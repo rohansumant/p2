@@ -1,0 +1,576 @@
+hello main
+Running sjf 5 times
+0
+Current time quanta:0 PID:4
+Current time quanta:1 PID:4
+Current time quanta:2 PID:4
+Current time quanta:3 PID:2
+Current time quanta:4 PID:2
+Current time quanta:5 PID:2
+Current time quanta:6 PID:2
+Current time quanta:7 PID:2
+Current time quanta:8 PID:2
+Current time quanta:9 PID:0
+Current time quanta:10 PID:0
+Current time quanta:11 PID:0
+Current time quanta:12 PID:0
+Current time quanta:13 PID:0
+Current time quanta:14 PID:0
+Current time quanta:15 PID:0
+Current time quanta:16 PID:0
+Current time quanta:17 PID:0
+Current time quanta:18 PID:0
+Current time quanta:19 PID:8
+Current time quanta:20 PID:8
+Current time quanta:21 PID:8
+Current time quanta:22 PID:8
+Current time quanta:23 PID:8
+Current time quanta:24 PID:8
+Current time quanta:25 PID:7
+Current time quanta:26 PID:7
+Current time quanta:27 PID:7
+Current time quanta:28 PID:7
+Current time quanta:29 PID:7
+Current time quanta:30 PID:5
+Current time quanta:31 PID:5
+Current time quanta:32 PID:5
+Current time quanta:33 PID:5
+Current time quanta:34 PID:5
+Current time quanta:35 PID:5
+Current time quanta:36 PID:5
+Current time quanta:37 PID:5
+Current time quanta:38 PID:5
+Current time quanta:39 PID:9
+Current time quanta:40 PID:9
+Current time quanta:41 PID:9
+Current time quanta:42 PID:3
+Current time quanta:43 PID:3
+Current time quanta:44 PID:3
+Current time quanta:45 PID:3
+Current time quanta:46 PID:3
+Current time quanta:47 PID:3
+Current time quanta:48 PID:3
+Current time quanta:49 PID:3
+Current time quanta:50 PID:1
+1
+Current time quanta:0 PID:2
+Current time quanta:1 PID:2
+Current time quanta:2 PID:2
+Current time quanta:3 PID:2
+Current time quanta:4 PID:2
+Current time quanta:5 PID:2
+Current time quanta:6 PID:2
+Current time quanta:7 PID:2
+Current time quanta:8 PID:9
+Current time quanta:9 PID:9
+Current time quanta:10 PID:9
+Current time quanta:11 PID:9
+Current time quanta:12 PID:9
+Current time quanta:13 PID:1
+Current time quanta:14 PID:1
+Current time quanta:15 PID:1
+Current time quanta:16 PID:1
+Current time quanta:17 PID:1
+Current time quanta:18 PID:1
+Current time quanta:19 PID:1
+Current time quanta:20 PID:8
+Current time quanta:21 PID:8
+Current time quanta:22 PID:8
+Current time quanta:23 PID:8
+Current time quanta:24 PID:8
+Current time quanta:25 PID:8
+Current time quanta:26 PID:3
+Current time quanta:27 PID:3
+Current time quanta:28 PID:3
+Current time quanta:29 PID:3
+Current time quanta:30 PID:3
+Current time quanta:31 PID:3
+Current time quanta:32 PID:3
+Current time quanta:33 PID:5
+Current time quanta:34 PID:5
+Current time quanta:35 PID:5
+Current time quanta:36 PID:5
+Current time quanta:37 PID:0
+Current time quanta:38 PID:0
+Current time quanta:39 PID:0
+Current time quanta:40 PID:0
+Current time quanta:41 PID:0
+Current time quanta:42 PID:0
+Current time quanta:43 PID:0
+Current time quanta:44 PID:7
+Current time quanta:45 PID:7
+Current time quanta:46 PID:4
+Current time quanta:47 PID:6
+Current time quanta:48 PID:6
+Current time quanta:49 PID:6
+Current time quanta:50 PID:6
+Current time quanta:51 PID:6
+Current time quanta:52 PID:6
+2
+Current time quanta:0 PID:8
+Current time quanta:1 PID:8
+Current time quanta:2 PID:8
+Current time quanta:3 PID:8
+Current time quanta:4 PID:8
+Current time quanta:5 PID:8
+Current time quanta:6 PID:8
+Current time quanta:7 PID:8
+Current time quanta:8 PID:8
+Current time quanta:9 PID:4
+Current time quanta:10 PID:4
+Current time quanta:11 PID:4
+Current time quanta:12 PID:4
+Current time quanta:13 PID:5
+Current time quanta:14 PID:9
+Current time quanta:15 PID:9
+Current time quanta:16 PID:9
+Current time quanta:17 PID:2
+Current time quanta:18 PID:2
+Current time quanta:19 PID:6
+Current time quanta:20 PID:6
+Current time quanta:21 PID:6
+Current time quanta:22 PID:6
+Current time quanta:23 PID:6
+Current time quanta:24 PID:6
+Current time quanta:25 PID:6
+Current time quanta:26 PID:6
+Current time quanta:27 PID:6
+Current time quanta:28 PID:1
+Current time quanta:29 PID:1
+Current time quanta:30 PID:1
+Current time quanta:31 PID:1
+Current time quanta:32 PID:1
+Current time quanta:33 PID:1
+Current time quanta:34 PID:7
+Current time quanta:35 PID:7
+Current time quanta:36 PID:7
+Current time quanta:37 PID:7
+Current time quanta:38 PID:0
+Current time quanta:39 PID:0
+Current time quanta:40 PID:0
+Current time quanta:41 PID:0
+3
+Current time quanta:0 PID:9
+Current time quanta:1 PID:9
+Current time quanta:2 PID:9
+Current time quanta:3 PID:9
+Current time quanta:4 PID:9
+Current time quanta:5 PID:9
+Current time quanta:6 PID:9
+Current time quanta:7 PID:9
+Current time quanta:8 PID:1
+Current time quanta:9 PID:1
+Current time quanta:10 PID:1
+Current time quanta:11 PID:1
+Current time quanta:12 PID:1
+Current time quanta:13 PID:1
+Current time quanta:14 PID:1
+Current time quanta:15 PID:1
+Current time quanta:16 PID:1
+Current time quanta:17 PID:7
+Current time quanta:18 PID:7
+Current time quanta:19 PID:7
+Current time quanta:20 PID:7
+Current time quanta:21 PID:7
+Current time quanta:22 PID:7
+Current time quanta:23 PID:7
+Current time quanta:24 PID:7
+Current time quanta:25 PID:7
+Current time quanta:26 PID:7
+Current time quanta:27 PID:3
+Current time quanta:28 PID:3
+Current time quanta:29 PID:3
+Current time quanta:30 PID:3
+Current time quanta:31 PID:3
+Current time quanta:32 PID:3
+Current time quanta:33 PID:3
+Current time quanta:34 PID:3
+Current time quanta:35 PID:4
+Current time quanta:36 PID:4
+Current time quanta:37 PID:4
+Current time quanta:38 PID:4
+Current time quanta:39 PID:4
+Current time quanta:40 PID:4
+Current time quanta:41 PID:4
+Current time quanta:42 PID:0
+Current time quanta:43 PID:0
+Current time quanta:44 PID:0
+Current time quanta:45 PID:0
+Current time quanta:46 PID:0
+Current time quanta:47 PID:0
+Current time quanta:48 PID:0
+Current time quanta:49 PID:0
+Current time quanta:50 PID:2
+Current time quanta:51 PID:2
+Current time quanta:52 PID:2
+Current time quanta:53 PID:2
+Current time quanta:54 PID:2
+Current time quanta:55 PID:2
+Current time quanta:56 PID:2
+Current time quanta:57 PID:2
+Current time quanta:58 PID:2
+Current time quanta:59 PID:6
+Current time quanta:60 PID:6
+Current time quanta:61 PID:6
+Current time quanta:62 PID:6
+Current time quanta:63 PID:6
+Current time quanta:64 PID:6
+Current time quanta:65 PID:6
+Current time quanta:66 PID:6
+Current time quanta:67 PID:5
+Current time quanta:68 PID:5
+Current time quanta:69 PID:5
+Current time quanta:70 PID:5
+4
+Current time quanta:0 PID:4
+Current time quanta:1 PID:4
+Current time quanta:2 PID:4
+Current time quanta:3 PID:4
+Current time quanta:4 PID:4
+Current time quanta:5 PID:2
+Current time quanta:6 PID:2
+Current time quanta:7 PID:7
+Current time quanta:8 PID:7
+Current time quanta:9 PID:7
+Current time quanta:10 PID:7
+Current time quanta:11 PID:7
+Current time quanta:12 PID:7
+Current time quanta:13 PID:9
+Current time quanta:14 PID:9
+Current time quanta:15 PID:9
+Current time quanta:16 PID:5
+Current time quanta:17 PID:5
+Current time quanta:18 PID:5
+Current time quanta:19 PID:5
+Current time quanta:20 PID:5
+Current time quanta:21 PID:5
+Current time quanta:22 PID:5
+Current time quanta:23 PID:5
+Current time quanta:24 PID:5
+Current time quanta:25 PID:5
+Current time quanta:26 PID:0
+Current time quanta:27 PID:0
+Current time quanta:28 PID:3
+Current time quanta:29 PID:3
+Current time quanta:30 PID:3
+Current time quanta:31 PID:3
+Current time quanta:32 PID:3
+Current time quanta:33 PID:3
+Current time quanta:34 PID:3
+Current time quanta:35 PID:3
+Current time quanta:36 PID:3
+Current time quanta:37 PID:3
+Current time quanta:38 PID:6
+Current time quanta:39 PID:6
+Current time quanta:40 PID:6
+Current time quanta:41 PID:6
+Current time quanta:42 PID:6
+Current time quanta:43 PID:6
+Current time quanta:44 PID:6
+Current time quanta:45 PID:1
+Current time quanta:46 PID:1
+Current time quanta:47 PID:1
+Current time quanta:48 PID:1
+Current time quanta:49 PID:1
+Current time quanta:50 PID:1
+Current time quanta:51 PID:1
+Current time quanta:52 PID:1
+Current time quanta:53 PID:1
+Current time quanta:54 PID:1
+Current time quanta:55 PID:8
+Current time quanta:56 PID:8
+Current time quanta:57 PID:8
+Current time quanta:58 PID:8
+Running srt 5 times
+0
+0 40 8.000000
+1 23 9.000000
+2 46 1.000000
+3 55 10.000000
+4 64 8.000000
+5 50 3.000000
+6 34 1.000000
+7 14 4.000000
+8 43 4.000000
+9 65 9.000000
+Current time quanta:14 PID:7
+Current time quanta:15 PID:7
+Current time quanta:16 PID:7
+Current time quanta:17 PID:7
+Current time quanta:23 PID:1
+Current time quanta:24 PID:1
+Current time quanta:25 PID:1
+Current time quanta:26 PID:1
+Current time quanta:27 PID:1
+Current time quanta:28 PID:1
+Current time quanta:29 PID:1
+Current time quanta:30 PID:1
+Current time quanta:31 PID:1
+Current time quanta:34 PID:6
+Current time quanta:40 PID:0
+Current time quanta:41 PID:0
+Current time quanta:42 PID:0
+Current time quanta:43 PID:8
+Current time quanta:44 PID:8
+Current time quanta:45 PID:8
+Current time quanta:46 PID:8
+Current time quanta:47 PID:2
+Current time quanta:48 PID:0
+Current time quanta:49 PID:0
+Current time quanta:50 PID:0
+Current time quanta:51 PID:0
+Current time quanta:52 PID:0
+Current time quanta:53 PID:5
+Current time quanta:54 PID:5
+Current time quanta:55 PID:5
+Current time quanta:56 PID:3
+Current time quanta:57 PID:3
+Current time quanta:58 PID:3
+Current time quanta:59 PID:3
+Current time quanta:60 PID:3
+Current time quanta:61 PID:3
+Current time quanta:62 PID:3
+Current time quanta:63 PID:3
+Current time quanta:64 PID:3
+Current time quanta:65 PID:3
+Current time quanta:66 PID:4
+Current time quanta:67 PID:4
+Current time quanta:68 PID:4
+Current time quanta:69 PID:4
+Current time quanta:70 PID:4
+Current time quanta:71 PID:4
+Current time quanta:72 PID:4
+Current time quanta:73 PID:4
+Current time quanta:74 PID:9
+Current time quanta:75 PID:9
+Current time quanta:76 PID:9
+Current time quanta:77 PID:9
+Current time quanta:78 PID:9
+Current time quanta:79 PID:9
+Current time quanta:80 PID:9
+Current time quanta:81 PID:9
+Current time quanta:82 PID:9
+1
+0 32 9.000000
+1 28 3.000000
+2 74 8.000000
+3 95 0.100000
+4 35 8.000000
+5 28 4.000000
+6 28 2.000000
+7 4 10.000000
+8 13 3.000000
+9 40 6.000000
+Current time quanta:4 PID:7
+Current time quanta:5 PID:7
+Current time quanta:6 PID:7
+Current time quanta:7 PID:7
+Current time quanta:8 PID:7
+Current time quanta:9 PID:7
+Current time quanta:10 PID:7
+Current time quanta:11 PID:7
+Current time quanta:12 PID:7
+Current time quanta:13 PID:7
+Current time quanta:14 PID:8
+Current time quanta:15 PID:8
+Current time quanta:16 PID:8
+Current time quanta:28 PID:6
+Current time quanta:29 PID:6
+Current time quanta:30 PID:1
+Current time quanta:31 PID:1
+Current time quanta:32 PID:1
+Current time quanta:33 PID:5
+Current time quanta:34 PID:5
+Current time quanta:35 PID:5
+Current time quanta:36 PID:5
+Current time quanta:37 PID:4
+Current time quanta:38 PID:4
+Current time quanta:39 PID:4
+Current time quanta:40 PID:4
+Current time quanta:41 PID:4
+Current time quanta:42 PID:4
+Current time quanta:43 PID:4
+Current time quanta:44 PID:4
+Current time quanta:45 PID:9
+Current time quanta:46 PID:9
+Current time quanta:47 PID:9
+Current time quanta:48 PID:9
+Current time quanta:49 PID:9
+Current time quanta:50 PID:9
+Current time quanta:51 PID:0
+Current time quanta:52 PID:0
+Current time quanta:53 PID:0
+Current time quanta:54 PID:0
+Current time quanta:55 PID:0
+Current time quanta:56 PID:0
+Current time quanta:57 PID:0
+Current time quanta:58 PID:0
+Current time quanta:59 PID:0
+Current time quanta:74 PID:2
+Current time quanta:75 PID:2
+Current time quanta:76 PID:2
+Current time quanta:77 PID:2
+Current time quanta:78 PID:2
+Current time quanta:79 PID:2
+Current time quanta:80 PID:2
+Current time quanta:81 PID:2
+Current time quanta:95 PID:3
+2
+0 28 0.100000
+1 17 4.000000
+2 24 10.000000
+3 83 1.000000
+4 72 9.000000
+5 90 2.000000
+6 54 5.000000
+7 82 10.000000
+8 97 3.000000
+9 4 1.000000
+Current time quanta:4 PID:9
+Current time quanta:17 PID:1
+Current time quanta:18 PID:1
+Current time quanta:19 PID:1
+Current time quanta:20 PID:1
+Current time quanta:24 PID:2
+Current time quanta:25 PID:2
+Current time quanta:26 PID:2
+Current time quanta:27 PID:2
+Current time quanta:28 PID:0
+Current time quanta:29 PID:2
+Current time quanta:30 PID:2
+Current time quanta:31 PID:2
+Current time quanta:32 PID:2
+Current time quanta:33 PID:2
+Current time quanta:34 PID:2
+Current time quanta:54 PID:6
+Current time quanta:55 PID:6
+Current time quanta:56 PID:6
+Current time quanta:57 PID:6
+Current time quanta:58 PID:6
+Current time quanta:72 PID:4
+Current time quanta:73 PID:4
+Current time quanta:74 PID:4
+Current time quanta:75 PID:4
+Current time quanta:76 PID:4
+Current time quanta:77 PID:4
+Current time quanta:78 PID:4
+Current time quanta:79 PID:4
+Current time quanta:80 PID:4
+Current time quanta:82 PID:7
+Current time quanta:83 PID:3
+Current time quanta:84 PID:7
+Current time quanta:85 PID:7
+Current time quanta:86 PID:7
+Current time quanta:87 PID:7
+Current time quanta:88 PID:7
+Current time quanta:89 PID:7
+Current time quanta:90 PID:5
+Current time quanta:91 PID:5
+Current time quanta:92 PID:7
+Current time quanta:93 PID:7
+Current time quanta:94 PID:7
+Current time quanta:97 PID:8
+Current time quanta:98 PID:8
+Current time quanta:99 PID:8
+3
+0 22 0.100000
+1 43 1.000000
+2 40 7.000000
+3 10 3.000000
+4 61 4.000000
+5 5 10.000000
+6 44 9.000000
+7 65 6.000000
+8 82 2.000000
+9 37 4.000000
+Current time quanta:5 PID:5
+Current time quanta:6 PID:5
+Current time quanta:7 PID:5
+Current time quanta:8 PID:5
+Current time quanta:9 PID:5
+Current time quanta:10 PID:3
+Current time quanta:11 PID:3
+Current time quanta:12 PID:3
+Current time quanta:13 PID:5
+Current time quanta:14 PID:5
+Current time quanta:15 PID:5
+Current time quanta:16 PID:5
+Current time quanta:17 PID:5
+Current time quanta:22 PID:0
+Current time quanta:37 PID:9
+Current time quanta:38 PID:9
+Current time quanta:39 PID:9
+Current time quanta:40 PID:9
+Current time quanta:41 PID:2
+Current time quanta:42 PID:2
+Current time quanta:43 PID:1
+Current time quanta:44 PID:2
+Current time quanta:45 PID:2
+Current time quanta:46 PID:2
+Current time quanta:47 PID:2
+Current time quanta:48 PID:2
+Current time quanta:49 PID:6
+Current time quanta:50 PID:6
+Current time quanta:51 PID:6
+Current time quanta:52 PID:6
+Current time quanta:53 PID:6
+Current time quanta:54 PID:6
+Current time quanta:55 PID:6
+Current time quanta:56 PID:6
+Current time quanta:57 PID:6
+Current time quanta:61 PID:4
+Current time quanta:62 PID:4
+Current time quanta:63 PID:4
+Current time quanta:64 PID:4
+Current time quanta:65 PID:7
+Current time quanta:66 PID:7
+Current time quanta:67 PID:7
+Current time quanta:68 PID:7
+Current time quanta:69 PID:7
+Current time quanta:70 PID:7
+Current time quanta:82 PID:8
+Current time quanta:83 PID:8
+4
+0 0 5.000000
+1 99 5.000000
+2 68 4.000000
+3 31 1.000000
+4 33 1.000000
+5 63 5.000000
+6 99 1.000000
+7 73 1.000000
+8 90 6.000000
+9 66 4.000000
+Current time quanta:0 PID:0
+Current time quanta:1 PID:0
+Current time quanta:2 PID:0
+Current time quanta:3 PID:0
+Current time quanta:4 PID:0
+Current time quanta:31 PID:3
+Current time quanta:33 PID:4
+Current time quanta:63 PID:5
+Current time quanta:64 PID:5
+Current time quanta:65 PID:5
+Current time quanta:66 PID:5
+Current time quanta:67 PID:5
+Current time quanta:68 PID:9
+Current time quanta:69 PID:9
+Current time quanta:70 PID:9
+Current time quanta:71 PID:9
+Current time quanta:72 PID:2
+Current time quanta:73 PID:7
+Current time quanta:74 PID:2
+Current time quanta:75 PID:2
+Current time quanta:76 PID:2
+Current time quanta:90 PID:8
+Current time quanta:91 PID:8
+Current time quanta:92 PID:8
+Current time quanta:93 PID:8
+Current time quanta:94 PID:8
+Current time quanta:95 PID:8
+Current time quanta:99 PID:6
+Current time quanta:100 PID:1
+Current time quanta:101 PID:1
+Current time quanta:102 PID:1
+Current time quanta:103 PID:1
+Current time quanta:104 PID:1
