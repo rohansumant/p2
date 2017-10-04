@@ -1,5 +1,5 @@
-#ifndef CONFIG_H
-#define CONFIG_H
+#ifndef COMMON_H
+#define COMMON_H
 
 #define NUMBER_OF_PROCS 10
 #define RUNS_PER_ALGO 5
