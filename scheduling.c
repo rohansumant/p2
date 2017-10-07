@@ -25,6 +25,7 @@ typedef struct {
     int arrival_time;
     float expected_runtime;
     int priority;
+    int age;
 } process;
 
 
@@ -195,14 +196,38 @@ int hpf_preemptive(process *ptr) {
 
     int x = 0; // pointer to the beginning of the process queue (ptr);
     for(int q=0;q<QUANTA;q++) {
-	// First, look for any new processes starting at this quantum
+
+
+	// BONUS-POINTS .. Handle aging, ie, bump the process to higher priority queue
+	// after it spends 5 quanta in current queue.
+	
+	// Age processes present in all queues (except priority 1)
+	for(int i=1;i<4;i++) for(int j=0;j<ix[i];j++) {
+	    Q[i][j].age++;
+	}
+
+	// Now, look for any new processes starting at this quantum
 	// and populate the queue accordingly
 	while(x < NUMBER_OF_PROCS && ptr[x].arrival_time == q) {
 	    int pr = ptr[x].priority - 1;
 	    Q[pr][ix[pr]] = ptr[x];
+	    Q[pr][ix[pr]].age = 0; // Set the age to 0 on arrival (fresh process)
 	    ix[pr]++;
 	    x++;
 	}
+
+	for(int i=1;i<4;i++) {
+	    for(int j=0;j<ix[i];j++) if(Q[i][j].expected_runtime > 0 && Q[i][j].age == 5) {
+		Q[i-1][ix[i-1]] = Q[i][j]; // Insert process into higher priority queue
+		Q[i-1][ix[i-1]].age = 0; // Fresh process in this new queue
+
+		ix[i-1]++;
+		Q[i][j].expected_runtime = -1; // Entry in previous queue effectively nullified
+	    }
+	}
+
+
+
 	// check process from which queue is to be alloted this quantum
 	int target_queue = -1;
 	for(int i=0;i<4;i++) {
@@ -263,14 +288,35 @@ int hpf_nonpreemptive(process *ptr) {
     
     int x = 0; // pointer to the beginning of the process queue (ptr);
     for(int q=0;q<QUANTA;q++) {
-	// First, look for any new processes starting at this quantum
+
+	// BONUS-POINTS .. Handle aging, ie, bump the process to higher priority queue
+	// after it spends 5 quanta in current queue.
+	
+	// Age processes present in all queues (except priority 1)
+	for(int i=1;i<4;i++) for(int j=0;j<ix[i];j++) {
+	    Q[i][j].age++;
+	}
+
+	// Now, look for any new processes starting at this quantum
 	// and populate the queue accordingly
 	while(x < NUMBER_OF_PROCS && ptr[x].arrival_time == q) {
 	    int pr = ptr[x].priority - 1;
 	    Q[pr][ix[pr]] = ptr[x];
+	    Q[pr][ix[pr]].age = 0; // Set the age to 0 on arrival (fresh process)
 	    ix[pr]++;
 	    x++;
 	}
+
+	for(int i=1;i<4;i++) {
+	    for(int j=0;j<ix[i];j++) if(Q[i][j].expected_runtime > 0 && Q[i][j].age == 5) {
+		Q[i-1][ix[i-1]] = Q[i][j]; // Insert process into higher priority queue
+		Q[i-1][ix[i-1]].age = 0; // Fresh process in this new queue
+
+		ix[i-1]++;
+		Q[i][j].expected_runtime = -1; // Entry in previous queue effectively nullified
+	    }
+	}
+
 	// check process from which queue is to be alloted this quantum
 	int target_queue = -1;
 	for(int i=0;i<4;i++) {
