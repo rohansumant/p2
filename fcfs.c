@@ -72,7 +72,7 @@ static void findAverageTime(process *ptr)
 // }
 
 // takes a sorted process array and a quanta and returns the next valid proc to run or NULL if none found
-process * next_proc_nonpre(process* ptr, int Q, process* c){
+process * next_proc_fcfs(process* ptr, int Q, process* c){
     int i =0;
     if (c != NULL && c->remaining_runtime > 0) return c; // non-preemptive-ness
     for (i=0; i< NUMBER_OF_PROCS; i++){
@@ -80,7 +80,6 @@ process * next_proc_nonpre(process* ptr, int Q, process* c){
     }
     return NULL;
 }
-
 
 void fcfs(process *ptr)
 {
@@ -103,7 +102,7 @@ void fcfs(process *ptr)
 
         if (done_procs == NUMBER_OF_PROCS) break; // if all procs are finished we break this loop
 
-        c_proc = next_proc_nonpre(ptr, i, c_proc);
+        c_proc = next_proc_fcfs(ptr, i, c_proc);
 
         // If c_proc is NULL there are no available procs to run so print QUANTA header with idle time and continue.
         if (c_proc == NULL){
