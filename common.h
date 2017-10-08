@@ -18,6 +18,7 @@ typedef struct {
 
 int compare_arrival_times(const void *, const void *);
 int compare_expected_runtimes(const void *, const void *);
+int compare_remaining_runtimes(const void *, const void *);
 int compare_priorities(const void *, const void *);
 int generate_procs(process *);
 int print_procs(process *);

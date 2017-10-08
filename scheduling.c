@@ -4,6 +4,7 @@
 #include "common.h"
 #include "fcfs.h"
 #include "sjf.h"
+#include "srt.h"
 
 // TODO: Answer the following:
 // can we add remaining time to the process struct?
@@ -12,19 +13,6 @@
 //     with possible values: [ 0.1, 1, 2, 3, 4 .. 10 ]
 
 
-// Shortest Remaining Time (preemptive)
-int srt(process *ptr)
-{
-// sort on shortest remaining time
-    int i;
-    qsort(ptr, NUMBER_OF_PROCS, sizeof(process), compare_expected_runtimes);
-    for(i=0; i<NUMBER_OF_PROCS; i++)
-    {
-        printf("pid: %d , expected runtime: %f\n", ptr[i].pid, ptr[i].expected_runtime);
-    }
-
-    return 0;
-}
 
 // Round Robin (preemptive)
 int rr(process *ptr)
@@ -79,14 +67,15 @@ int main()
         print_procs(buff);
         sjf(buff);
     }
-//
-//    printf("Running srt %d times\n", RUNS_PER_ALGO);
-//    for (i=0; i< RUNS_PER_ALGO; i++)
-//    {
-//        printf("%d\n", i);
-//        generate_procs(buff);
-//        srt(buff);
-//    }
+
+    printf("Running srt %d times\n", RUNS_PER_ALGO);
+    for (i=0; i< RUNS_PER_ALGO; i++)
+    {
+        printf("run #%d:\n", i);
+        generate_procs(buff);
+        print_procs(buff);
+        srt(buff);
+    }
 //
 //    printf("Running rr %d times\n", RUNS_PER_ALGO);
 //    for (i=0; i< RUNS_PER_ALGO; i++)

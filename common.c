@@ -19,6 +19,16 @@ int compare_expected_runtimes(const void * a, const void * b)
     return r;
 }
 
+int compare_remaining_runtimes(const void * a, const void * b)
+{
+    process *p1 = (process*)a;
+    process *p2 = (process*)b;
+    float r = p1->remaining_runtime - p2->remaining_runtime;
+    if (r>0) return 1;
+    if (r<0) return -1;
+    return r;
+}
+
 int compare_priorities(const void * a, const void * b)
 {
     process *p1 = (process*)a;
