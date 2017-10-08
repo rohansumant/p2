@@ -151,6 +151,8 @@ int hpf_nonpreemptive(process *ptr) {
 	done[i] = 0;
     }
     
+    process* target_process = NULL;
+
     int x = 0; // pointer to the beginning of the process queue (ptr);
     for(int q=0;q<QUANTA;q++) {
 	// First, look for any new processes starting at this quantum
@@ -161,25 +163,28 @@ int hpf_nonpreemptive(process *ptr) {
 	    ix[pr]++;
 	    x++;
 	}
-	// check process from which queue is to be alloted this quantum
-	int target_queue = -1;
-	for(int i=0;i<4;i++) {
-	    for(int j=0;j<ix[i];j++) if(Q[i][j].expected_runtime > 0.0) { // if expected_runtime <= 0.0 then the process has already completed
-		target_queue = i;
-		break;
-	    }
-	    if(target_queue != -1) break;
-	}
-	if(target_queue == -1) {
-	    printf("No jobs at quantum %d\n",q);
-	    continue;
-	}
-	int target_process_ix = 0;
-	while(target_process_ix < ix[target_queue] && Q[target_queue][target_process_ix].expected_runtime <= 0) {
-	    target_process_ix++;
-	}
 
-	process* target_process = &(Q[target_queue][target_process_ix]);
+
+	if(!target_process) {
+	    // check process from which queue is to be alloted this quantum
+	    int target_queue = -1;
+	    for(int i=0;i<4;i++) {
+		for(int j=0;j<ix[i];j++) if(Q[i][j].expected_runtime > 0.0) { // if expected_runtime <= 0.0 then the process has already completed
+		    target_queue = i;
+		    break;
+		}
+		if(target_queue != -1) break;
+	    }
+	    if(target_queue == -1) {
+		printf("No jobs at quantum %d\n",q);
+		continue;
+	    }
+	    int target_process_ix = 0;
+	    while(target_process_ix < ix[target_queue] && Q[target_queue][target_process_ix].expected_runtime <= 0) {
+		target_process_ix++;
+	    }
+	    target_process = &(Q[target_queue][target_process_ix]);
+	} 
 
 	if(first_touch[target_process->pid] == -1) first_touch[target_process->pid] = q;
 	last_touch[target_process->pid] = q;
@@ -193,7 +198,8 @@ int hpf_nonpreemptive(process *ptr) {
 	target_process->expected_runtime -= 1.0;
 	if(target_process->expected_runtime <= 0) {
 	   done[target_process->pid] = 1;
-	} 
+	   target_process = NULL;
+	}
     }
     Print_HPF_Stats(ptr,first_touch,last_touch,done);
     return 0;
