@@ -5,7 +5,11 @@
 #include "fcfs.h"
 #include "sjf.h"
 #include "srt.h"
+<<<<<<< HEAD
 #include "hpf.h"
+=======
+#include "rr.h"
+>>>>>>> 1f5916e2c67327b4995fe797236c59a6db579866
 
 // TODO: Answer the following:
 // can we add remaining time to the process struct?
@@ -13,6 +17,7 @@
 // why does expected run time run from 0.1 to 10
 //     with possible values: [ 0.1, 1, 2, 3, 4 .. 10 ]
 
+<<<<<<< HEAD
 
 
 // Round Robin (preemptive)
@@ -28,6 +33,23 @@ int rr(process *ptr)
     return 0;
 }
 
+=======
+
+// Highest Priority First (both preemptive and non-preemptive)
+int hpf(process *ptr)
+{
+// sort on priorities
+    int i;
+    qsort(ptr, NUMBER_OF_PROCS, sizeof(process), compare_priorities);
+    for(i=0; i<NUMBER_OF_PROCS; i++)
+    {
+        printf("pid: %d , priority: %d\n", ptr[i].pid, ptr[i].priority);
+    }
+
+    return 0;
+}
+
+>>>>>>> 1f5916e2c67327b4995fe797236c59a6db579866
 
 int main()
 {
@@ -40,25 +62,40 @@ int main()
     printf("Running fcfs %d times\n", RUNS_PER_ALGO);
     for (i=0; i< RUNS_PER_ALGO; i++)
     {
+<<<<<<< HEAD
 	printf("run #%d:\n", i);
 	generate_procs(buff);
 	print_procs(buff);
 	fcfs(buff);
+=======
+        printf("run #%d:\n", i);
+        generate_procs(buff);
+        print_procs(buff);
+        fcfs(buff);
+>>>>>>> 1f5916e2c67327b4995fe797236c59a6db579866
     }
 
     printf("Running sjf %d times\n", RUNS_PER_ALGO);
     for (i=0; i< RUNS_PER_ALGO; i++)
     {
+<<<<<<< HEAD
 	printf("run #%d:\n", i);
 	generate_procs(buff);
 	print_procs(buff);
 	sjf(buff);
+=======
+        printf("run #%d:\n", i);
+        generate_procs(buff);
+        print_procs(buff);
+        sjf(buff);
+>>>>>>> 1f5916e2c67327b4995fe797236c59a6db579866
     }
 
 
     printf("Running srt %d times\n", RUNS_PER_ALGO);
     for (i=0; i< RUNS_PER_ALGO; i++)
     {
+<<<<<<< HEAD
 	printf("run #%d:\n", i);
 	generate_procs(buff);
 	print_procs(buff);
@@ -90,6 +127,30 @@ int main()
 	hpf_preemptive(a);
 	hpf_nonpreemptive(b);
     }
+=======
+        printf("run #%d:\n", i);
+        generate_procs(buff);
+        print_procs(buff);
+        srt(buff);
+    }
+
+    printf("Running rr %d times\n", RUNS_PER_ALGO);
+    for (i=0; i< RUNS_PER_ALGO; i++)
+    {
+       printf("%d\n", i);
+       generate_procs(buff);
+       print_procs(buff);
+       rr(buff);
+    }
+
+//    printf("Running hpf %d times\n", RUNS_PER_ALGO);
+//    for (i=0; i< RUNS_PER_ALGO; i++)
+//    {
+//        printf("%d\n", i);
+//        generate_procs(buff);
+//        hpf(buff);
+//    }
+>>>>>>> 1f5916e2c67327b4995fe797236c59a6db579866
 
     return 0;
 }

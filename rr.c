@@ -1,26 +1,62 @@
-#include "srt.h"
+#include "rr.h"
 
+
+//Get index of the last served process
+int get_index(process* ptr, int last_serviced)
+{
+    for (int i=0; i< NUMBER_OF_PROCS; i++){
+        if (ptr[i].pid == last_serviced)
+        {
+            return i;
+        }
+        else{
+            continue;
+        }
+    } 
+    return 0;
+}
 
 // takes a sorted process array and a quanta and returns the next valid proc to run or NULL if none found
-process * next_proc_pre(process* ptr, int Q){
+process * next_proc_rr(process* ptr, int Q, process* c, int last_serviced){
     int i =0;
-    for (i=0; i< NUMBER_OF_PROCS; i++){
-        if (Q >= ptr[i].arrival_time && ptr[i].remaining_runtime > 0) return &ptr[i];
+    int index = 0;
+    //Get index of last served process
+    index = get_index(ptr, last_serviced);
+
+    //Traverse left to select next process to serve
+    for(i=index+1; i<NUMBER_OF_PROCS; i++){
+        if(Q >= ptr[i].arrival_time && ptr[i].remaining_runtime > 0){
+            return &ptr[i];
+        }
+    }
+
+    //Traverse right to select next process to serve
+    for (i=0; i< index; i++){
+        if (Q >= ptr[i].arrival_time && ptr[i].remaining_runtime > 0)
+        {
+            return &ptr[i];
+        }
+    }
+
+    //Return same element in case there is no other process to serve
+    if (c != NULL && c->remaining_runtime > 0) {
+         return c; 
     }
     return NULL;
 }
 
-// Shortest Remaining Time (preemptive)
-int srt(process *ptr)
+// Shortest Job First (non-preemptive)
+int rr(process *ptr)
 {
     int i;
     int done_procs = 0;
     float idle_time = 0;
     float q_idle_time = 0;
     process* c_proc = NULL;
-
-    // sort on shortest remaining time
-    qsort(ptr, NUMBER_OF_PROCS, sizeof(process), compare_remaining_runtimes);
+    int last_serviced = 0;
+    int index = 0;
+    // sort on expected runtime
+    qsort(ptr, NUMBER_OF_PROCS, sizeof(process), compare_arrival_times);
 
     printf("expected order:\n");
     print_procs(ptr);
@@ -28,18 +64,21 @@ int srt(process *ptr)
     printf("\n Simulation starting...\n\n");
     for (i=0; i<QUANTA; i++)
     {
-        // sort on remaining time
-        qsort(ptr, NUMBER_OF_PROCS, sizeof(process), compare_remaining_runtimes);
         q_idle_time = 0;    // var to measure idle time in this quanta
+
         if (done_procs == NUMBER_OF_PROCS) break; // if all procs are finished we break this loop
 
-        c_proc = next_proc_pre(ptr, i);
+        c_proc = next_proc_rr(ptr, i, c_proc, last_serviced);
+        
 
         // If c_proc is NULL there are no available procs to run so print QUANTA header with idle time and continue.
         if (c_proc == NULL){
             printf("| QUANTA %02d:  I D L E  |\n",i);
             idle_time += 1.0;
             continue;
+        }
+        else{
+            last_serviced = c_proc->pid;
         }
 
         // If we get here, we have a valid proc to run at c_proc
@@ -68,7 +107,7 @@ int srt(process *ptr)
 
     // Finish the rest of the QUANTA
     for (i=i; i< QUANTA; i++){
-        printf("| QUANTA %02d:  I D L E  |\n",i);
+        printf("| QUANTA %02d: IDLE  |\n",i);
         idle_time += 1.0;
     }
 
