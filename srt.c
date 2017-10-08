@@ -1,17 +1,12 @@
 #include "srt.h"
 
 
-// takes a rt sorted process array and a quanta and returns the next valid proc to run or NULL if none found
-process * next_proc(process* ptr, int Q){
+// takes a sorted process array and a quanta and returns the next valid proc to run or NULL if none found
+process * next_proc_pre(process* ptr, int Q){
     int i =0;
     for (i=0; i< NUMBER_OF_PROCS; i++){
-        if (Q > ptr[i].arrival_time && ptr[i].remaining_runtime > 0){
-//            printf("found valid next proc with pid:%d\n", ptr[i].pid);
-            return &ptr[i];
-        }
-//        printf("skipped pid %d\n", ptr[i].pid);
+        if (Q >= ptr[i].arrival_time && ptr[i].remaining_runtime > 0) return &ptr[i];
     }
-//    printf("no valid proc, returning NULL\n");
     return NULL;
 }
 
@@ -19,11 +14,10 @@ process * next_proc(process* ptr, int Q){
 int srt(process *ptr)
 {
     int i;
-    int idx = 0;
     int done_procs = 0;
     float idle_time = 0;
     float q_idle_time = 0;
-    process* c_proc;
+    process* c_proc = NULL;
 
     // sort on shortest remaining time
     qsort(ptr, NUMBER_OF_PROCS, sizeof(process), compare_remaining_runtimes);
@@ -34,13 +28,12 @@ int srt(process *ptr)
     printf("\n Simulation starting...\n\n");
     for (i=0; i<QUANTA; i++)
     {
-        // reset our index and sort on remaining time
-        idx = 0;
+        // sort on remaining time
         qsort(ptr, NUMBER_OF_PROCS, sizeof(process), compare_remaining_runtimes);
         q_idle_time = 0;    // var to measure idle time in this quanta
         if (done_procs == NUMBER_OF_PROCS) break; // if all procs are finished we break this loop
 
-        c_proc = next_proc(ptr, i);
+        c_proc = next_proc_pre(ptr, i);
 
         // If c_proc is NULL there are no available procs to run so print QUANTA header with idle time and continue.
         if (c_proc == NULL){

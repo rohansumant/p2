@@ -84,3 +84,12 @@ int print_procs(process *b){
 
     return 0;
 }
+
+//// takes a sorted process array and a quanta and returns the next valid proc to run or NULL if none found
+//process * next_proc(process* ptr, int Q){
+//    int i =0;
+//    for (i=0; i< NUMBER_OF_PROCS; i++){
+//        if (Q > ptr[i].arrival_time && ptr[i].remaining_runtime > 0) return &ptr[i];
+//    }
+//    return NULL;
+//}

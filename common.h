@@ -22,5 +22,6 @@ int compare_remaining_runtimes(const void *, const void *);
 int compare_priorities(const void *, const void *);
 int generate_procs(process *);
 int print_procs(process *);
+//process * next_proc(process*, int);
 
 #endif
