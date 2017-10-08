@@ -65,25 +65,6 @@ int hpf(process *ptr)
     return 0;
 }
 
-int generate_procs(process *p)
-{
-    int pr;
-    int i;
-    float service_time;
-    for(i=0; i<NUMBER_OF_PROCS; i++)
-    {
-        p[i].pid = i;
-        p[i].arrival_time = rand() % 100;
-        service_time = rand() % 11;
-        if (service_time == 0) service_time += 0.1;
-        p[i].expected_runtime = service_time;
-        pr = rand() % 5;
-        if (pr == 0) pr += 1;
-        p[i].priority = pr;
-    }
-
-    return 0;
-}
 
 int main()
 {
@@ -96,41 +77,43 @@ int main()
     printf("Running fcfs %d times\n", RUNS_PER_ALGO);
     for (i=0; i< RUNS_PER_ALGO; i++)
     {
-        printf("%d\n", i);
+        printf("run #%d:\n", i);
         generate_procs(buff);
+        print_procs(buff);
         fcfs(buff);
     }
 
-    printf("Running sjf %d times\n", RUNS_PER_ALGO);
-    for (i=0; i< RUNS_PER_ALGO; i++)
-    {
-        printf("%d\n", i);
-        generate_procs(buff);
-        sjf(buff);
-    }
+//    printf("Running sjf %d times\n", RUNS_PER_ALGO);
+//    for (i=0; i< RUNS_PER_ALGO; i++)
+//    {
+//        printf("%d\n", i);
+//        generate_procs(buff);
+//        sjf(buff);
+//    }
+//
+//    printf("Running srt %d times\n", RUNS_PER_ALGO);
+//    for (i=0; i< RUNS_PER_ALGO; i++)
+//    {
+//        printf("%d\n", i);
+//        generate_procs(buff);
+//        srt(buff);
+//    }
+//
+//    printf("Running rr %d times\n", RUNS_PER_ALGO);
+//    for (i=0; i< RUNS_PER_ALGO; i++)
+//    {
+//        printf("%d\n", i);
+//        generate_procs(buff);
+//        rr(buff);
+//    }
+//
+//    printf("Running hpf %d times\n", RUNS_PER_ALGO);
+//    for (i=0; i< RUNS_PER_ALGO; i++)
+//    {
+//        printf("%d\n", i);
+//        generate_procs(buff);
+//        hpf(buff);
+//    }
 
-    printf("Running srt %d times\n", RUNS_PER_ALGO);
-    for (i=0; i< RUNS_PER_ALGO; i++)
-    {
-        printf("%d\n", i);
-        generate_procs(buff);
-        srt(buff);
-    }
-
-    printf("Running rr %d times\n", RUNS_PER_ALGO);
-    for (i=0; i< RUNS_PER_ALGO; i++)
-    {
-        printf("%d\n", i);
-        generate_procs(buff);
-        rr(buff);
-    }
-
-    printf("Running hpf %d times\n", RUNS_PER_ALGO);
-    for (i=0; i< RUNS_PER_ALGO; i++)
-    {
-        printf("%d\n", i);
-        generate_procs(buff);
-        hpf(buff);
-    }
-
+    return 0;
 }

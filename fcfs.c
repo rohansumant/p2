@@ -32,7 +32,7 @@ static void printFCFSStats(process *ptr, int *waitingTime, int *turnAroundTime)
         totalWaitTime += waitingTime[i];
         totalTurnAroundTime += turnAroundTime[i];
 
-        printf("%d\t\t %f\t\t %d\t\t %d\t\t\n", ptr[i].pid, ptr[i].expected_runtime, waitingTime[i], turnAroundTime[i]);
+        printf("%d\t\t %.1f\t\t %d\t\t %d\t\t\n", ptr[i].pid, ptr[i].expected_runtime, waitingTime[i], turnAroundTime[i]);
     }
 
     printf("Average waiting time %f\n", (float)totalWaitTime/(float)NUMBER_OF_PROCS);
@@ -60,7 +60,7 @@ void fcfs(process *ptr)
     
     for(i=0; i<NUMBER_OF_PROCS; i++)
     {
-        printf("pid: %d , arrival time: %d\t expected_runtime :%f\n ", ptr[i].pid, ptr[i].arrival_time, ptr[i].expected_runtime);
+        printf("pid: %d , arrival time: %.1f\t expected_runtime :%.1f\n", ptr[i].pid, ptr[i].arrival_time, ptr[i].expected_runtime);
     }
     
     findAverageTime(ptr);

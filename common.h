@@ -7,13 +7,16 @@
 
 typedef struct {
     int pid;
-    int arrival_time;
+    float arrival_time;
     float expected_runtime;
+    float remaining_runtime;
     int priority;
 } process;
 
 int compare_arrival_times(const void *, const void *);
 int compare_expected_runtimes(const void *, const void *);
 int compare_priorities(const void *, const void *);
+int generate_procs(process *);
+int print_procs(process *);
 
 #endif
