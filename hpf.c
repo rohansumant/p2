@@ -84,6 +84,15 @@ int hpf_preemptive(process *ptr) {
 
     int x = 0; // pointer to the beginning of the process queue (ptr);
     for(int q=0;q<QUANTA;q++) {
+
+	// BONUS-POINTS .. Handle aging, ie, bump the process to higher priority queue
+	// after it spends 5 quanta in current queue.
+	
+	// Age processes present in all queues (except priority 1)
+	for(int i=1;i<4;i++) for(int j=0;j<ix[i];j++) {
+	    Q[i][j].age++;
+	}
+
 	// First, look for any new processes starting at this quantum
 	// and populate the queue accordingly
 	while(x < NUMBER_OF_PROCS && ptr[x].arrival_time <= q) {
@@ -92,6 +101,17 @@ int hpf_preemptive(process *ptr) {
 	    ix[pr]++;
 	    x++;
 	}
+	
+	for(int i=1;i<4;i++) {
+	    for(int j=0;j<ix[i];j++) if(Q[i][j].expected_runtime > 0 && Q[i][j].age == 5) {
+		Q[i-1][ix[i-1]] = Q[i][j]; // Insert process into higher priority queue
+		Q[i-1][ix[i-1]].age = 0; // Fresh process in this new queue
+
+		ix[i-1]++;
+		Q[i][j].expected_runtime = -1; // Entry in previous queue effectively nullified
+	    }
+	}
+
 	// check process from which queue is to be alloted this quantum
 	int target_queue = -1;
 	for(int i=0;i<4;i++) {
@@ -155,6 +175,16 @@ int hpf_nonpreemptive(process *ptr) {
 
     int x = 0; // pointer to the beginning of the process queue (ptr);
     for(int q=0;q<QUANTA;q++) {
+
+	// BONUS-POINTS .. Handle aging, ie, bump the process to higher priority queue
+	// after it spends 5 quanta in current queue.
+	
+	// Age processes present in all queues (except priority 1)
+	for(int i=1;i<4;i++) for(int j=0;j<ix[i];j++) {
+	    Q[i][j].age++;
+	}
+
+
 	// First, look for any new processes starting at this quantum
 	// and populate the queue accordingly
 	while(x < NUMBER_OF_PROCS && ptr[x].arrival_time <= q) {
@@ -164,6 +194,16 @@ int hpf_nonpreemptive(process *ptr) {
 	    x++;
 	}
 
+	for(int i=1;i<4;i++) {
+	    for(int j=0;j<ix[i];j++) if(Q[i][j].expected_runtime > 0 && Q[i][j].age == 5) {
+		if(target_process && target_process->pid == Q[i][j].pid) continue; // No benefit for doing this for the ongoing process, it already owns the CPU.
+		Q[i-1][ix[i-1]] = Q[i][j]; // Insert process into higher priority queue
+		Q[i-1][ix[i-1]].age = 0; // Fresh process in this new queue
+
+		ix[i-1]++;
+		Q[i][j].expected_runtime = -1; // Entry in previous queue effectively nullified
+	    }
+	}
 
 	if(!target_process) {
 	    // check process from which queue is to be alloted this quantum

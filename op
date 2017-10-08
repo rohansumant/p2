@@ -1,0 +1,3570 @@
+hello main
+Running fcfs 5 times
+run #0:
+________________________________________________________
+|   pid    |   a time |   e time |   r time |  priority|
+|======================================================|
+|   0      |   38.3   |   3.2    |   3.2    |   2      |
+|   1      |   91.5   |   5.2    |   5.2    |   1      |
+|   2      |   38.6   |   3.0    |   3.0    |   4      |
+|   3      |   42.1   |   4.4    |   4.4    |   2      |
+|   4      |   69.0   |   1.9    |   1.9    |   3      |
+|   5      |   92.6   |   1.1    |   1.1    |   1      |
+|   6      |   17.2   |   3.4    |   3.4    |   1      |
+|   7      |   36.8   |   2.0    |   2.0    |   4      |
+|   8      |   78.2   |   6.5    |   6.5    |   2      |
+|   9      |   12.3   |   2.0    |   2.0    |   1      |
+========================================================
+pid: 9 , arrival time: 12.3	 expected_runtime :2.0
+pid: 6 , arrival time: 17.2	 expected_runtime :3.4
+pid: 7 , arrival time: 36.8	 expected_runtime :2.0
+pid: 0 , arrival time: 38.3	 expected_runtime :3.2
+pid: 2 , arrival time: 38.6	 expected_runtime :3.0
+pid: 3 , arrival time: 42.1	 expected_runtime :4.4
+pid: 4 , arrival time: 69.0	 expected_runtime :1.9
+pid: 8 , arrival time: 78.2	 expected_runtime :6.5
+pid: 1 , arrival time: 91.5	 expected_runtime :5.2
+pid: 5 , arrival time: 92.6	 expected_runtime :1.1
+Process id 	 Burst Time 	 Waiting time 	 Turn around time 	
+9		 2.0		 0		 2		
+6		 3.4		 2		 5		
+7		 2.0		 5		 7		
+0		 3.2		 7		 10		
+2		 3.0		 10		 13		
+3		 4.4		 13		 17		
+4		 1.9		 17		 18		
+8		 6.5		 18		 24		
+1		 5.2		 24		 29		
+5		 1.1		 29		 30		
+Average waiting time 12.500000
+Average turn around time 15.500000
+run #1:
+________________________________________________________
+|   pid    |   a time |   e time |   r time |  priority|
+|======================================================|
+|   0      |   92.9   |   1.8    |   1.8    |   2      |
+|   1      |   5.8    |   9.7    |   9.7    |   2      |
+|   2      |   39.3   |   1.5    |   1.5    |   1      |
+|   3      |   4.2    |   6.5    |   6.5    |   3      |
+|   4      |   42.1   |   2.9    |   2.9    |   4      |
+|   5      |   53.7   |   8.7    |   8.7    |   4      |
+|   6      |   31.5   |   7.5    |   7.5    |   3      |
+|   7      |   52.6   |   10.0   |   10.0   |   1      |
+|   8      |   95.6   |   3.7    |   3.7    |   2      |
+|   9      |   17.0   |   4.4    |   4.4    |   1      |
+========================================================
+pid: 3 , arrival time: 4.2	 expected_runtime :6.5
+pid: 1 , arrival time: 5.8	 expected_runtime :9.7
+pid: 9 , arrival time: 17.0	 expected_runtime :4.4
+pid: 6 , arrival time: 31.5	 expected_runtime :7.5
+pid: 2 , arrival time: 39.3	 expected_runtime :1.5
+pid: 4 , arrival time: 42.1	 expected_runtime :2.9
+pid: 7 , arrival time: 52.6	 expected_runtime :10.0
+pid: 5 , arrival time: 53.7	 expected_runtime :8.7
+pid: 0 , arrival time: 92.9	 expected_runtime :1.8
+pid: 8 , arrival time: 95.6	 expected_runtime :3.7
+Process id 	 Burst Time 	 Waiting time 	 Turn around time 	
+3		 6.5		 0		 6		
+1		 9.7		 6		 15		
+9		 4.4		 15		 19		
+6		 7.5		 19		 26		
+2		 1.5		 26		 27		
+4		 2.9		 27		 29		
+7		 10.0		 29		 39		
+5		 8.7		 39		 47		
+0		 1.8		 47		 48		
+8		 3.7		 48		 51		
+Average waiting time 25.600000
+Average turn around time 30.700001
+run #2:
+________________________________________________________
+|   pid    |   a time |   e time |   r time |  priority|
+|======================================================|
+|   0      |   30.5   |   9.5    |   9.5    |   4      |
+|   1      |   32.7   |   3.2    |   3.2    |   1      |
+|   2      |   84.6   |   5.8    |   5.8    |   3      |
+|   3      |   85.7   |   9.5    |   9.5    |   1      |
+|   4      |   58.2   |   6.9    |   6.9    |   4      |
+|   5      |   36.7   |   2.7    |   2.7    |   4      |
+|   6      |   4.3    |   9.2    |   9.2    |   2      |
+|   7      |   80.8   |   8.0    |   8.0    |   3      |
+|   8      |   78.8   |   8.6    |   8.6    |   3      |
+|   9      |   65.1   |   2.1    |   2.1    |   4      |
+========================================================
+pid: 6 , arrival time: 4.3	 expected_runtime :9.2
+pid: 0 , arrival time: 30.5	 expected_runtime :9.5
+pid: 1 , arrival time: 32.7	 expected_runtime :3.2
+pid: 5 , arrival time: 36.7	 expected_runtime :2.7
+pid: 4 , arrival time: 58.2	 expected_runtime :6.9
+pid: 9 , arrival time: 65.1	 expected_runtime :2.1
+pid: 8 , arrival time: 78.8	 expected_runtime :8.6
+pid: 7 , arrival time: 80.8	 expected_runtime :8.0
+pid: 2 , arrival time: 84.6	 expected_runtime :5.8
+pid: 3 , arrival time: 85.7	 expected_runtime :9.5
+Process id 	 Burst Time 	 Waiting time 	 Turn around time 	
+6		 9.2		 0		 9		
+0		 9.5		 9		 18		
+1		 3.2		 18		 21		
+5		 2.7		 21		 23		
+4		 6.9		 23		 29		
+9		 2.1		 29		 31		
+8		 8.6		 31		 39		
+7		 8.0		 39		 47		
+2		 5.8		 47		 52		
+3		 9.5		 52		 61		
+Average waiting time 26.900000
+Average turn around time 33.000000
+run #3:
+________________________________________________________
+|   pid    |   a time |   e time |   r time |  priority|
+|======================================================|
+|   0      |   93.2   |   6.8    |   6.8    |   1      |
+|   1      |   36.8   |   2.2    |   2.2    |   2      |
+|   2      |   22.6   |   3.8    |   3.8    |   4      |
+|   3      |   53.9   |   7.6    |   7.6    |   1      |
+|   4      |   43.4   |   1.4    |   1.4    |   2      |
+|   5      |   60.1   |   1.4    |   1.4    |   2      |
+|   6      |   31.7   |   4.7    |   4.7    |   2      |
+|   7      |   75.6   |   7.8    |   7.8    |   1      |
+|   8      |   28.6   |   8.1    |   8.1    |   1      |
+|   9      |   68.9   |   2.2    |   2.2    |   4      |
+========================================================
+pid: 2 , arrival time: 22.6	 expected_runtime :3.8
+pid: 8 , arrival time: 28.6	 expected_runtime :8.1
+pid: 6 , arrival time: 31.7	 expected_runtime :4.7
+pid: 1 , arrival time: 36.8	 expected_runtime :2.2
+pid: 4 , arrival time: 43.4	 expected_runtime :1.4
+pid: 3 , arrival time: 53.9	 expected_runtime :7.6
+pid: 5 , arrival time: 60.1	 expected_runtime :1.4
+pid: 9 , arrival time: 68.9	 expected_runtime :2.2
+pid: 7 , arrival time: 75.6	 expected_runtime :7.8
+pid: 0 , arrival time: 93.2	 expected_runtime :6.8
+Process id 	 Burst Time 	 Waiting time 	 Turn around time 	
+2		 3.8		 0		 3		
+8		 8.1		 3		 11		
+6		 4.7		 11		 15		
+1		 2.2		 15		 17		
+4		 1.4		 17		 18		
+3		 7.6		 18		 25		
+5		 1.4		 25		 26		
+9		 2.2		 26		 28		
+7		 7.8		 28		 35		
+0		 6.8		 35		 41		
+Average waiting time 17.799999
+Average turn around time 21.900000
+run #4:
+________________________________________________________
+|   pid    |   a time |   e time |   r time |  priority|
+|======================================================|
+|   0      |   44.0   |   8.9    |   8.9    |   1      |
+|   1      |   11.7   |   9.7    |   9.7    |   1      |
+|   2      |   48.1   |   4.3    |   4.3    |   4      |
+|   3      |   92.7   |   6.7    |   6.7    |   1      |
+|   4      |   49.7   |   9.8    |   9.8    |   1      |
+|   5      |   96.5   |   3.2    |   3.2    |   3      |
+|   6      |   21.9   |   5.7    |   5.7    |   3      |
+|   7      |   87.1   |   4.4    |   4.4    |   4      |
+|   8      |   50.3   |   6.2    |   6.2    |   1      |
+|   9      |   36.8   |   1.1    |   1.1    |   1      |
+========================================================
+pid: 1 , arrival time: 11.7	 expected_runtime :9.7
+pid: 6 , arrival time: 21.9	 expected_runtime :5.7
+pid: 9 , arrival time: 36.8	 expected_runtime :1.1
+pid: 0 , arrival time: 44.0	 expected_runtime :8.9
+pid: 2 , arrival time: 48.1	 expected_runtime :4.3
+pid: 4 , arrival time: 49.7	 expected_runtime :9.8
+pid: 8 , arrival time: 50.3	 expected_runtime :6.2
+pid: 7 , arrival time: 87.1	 expected_runtime :4.4
+pid: 3 , arrival time: 92.7	 expected_runtime :6.7
+pid: 5 , arrival time: 96.5	 expected_runtime :3.2
+Process id 	 Burst Time 	 Waiting time 	 Turn around time 	
+1		 9.7		 0		 9		
+6		 5.7		 9		 14		
+9		 1.1		 14		 15		
+0		 8.9		 15		 23		
+2		 4.3		 23		 27		
+4		 9.8		 27		 36		
+8		 6.2		 36		 42		
+7		 4.4		 42		 46		
+3		 6.7		 46		 52		
+5		 3.2		 52		 55		
+Average waiting time 26.400000
+Average turn around time 31.900000
+Running sjf 5 times
+run #0:
+________________________________________________________
+|   pid    |   a time |   e time |   r time |  priority|
+|======================================================|
+|   0      |   34.0   |   1.4    |   1.4    |   1      |
+|   1      |   72.3   |   1.0    |   1.0    |   1      |
+|   2      |   84.6   |   3.1    |   3.1    |   1      |
+|   3      |   55.5   |   5.6    |   5.6    |   3      |
+|   4      |   76.4   |   10.0   |   10.0   |   1      |
+|   5      |   35.0   |   6.6    |   6.6    |   1      |
+|   6      |   3.4    |   8.1    |   8.1    |   4      |
+|   7      |   91.4   |   1.2    |   1.2    |   1      |
+|   8      |   74.3   |   7.8    |   7.8    |   2      |
+|   9      |   36.5   |   9.1    |   9.1    |   1      |
+========================================================
+expected order:
+________________________________________________________
+|   pid    |   a time |   e time |   r time |  priority|
+|======================================================|
+|   1      |   72.3   |   1.0    |   1.0    |   1      |
+|   7      |   91.4   |   1.2    |   1.2    |   1      |
+|   0      |   34.0   |   1.4    |   1.4    |   1      |
+|   2      |   84.6   |   3.1    |   3.1    |   1      |
+|   3      |   55.5   |   5.6    |   5.6    |   3      |
+|   5      |   35.0   |   6.6    |   6.6    |   1      |
+|   8      |   74.3   |   7.8    |   7.8    |   2      |
+|   6      |   3.4    |   8.1    |   8.1    |   4      |
+|   9      |   36.5   |   9.1    |   9.1    |   1      |
+|   4      |   76.4   |   10.0   |   10.0   |   1      |
+========================================================
+
+ Simulation starting...
+
+| QUANTA 00:  I D L E  |
+| QUANTA 01:  I D L E  |
+| QUANTA 02:  I D L E  |
+| QUANTA 03:  I D L E  |
+| QUANTA 04: [p06](7.1)|
+| QUANTA 05: [p06](6.1)|
+| QUANTA 06: [p06](5.1)|
+| QUANTA 07: [p06](4.1)|
+| QUANTA 08: [p06](3.1)|
+| QUANTA 09: [p06](2.1)|
+| QUANTA 10: [p06](1.1)|
+| QUANTA 11: [p06](0.1)|
+| QUANTA 12: [p06](0.0)|<< CPU IDLE for 0.9 QUANTA |
+| QUANTA 13:  I D L E  |
+| QUANTA 14:  I D L E  |
+| QUANTA 15:  I D L E  |
+| QUANTA 16:  I D L E  |
+| QUANTA 17:  I D L E  |
+| QUANTA 18:  I D L E  |
+| QUANTA 19:  I D L E  |
+| QUANTA 20:  I D L E  |
+| QUANTA 21:  I D L E  |
+| QUANTA 22:  I D L E  |
+| QUANTA 23:  I D L E  |
+| QUANTA 24:  I D L E  |
+| QUANTA 25:  I D L E  |
+| QUANTA 26:  I D L E  |
+| QUANTA 27:  I D L E  |
+| QUANTA 28:  I D L E  |
+| QUANTA 29:  I D L E  |
+| QUANTA 30:  I D L E  |
+| QUANTA 31:  I D L E  |
+| QUANTA 32:  I D L E  |
+| QUANTA 33:  I D L E  |
+| QUANTA 34: [p00](0.4)|
+| QUANTA 35: [p00](0.0)|<< CPU IDLE for 0.6 QUANTA |
+| QUANTA 36: [p05](5.6)|
+| QUANTA 37: [p05](4.6)|
+| QUANTA 38: [p05](3.6)|
+| QUANTA 39: [p05](2.6)|
+| QUANTA 40: [p05](1.6)|
+| QUANTA 41: [p05](0.6)|
+| QUANTA 42: [p05](0.0)|<< CPU IDLE for 0.4 QUANTA |
+| QUANTA 43: [p09](8.1)|
+| QUANTA 44: [p09](7.1)|
+| QUANTA 45: [p09](6.1)|
+| QUANTA 46: [p09](5.1)|
+| QUANTA 47: [p09](4.1)|
+| QUANTA 48: [p09](3.1)|
+| QUANTA 49: [p09](2.1)|
+| QUANTA 50: [p09](1.1)|
+| QUANTA 51: [p09](0.1)|
+| QUANTA 52: [p09](0.0)|<< CPU IDLE for 0.9 QUANTA |
+| QUANTA 53:  I D L E  |
+| QUANTA 54:  I D L E  |
+| QUANTA 55:  I D L E  |
+| QUANTA 56: [p03](4.6)|
+| QUANTA 57: [p03](3.6)|
+| QUANTA 58: [p03](2.6)|
+| QUANTA 59: [p03](1.6)|
+| QUANTA 60: [p03](0.6)|
+| QUANTA 61: [p03](0.0)|<< CPU IDLE for 0.4 QUANTA |
+| QUANTA 62:  I D L E  |
+| QUANTA 63:  I D L E  |
+| QUANTA 64:  I D L E  |
+| QUANTA 65:  I D L E  |
+| QUANTA 66:  I D L E  |
+| QUANTA 67:  I D L E  |
+| QUANTA 68:  I D L E  |
+| QUANTA 69:  I D L E  |
+| QUANTA 70:  I D L E  |
+| QUANTA 71:  I D L E  |
+| QUANTA 72:  I D L E  |
+| QUANTA 73: [p01](0.0)|
+| QUANTA 74:  I D L E  |
+| QUANTA 75: [p08](6.8)|
+| QUANTA 76: [p08](5.8)|
+| QUANTA 77: [p08](4.8)|
+| QUANTA 78: [p08](3.8)|
+| QUANTA 79: [p08](2.8)|
+| QUANTA 80: [p08](1.8)|
+| QUANTA 81: [p08](0.8)|
+| QUANTA 82: [p08](0.0)|<< CPU IDLE for 0.2 QUANTA |
+| QUANTA 83: [p04](9.0)|
+| QUANTA 84: [p04](8.0)|
+| QUANTA 85: [p04](7.0)|
+| QUANTA 86: [p04](6.0)|
+| QUANTA 87: [p04](5.0)|
+| QUANTA 88: [p04](4.0)|
+| QUANTA 89: [p04](3.0)|
+| QUANTA 90: [p04](2.0)|
+| QUANTA 91: [p04](1.0)|
+| QUANTA 92: [p04](0.0)|
+| QUANTA 93: [p07](0.2)|
+| QUANTA 94: [p07](0.0)|<< CPU IDLE for 0.8 QUANTA |
+| QUANTA 95: [p02](2.1)|
+| QUANTA 96: [p02](1.1)|
+| QUANTA 97: [p02](0.1)|
+| QUANTA 98: [p02](0.0)|<< CPU IDLE for 0.9 QUANTA |
+| QUANTA 99: IDLE  |
+
+
+0 processes did not finish after 100 QUANTA
+
+cpu was idle 46.1 Quanta 
+run #1:
+________________________________________________________
+|   pid    |   a time |   e time |   r time |  priority|
+|======================================================|
+|   0      |   43.2   |   9.7    |   9.7    |   2      |
+|   1      |   22.8   |   9.7    |   9.7    |   2      |
+|   2      |   47.4   |   7.8    |   7.8    |   3      |
+|   3      |   39.5   |   4.6    |   4.6    |   2      |
+|   4      |   23.5   |   7.6    |   7.6    |   3      |
+|   5      |   42.8   |   4.7    |   4.7    |   1      |
+|   6      |   92.8   |   3.1    |   3.1    |   1      |
+|   7      |   40.4   |   7.5    |   7.5    |   3      |
+|   8      |   61.3   |   2.1    |   2.1    |   1      |
+|   9      |   84.0   |   8.6    |   8.6    |   3      |
+========================================================
+expected order:
+________________________________________________________
+|   pid    |   a time |   e time |   r time |  priority|
+|======================================================|
+|   8      |   61.3   |   2.1    |   2.1    |   1      |
+|   6      |   92.8   |   3.1    |   3.1    |   1      |
+|   3      |   39.5   |   4.6    |   4.6    |   2      |
+|   5      |   42.8   |   4.7    |   4.7    |   1      |
+|   7      |   40.4   |   7.5    |   7.5    |   3      |
+|   4      |   23.5   |   7.6    |   7.6    |   3      |
+|   2      |   47.4   |   7.8    |   7.8    |   3      |
+|   9      |   84.0   |   8.6    |   8.6    |   3      |
+|   0      |   43.2   |   9.7    |   9.7    |   2      |
+|   1      |   22.8   |   9.7    |   9.7    |   2      |
+========================================================
+
+ Simulation starting...
+
+| QUANTA 00:  I D L E  |
+| QUANTA 01:  I D L E  |
+| QUANTA 02:  I D L E  |
+| QUANTA 03:  I D L E  |
+| QUANTA 04:  I D L E  |
+| QUANTA 05:  I D L E  |
+| QUANTA 06:  I D L E  |
+| QUANTA 07:  I D L E  |
+| QUANTA 08:  I D L E  |
+| QUANTA 09:  I D L E  |
+| QUANTA 10:  I D L E  |
+| QUANTA 11:  I D L E  |
+| QUANTA 12:  I D L E  |
+| QUANTA 13:  I D L E  |
+| QUANTA 14:  I D L E  |
+| QUANTA 15:  I D L E  |
+| QUANTA 16:  I D L E  |
+| QUANTA 17:  I D L E  |
+| QUANTA 18:  I D L E  |
+| QUANTA 19:  I D L E  |
+| QUANTA 20:  I D L E  |
+| QUANTA 21:  I D L E  |
+| QUANTA 22:  I D L E  |
+| QUANTA 23: [p01](8.7)|
+| QUANTA 24: [p01](7.7)|
+| QUANTA 25: [p01](6.7)|
+| QUANTA 26: [p01](5.7)|
+| QUANTA 27: [p01](4.7)|
+| QUANTA 28: [p01](3.7)|
+| QUANTA 29: [p01](2.7)|
+| QUANTA 30: [p01](1.7)|
+| QUANTA 31: [p01](0.7)|
+| QUANTA 32: [p01](0.0)|<< CPU IDLE for 0.3 QUANTA |
+| QUANTA 33: [p04](6.6)|
+| QUANTA 34: [p04](5.6)|
+| QUANTA 35: [p04](4.6)|
+| QUANTA 36: [p04](3.6)|
+| QUANTA 37: [p04](2.6)|
+| QUANTA 38: [p04](1.6)|
+| QUANTA 39: [p04](0.6)|
+| QUANTA 40: [p04](0.0)|<< CPU IDLE for 0.4 QUANTA |
+| QUANTA 41: [p03](3.6)|
+| QUANTA 42: [p03](2.6)|
+| QUANTA 43: [p03](1.6)|
+| QUANTA 44: [p03](0.6)|
+| QUANTA 45: [p03](0.0)|<< CPU IDLE for 0.4 QUANTA |
+| QUANTA 46: [p05](3.7)|
+| QUANTA 47: [p05](2.7)|
+| QUANTA 48: [p05](1.7)|
+| QUANTA 49: [p05](0.7)|
+| QUANTA 50: [p05](0.0)|<< CPU IDLE for 0.3 QUANTA |
+| QUANTA 51: [p07](6.5)|
+| QUANTA 52: [p07](5.5)|
+| QUANTA 53: [p07](4.5)|
+| QUANTA 54: [p07](3.5)|
+| QUANTA 55: [p07](2.5)|
+| QUANTA 56: [p07](1.5)|
+| QUANTA 57: [p07](0.5)|
+| QUANTA 58: [p07](0.0)|<< CPU IDLE for 0.5 QUANTA |
+| QUANTA 59: [p02](6.8)|
+| QUANTA 60: [p02](5.8)|
+| QUANTA 61: [p02](4.8)|
+| QUANTA 62: [p02](3.8)|
+| QUANTA 63: [p02](2.8)|
+| QUANTA 64: [p02](1.8)|
+| QUANTA 65: [p02](0.8)|
+| QUANTA 66: [p02](0.0)|<< CPU IDLE for 0.2 QUANTA |
+| QUANTA 67: [p08](1.1)|
+| QUANTA 68: [p08](0.1)|
+| QUANTA 69: [p08](0.0)|<< CPU IDLE for 0.9 QUANTA |
+| QUANTA 70: [p00](8.7)|
+| QUANTA 71: [p00](7.7)|
+| QUANTA 72: [p00](6.7)|
+| QUANTA 73: [p00](5.7)|
+| QUANTA 74: [p00](4.7)|
+| QUANTA 75: [p00](3.7)|
+| QUANTA 76: [p00](2.7)|
+| QUANTA 77: [p00](1.7)|
+| QUANTA 78: [p00](0.7)|
+| QUANTA 79: [p00](0.0)|<< CPU IDLE for 0.3 QUANTA |
+| QUANTA 80:  I D L E  |
+| QUANTA 81:  I D L E  |
+| QUANTA 82:  I D L E  |
+| QUANTA 83:  I D L E  |
+| QUANTA 84: [p09](7.6)|
+| QUANTA 85: [p09](6.6)|
+| QUANTA 86: [p09](5.6)|
+| QUANTA 87: [p09](4.6)|
+| QUANTA 88: [p09](3.6)|
+| QUANTA 89: [p09](2.6)|
+| QUANTA 90: [p09](1.6)|
+| QUANTA 91: [p09](0.6)|
+| QUANTA 92: [p09](0.0)|<< CPU IDLE for 0.4 QUANTA |
+| QUANTA 93: [p06](2.1)|
+| QUANTA 94: [p06](1.1)|
+| QUANTA 95: [p06](0.1)|
+| QUANTA 96: [p06](0.0)|<< CPU IDLE for 0.9 QUANTA |
+| QUANTA 97: IDLE  |
+| QUANTA 98: IDLE  |
+| QUANTA 99: IDLE  |
+
+
+0 processes did not finish after 100 QUANTA
+
+cpu was idle 34.6 Quanta 
+run #2:
+________________________________________________________
+|   pid    |   a time |   e time |   r time |  priority|
+|======================================================|
+|   0      |   12.8   |   2.1    |   2.1    |   4      |
+|   1      |   91.7   |   8.6    |   8.6    |   1      |
+|   2      |   32.4   |   7.3    |   7.3    |   1      |
+|   3      |   18.3   |   6.0    |   6.0    |   4      |
+|   4      |   77.2   |   1.3    |   1.3    |   4      |
+|   5      |   59.0   |   6.3    |   6.3    |   4      |
+|   6      |   95.4   |   7.6    |   7.6    |   4      |
+|   7      |   8.2    |   7.3    |   7.3    |   4      |
+|   8      |   19.7   |   10.0   |   10.0   |   1      |
+|   9      |   80.4   |   5.1    |   5.1    |   1      |
+========================================================
+expected order:
+________________________________________________________
+|   pid    |   a time |   e time |   r time |  priority|
+|======================================================|
+|   4      |   77.2   |   1.3    |   1.3    |   4      |
+|   0      |   12.8   |   2.1    |   2.1    |   4      |
+|   9      |   80.4   |   5.1    |   5.1    |   1      |
+|   3      |   18.3   |   6.0    |   6.0    |   4      |
+|   5      |   59.0   |   6.3    |   6.3    |   4      |
+|   2      |   32.4   |   7.3    |   7.3    |   1      |
+|   7      |   8.2    |   7.3    |   7.3    |   4      |
+|   6      |   95.4   |   7.6    |   7.6    |   4      |
+|   1      |   91.7   |   8.6    |   8.6    |   1      |
+|   8      |   19.7   |   10.0   |   10.0   |   1      |
+========================================================
+
+ Simulation starting...
+
+| QUANTA 00:  I D L E  |
+| QUANTA 01:  I D L E  |
+| QUANTA 02:  I D L E  |
+| QUANTA 03:  I D L E  |
+| QUANTA 04:  I D L E  |
+| QUANTA 05:  I D L E  |
+| QUANTA 06:  I D L E  |
+| QUANTA 07:  I D L E  |
+| QUANTA 08:  I D L E  |
+| QUANTA 09: [p07](6.3)|
+| QUANTA 10: [p07](5.3)|
+| QUANTA 11: [p07](4.3)|
+| QUANTA 12: [p07](3.3)|
+| QUANTA 13: [p07](2.3)|
+| QUANTA 14: [p07](1.3)|
+| QUANTA 15: [p07](0.3)|
+| QUANTA 16: [p07](0.0)|<< CPU IDLE for 0.7 QUANTA |
+| QUANTA 17: [p00](1.1)|
+| QUANTA 18: [p00](0.1)|
+| QUANTA 19: [p00](0.0)|<< CPU IDLE for 0.9 QUANTA |
+| QUANTA 20: [p03](5.0)|
+| QUANTA 21: [p03](4.0)|
+| QUANTA 22: [p03](3.0)|
+| QUANTA 23: [p03](2.0)|
+| QUANTA 24: [p03](1.0)|
+| QUANTA 25: [p03](0.0)|
+| QUANTA 26: [p08](9.0)|
+| QUANTA 27: [p08](8.0)|
+| QUANTA 28: [p08](7.0)|
+| QUANTA 29: [p08](6.0)|
+| QUANTA 30: [p08](5.0)|
+| QUANTA 31: [p08](4.0)|
+| QUANTA 32: [p08](3.0)|
+| QUANTA 33: [p08](2.0)|
+| QUANTA 34: [p08](1.0)|
+| QUANTA 35: [p08](0.0)|
+| QUANTA 36: [p02](6.3)|
+| QUANTA 37: [p02](5.3)|
+| QUANTA 38: [p02](4.3)|
+| QUANTA 39: [p02](3.3)|
+| QUANTA 40: [p02](2.3)|
+| QUANTA 41: [p02](1.3)|
+| QUANTA 42: [p02](0.3)|
+| QUANTA 43: [p02](0.0)|<< CPU IDLE for 0.7 QUANTA |
+| QUANTA 44:  I D L E  |
+| QUANTA 45:  I D L E  |
+| QUANTA 46:  I D L E  |
+| QUANTA 47:  I D L E  |
+| QUANTA 48:  I D L E  |
+| QUANTA 49:  I D L E  |
+| QUANTA 50:  I D L E  |
+| QUANTA 51:  I D L E  |
+| QUANTA 52:  I D L E  |
+| QUANTA 53:  I D L E  |
+| QUANTA 54:  I D L E  |
+| QUANTA 55:  I D L E  |
+| QUANTA 56:  I D L E  |
+| QUANTA 57:  I D L E  |
+| QUANTA 58:  I D L E  |
+| QUANTA 59: [p05](5.3)|
+| QUANTA 60: [p05](4.3)|
+| QUANTA 61: [p05](3.3)|
+| QUANTA 62: [p05](2.3)|
+| QUANTA 63: [p05](1.3)|
+| QUANTA 64: [p05](0.3)|
+| QUANTA 65: [p05](0.0)|<< CPU IDLE for 0.7 QUANTA |
+| QUANTA 66:  I D L E  |
+| QUANTA 67:  I D L E  |
+| QUANTA 68:  I D L E  |
+| QUANTA 69:  I D L E  |
+| QUANTA 70:  I D L E  |
+| QUANTA 71:  I D L E  |
+| QUANTA 72:  I D L E  |
+| QUANTA 73:  I D L E  |
+| QUANTA 74:  I D L E  |
+| QUANTA 75:  I D L E  |
+| QUANTA 76:  I D L E  |
+| QUANTA 77:  I D L E  |
+| QUANTA 78: [p04](0.3)|
+| QUANTA 79: [p04](0.0)|<< CPU IDLE for 0.7 QUANTA |
+| QUANTA 80:  I D L E  |
+| QUANTA 81: [p09](4.1)|
+| QUANTA 82: [p09](3.1)|
+| QUANTA 83: [p09](2.1)|
+| QUANTA 84: [p09](1.1)|
+| QUANTA 85: [p09](0.1)|
+| QUANTA 86: [p09](0.0)|<< CPU IDLE for 0.9 QUANTA |
+| QUANTA 87:  I D L E  |
+| QUANTA 88:  I D L E  |
+| QUANTA 89:  I D L E  |
+| QUANTA 90:  I D L E  |
+| QUANTA 91:  I D L E  |
+| QUANTA 92: [p01](7.6)|
+| QUANTA 93: [p01](6.6)|
+| QUANTA 94: [p01](5.6)|
+| QUANTA 95: [p01](4.6)|
+| QUANTA 96: [p01](3.6)|
+| QUANTA 97: [p01](2.6)|
+| QUANTA 98: [p01](1.6)|
+| QUANTA 99: [p01](0.6)|
+
+
+2 processes did not finish after 100 QUANTA
+pid:6 remaining time: 7.600000
+pid:1 remaining time: 0.600000
+
+cpu was idle 46.6 Quanta 
+run #3:
+________________________________________________________
+|   pid    |   a time |   e time |   r time |  priority|
+|======================================================|
+|   0      |   62.2   |   3.6    |   3.6    |   4      |
+|   1      |   34.3   |   9.5    |   9.5    |   3      |
+|   2      |   34.0   |   5.7    |   5.7    |   1      |
+|   3      |   81.0   |   2.3    |   2.3    |   1      |
+|   4      |   66.1   |   4.8    |   4.8    |   3      |
+|   5      |   30.5   |   9.7    |   9.7    |   1      |
+|   6      |   44.4   |   3.5    |   3.5    |   2      |
+|   7      |   46.5   |   1.1    |   1.1    |   1      |
+|   8      |   28.2   |   6.1    |   6.1    |   4      |
+|   9      |   63.7   |   2.7    |   2.7    |   4      |
+========================================================
+expected order:
+________________________________________________________
+|   pid    |   a time |   e time |   r time |  priority|
+|======================================================|
+|   7      |   46.5   |   1.1    |   1.1    |   1      |
+|   3      |   81.0   |   2.3    |   2.3    |   1      |
+|   9      |   63.7   |   2.7    |   2.7    |   4      |
+|   6      |   44.4   |   3.5    |   3.5    |   2      |
+|   0      |   62.2   |   3.6    |   3.6    |   4      |
+|   4      |   66.1   |   4.8    |   4.8    |   3      |
+|   2      |   34.0   |   5.7    |   5.7    |   1      |
+|   8      |   28.2   |   6.1    |   6.1    |   4      |
+|   1      |   34.3   |   9.5    |   9.5    |   3      |
+|   5      |   30.5   |   9.7    |   9.7    |   1      |
+========================================================
+
+ Simulation starting...
+
+| QUANTA 00:  I D L E  |
+| QUANTA 01:  I D L E  |
+| QUANTA 02:  I D L E  |
+| QUANTA 03:  I D L E  |
+| QUANTA 04:  I D L E  |
+| QUANTA 05:  I D L E  |
+| QUANTA 06:  I D L E  |
+| QUANTA 07:  I D L E  |
+| QUANTA 08:  I D L E  |
+| QUANTA 09:  I D L E  |
+| QUANTA 10:  I D L E  |
+| QUANTA 11:  I D L E  |
+| QUANTA 12:  I D L E  |
+| QUANTA 13:  I D L E  |
+| QUANTA 14:  I D L E  |
+| QUANTA 15:  I D L E  |
+| QUANTA 16:  I D L E  |
+| QUANTA 17:  I D L E  |
+| QUANTA 18:  I D L E  |
+| QUANTA 19:  I D L E  |
+| QUANTA 20:  I D L E  |
+| QUANTA 21:  I D L E  |
+| QUANTA 22:  I D L E  |
+| QUANTA 23:  I D L E  |
+| QUANTA 24:  I D L E  |
+| QUANTA 25:  I D L E  |
+| QUANTA 26:  I D L E  |
+| QUANTA 27:  I D L E  |
+| QUANTA 28:  I D L E  |
+| QUANTA 29: [p08](5.1)|
+| QUANTA 30: [p08](4.1)|
+| QUANTA 31: [p08](3.1)|
+| QUANTA 32: [p08](2.1)|
+| QUANTA 33: [p08](1.1)|
+| QUANTA 34: [p08](0.1)|
+| QUANTA 35: [p08](0.0)|<< CPU IDLE for 0.9 QUANTA |
+| QUANTA 36: [p02](4.7)|
+| QUANTA 37: [p02](3.7)|
+| QUANTA 38: [p02](2.7)|
+| QUANTA 39: [p02](1.7)|
+| QUANTA 40: [p02](0.7)|
+| QUANTA 41: [p02](0.0)|<< CPU IDLE for 0.3 QUANTA |
+| QUANTA 42: [p01](8.5)|
+| QUANTA 43: [p01](7.5)|
+| QUANTA 44: [p01](6.5)|
+| QUANTA 45: [p01](5.5)|
+| QUANTA 46: [p01](4.5)|
+| QUANTA 47: [p01](3.5)|
+| QUANTA 48: [p01](2.5)|
+| QUANTA 49: [p01](1.5)|
+| QUANTA 50: [p01](0.5)|
+| QUANTA 51: [p01](0.0)|<< CPU IDLE for 0.5 QUANTA |
+| QUANTA 52: [p07](0.1)|
+| QUANTA 53: [p07](0.0)|<< CPU IDLE for 0.9 QUANTA |
+| QUANTA 54: [p06](2.5)|
+| QUANTA 55: [p06](1.5)|
+| QUANTA 56: [p06](0.5)|
+| QUANTA 57: [p06](0.0)|<< CPU IDLE for 0.5 QUANTA |
+| QUANTA 58: [p05](8.7)|
+| QUANTA 59: [p05](7.7)|
+| QUANTA 60: [p05](6.7)|
+| QUANTA 61: [p05](5.7)|
+| QUANTA 62: [p05](4.7)|
+| QUANTA 63: [p05](3.7)|
+| QUANTA 64: [p05](2.7)|
+| QUANTA 65: [p05](1.7)|
+| QUANTA 66: [p05](0.7)|
+| QUANTA 67: [p05](0.0)|<< CPU IDLE for 0.3 QUANTA |
+| QUANTA 68: [p09](1.7)|
+| QUANTA 69: [p09](0.7)|
+| QUANTA 70: [p09](0.0)|<< CPU IDLE for 0.3 QUANTA |
+| QUANTA 71: [p00](2.6)|
+| QUANTA 72: [p00](1.6)|
+| QUANTA 73: [p00](0.6)|
+| QUANTA 74: [p00](0.0)|<< CPU IDLE for 0.4 QUANTA |
+| QUANTA 75: [p04](3.8)|
+| QUANTA 76: [p04](2.8)|
+| QUANTA 77: [p04](1.8)|
+| QUANTA 78: [p04](0.8)|
+| QUANTA 79: [p04](0.0)|<< CPU IDLE for 0.2 QUANTA |
+| QUANTA 80:  I D L E  |
+| QUANTA 81: [p03](1.3)|
+| QUANTA 82: [p03](0.3)|
+| QUANTA 83: [p03](0.0)|<< CPU IDLE for 0.7 QUANTA |
+| QUANTA 84: IDLE  |
+| QUANTA 85: IDLE  |
+| QUANTA 86: IDLE  |
+| QUANTA 87: IDLE  |
+| QUANTA 88: IDLE  |
+| QUANTA 89: IDLE  |
+| QUANTA 90: IDLE  |
+| QUANTA 91: IDLE  |
+| QUANTA 92: IDLE  |
+| QUANTA 93: IDLE  |
+| QUANTA 94: IDLE  |
+| QUANTA 95: IDLE  |
+| QUANTA 96: IDLE  |
+| QUANTA 97: IDLE  |
+| QUANTA 98: IDLE  |
+| QUANTA 99: IDLE  |
+
+
+0 processes did not finish after 100 QUANTA
+
+cpu was idle 51.0 Quanta 
+run #4:
+________________________________________________________
+|   pid    |   a time |   e time |   r time |  priority|
+|======================================================|
+|   0      |   60.0   |   1.0    |   1.0    |   2      |
+|   1      |   89.9   |   1.0    |   1.0    |   1      |
+|   2      |   46.8   |   8.7    |   8.7    |   3      |
+|   3      |   13.1   |   4.0    |   4.0    |   1      |
+|   4      |   93.3   |   1.5    |   1.5    |   1      |
+|   5      |   16.3   |   5.5    |   5.5    |   1      |
+|   6      |   89.9   |   1.5    |   1.5    |   4      |
+|   7      |   77.3   |   9.7    |   9.7    |   3      |
+|   8      |   19.0   |   1.4    |   1.4    |   1      |
+|   9      |   46.6   |   8.3    |   8.3    |   1      |
+========================================================
+expected order:
+________________________________________________________
+|   pid    |   a time |   e time |   r time |  priority|
+|======================================================|
+|   0      |   60.0   |   1.0    |   1.0    |   2      |
+|   1      |   89.9   |   1.0    |   1.0    |   1      |
+|   8      |   19.0   |   1.4    |   1.4    |   1      |
+|   4      |   93.3   |   1.5    |   1.5    |   1      |
+|   6      |   89.9   |   1.5    |   1.5    |   4      |
+|   3      |   13.1   |   4.0    |   4.0    |   1      |
+|   5      |   16.3   |   5.5    |   5.5    |   1      |
+|   9      |   46.6   |   8.3    |   8.3    |   1      |
+|   2      |   46.8   |   8.7    |   8.7    |   3      |
+|   7      |   77.3   |   9.7    |   9.7    |   3      |
+========================================================
+
+ Simulation starting...
+
+| QUANTA 00:  I D L E  |
+| QUANTA 01:  I D L E  |
+| QUANTA 02:  I D L E  |
+| QUANTA 03:  I D L E  |
+| QUANTA 04:  I D L E  |
+| QUANTA 05:  I D L E  |
+| QUANTA 06:  I D L E  |
+| QUANTA 07:  I D L E  |
+| QUANTA 08:  I D L E  |
+| QUANTA 09:  I D L E  |
+| QUANTA 10:  I D L E  |
+| QUANTA 11:  I D L E  |
+| QUANTA 12:  I D L E  |
+| QUANTA 13:  I D L E  |
+| QUANTA 14: [p03](3.0)|
+| QUANTA 15: [p03](2.0)|
+| QUANTA 16: [p03](1.0)|
+| QUANTA 17: [p03](0.0)|
+| QUANTA 18: [p05](4.5)|
+| QUANTA 19: [p05](3.5)|
+| QUANTA 20: [p05](2.5)|
+| QUANTA 21: [p05](1.5)|
+| QUANTA 22: [p05](0.5)|
+| QUANTA 23: [p05](0.0)|<< CPU IDLE for 0.5 QUANTA |
+| QUANTA 24: [p08](0.4)|
+| QUANTA 25: [p08](0.0)|<< CPU IDLE for 0.6 QUANTA |
+| QUANTA 26:  I D L E  |
+| QUANTA 27:  I D L E  |
+| QUANTA 28:  I D L E  |
+| QUANTA 29:  I D L E  |
+| QUANTA 30:  I D L E  |
+| QUANTA 31:  I D L E  |
+| QUANTA 32:  I D L E  |
+| QUANTA 33:  I D L E  |
+| QUANTA 34:  I D L E  |
+| QUANTA 35:  I D L E  |
+| QUANTA 36:  I D L E  |
+| QUANTA 37:  I D L E  |
+| QUANTA 38:  I D L E  |
+| QUANTA 39:  I D L E  |
+| QUANTA 40:  I D L E  |
+| QUANTA 41:  I D L E  |
+| QUANTA 42:  I D L E  |
+| QUANTA 43:  I D L E  |
+| QUANTA 44:  I D L E  |
+| QUANTA 45:  I D L E  |
+| QUANTA 46:  I D L E  |
+| QUANTA 47: [p09](7.3)|
+| QUANTA 48: [p09](6.3)|
+| QUANTA 49: [p09](5.3)|
+| QUANTA 50: [p09](4.3)|
+| QUANTA 51: [p09](3.3)|
+| QUANTA 52: [p09](2.3)|
+| QUANTA 53: [p09](1.3)|
+| QUANTA 54: [p09](0.3)|
+| QUANTA 55: [p09](0.0)|<< CPU IDLE for 0.7 QUANTA |
+| QUANTA 56: [p02](7.7)|
+| QUANTA 57: [p02](6.7)|
+| QUANTA 58: [p02](5.7)|
+| QUANTA 59: [p02](4.7)|
+| QUANTA 60: [p02](3.7)|
+| QUANTA 61: [p02](2.7)|
+| QUANTA 62: [p02](1.7)|
+| QUANTA 63: [p02](0.7)|
+| QUANTA 64: [p02](0.0)|<< CPU IDLE for 0.3 QUANTA |
+| QUANTA 65: [p00](0.0)|
+| QUANTA 66:  I D L E  |
+| QUANTA 67:  I D L E  |
+| QUANTA 68:  I D L E  |
+| QUANTA 69:  I D L E  |
+| QUANTA 70:  I D L E  |
+| QUANTA 71:  I D L E  |
+| QUANTA 72:  I D L E  |
+| QUANTA 73:  I D L E  |
+| QUANTA 74:  I D L E  |
+| QUANTA 75:  I D L E  |
+| QUANTA 76:  I D L E  |
+| QUANTA 77:  I D L E  |
+| QUANTA 78: [p07](8.7)|
+| QUANTA 79: [p07](7.7)|
+| QUANTA 80: [p07](6.7)|
+| QUANTA 81: [p07](5.7)|
+| QUANTA 82: [p07](4.7)|
+| QUANTA 83: [p07](3.7)|
+| QUANTA 84: [p07](2.7)|
+| QUANTA 85: [p07](1.7)|
+| QUANTA 86: [p07](0.7)|
+| QUANTA 87: [p07](0.0)|<< CPU IDLE for 0.3 QUANTA |
+| QUANTA 88:  I D L E  |
+| QUANTA 89:  I D L E  |
+| QUANTA 90: [p01](0.0)|
+| QUANTA 91: [p06](0.5)|
+| QUANTA 92: [p06](0.0)|<< CPU IDLE for 0.5 QUANTA |
+| QUANTA 93:  I D L E  |
+| QUANTA 94: [p04](0.5)|
+| QUANTA 95: [p04](0.0)|<< CPU IDLE for 0.5 QUANTA |
+| QUANTA 96: IDLE  |
+| QUANTA 97: IDLE  |
+| QUANTA 98: IDLE  |
+| QUANTA 99: IDLE  |
+
+
+0 processes did not finish after 100 QUANTA
+
+cpu was idle 57.4 Quanta 
+Running srt 5 times
+run #0:
+________________________________________________________
+|   pid    |   a time |   e time |   r time |  priority|
+|======================================================|
+|   0      |   9.0    |   1.6    |   1.6    |   1      |
+|   1      |   54.2   |   9.4    |   9.4    |   2      |
+|   2      |   44.5   |   9.9    |   9.9    |   4      |
+|   3      |   41.8   |   1.3    |   1.3    |   2      |
+|   4      |   34.8   |   3.5    |   3.5    |   4      |
+|   5      |   0.9    |   1.6    |   1.6    |   1      |
+|   6      |   34.2   |   1.1    |   1.1    |   1      |
+|   7      |   30.1   |   2.7    |   2.7    |   2      |
+|   8      |   32.1   |   2.5    |   2.5    |   4      |
+|   9      |   59.9   |   1.5    |   1.5    |   4      |
+========================================================
+expected order:
+________________________________________________________
+|   pid    |   a time |   e time |   r time |  priority|
+|======================================================|
+|   6      |   34.2   |   1.1    |   1.1    |   1      |
+|   3      |   41.8   |   1.3    |   1.3    |   2      |
+|   9      |   59.9   |   1.5    |   1.5    |   4      |
+|   0      |   9.0    |   1.6    |   1.6    |   1      |
+|   5      |   0.9    |   1.6    |   1.6    |   1      |
+|   8      |   32.1   |   2.5    |   2.5    |   4      |
+|   7      |   30.1   |   2.7    |   2.7    |   2      |
+|   4      |   34.8   |   3.5    |   3.5    |   4      |
+|   1      |   54.2   |   9.4    |   9.4    |   2      |
+|   2      |   44.5   |   9.9    |   9.9    |   4      |
+========================================================
+
+ Simulation starting...
+
+| QUANTA 00:  I D L E  |
+| QUANTA 01: [p05](0.6)|
+| QUANTA 02: [p05](0.0)|<< CPU IDLE for 0.4 QUANTA |
+| QUANTA 03:  I D L E  |
+| QUANTA 04:  I D L E  |
+| QUANTA 05:  I D L E  |
+| QUANTA 06:  I D L E  |
+| QUANTA 07:  I D L E  |
+| QUANTA 08:  I D L E  |
+| QUANTA 09: [p00](0.6)|
+| QUANTA 10: [p00](0.0)|<< CPU IDLE for 0.4 QUANTA |
+| QUANTA 11:  I D L E  |
+| QUANTA 12:  I D L E  |
+| QUANTA 13:  I D L E  |
+| QUANTA 14:  I D L E  |
+| QUANTA 15:  I D L E  |
+| QUANTA 16:  I D L E  |
+| QUANTA 17:  I D L E  |
+| QUANTA 18:  I D L E  |
+| QUANTA 19:  I D L E  |
+| QUANTA 20:  I D L E  |
+| QUANTA 21:  I D L E  |
+| QUANTA 22:  I D L E  |
+| QUANTA 23:  I D L E  |
+| QUANTA 24:  I D L E  |
+| QUANTA 25:  I D L E  |
+| QUANTA 26:  I D L E  |
+| QUANTA 27:  I D L E  |
+| QUANTA 28:  I D L E  |
+| QUANTA 29:  I D L E  |
+| QUANTA 30:  I D L E  |
+| QUANTA 31: [p07](1.7)|
+| QUANTA 32: [p07](0.7)|
+| QUANTA 33: [p07](0.0)|<< CPU IDLE for 0.3 QUANTA |
+| QUANTA 34: [p08](1.5)|
+| QUANTA 35: [p06](0.1)|
+| QUANTA 36: [p06](0.0)|<< CPU IDLE for 0.9 QUANTA |
+| QUANTA 37: [p08](0.5)|
+| QUANTA 38: [p08](0.0)|<< CPU IDLE for 0.5 QUANTA |
+| QUANTA 39: [p04](2.5)|
+| QUANTA 40: [p04](1.5)|
+| QUANTA 41: [p04](0.5)|
+| QUANTA 42: [p04](0.0)|<< CPU IDLE for 0.5 QUANTA |
+| QUANTA 43: [p03](0.3)|
+| QUANTA 44: [p03](0.0)|<< CPU IDLE for 0.7 QUANTA |
+| QUANTA 45: [p02](8.9)|
+| QUANTA 46: [p02](7.9)|
+| QUANTA 47: [p02](6.9)|
+| QUANTA 48: [p02](5.9)|
+| QUANTA 49: [p02](4.9)|
+| QUANTA 50: [p02](3.9)|
+| QUANTA 51: [p02](2.9)|
+| QUANTA 52: [p02](1.9)|
+| QUANTA 53: [p02](0.9)|
+| QUANTA 54: [p02](0.0)|<< CPU IDLE for 0.1 QUANTA |
+| QUANTA 55: [p01](8.4)|
+| QUANTA 56: [p01](7.4)|
+| QUANTA 57: [p01](6.4)|
+| QUANTA 58: [p01](5.4)|
+| QUANTA 59: [p01](4.4)|
+| QUANTA 60: [p09](0.5)|
+| QUANTA 61: [p09](0.0)|<< CPU IDLE for 0.5 QUANTA |
+| QUANTA 62: [p01](3.4)|
+| QUANTA 63: [p01](2.4)|
+| QUANTA 64: [p01](1.4)|
+| QUANTA 65: [p01](0.4)|
+| QUANTA 66: [p01](0.0)|<< CPU IDLE for 0.6 QUANTA |
+| QUANTA 67:  I D L E  |
+| QUANTA 68:  I D L E  |
+| QUANTA 69:  I D L E  |
+| QUANTA 70:  I D L E  |
+| QUANTA 71:  I D L E  |
+| QUANTA 72:  I D L E  |
+| QUANTA 73:  I D L E  |
+| QUANTA 74:  I D L E  |
+| QUANTA 75:  I D L E  |
+| QUANTA 76:  I D L E  |
+| QUANTA 77:  I D L E  |
+| QUANTA 78:  I D L E  |
+| QUANTA 79:  I D L E  |
+| QUANTA 80:  I D L E  |
+| QUANTA 81:  I D L E  |
+| QUANTA 82:  I D L E  |
+| QUANTA 83:  I D L E  |
+| QUANTA 84:  I D L E  |
+| QUANTA 85:  I D L E  |
+| QUANTA 86:  I D L E  |
+| QUANTA 87:  I D L E  |
+| QUANTA 88:  I D L E  |
+| QUANTA 89:  I D L E  |
+| QUANTA 90:  I D L E  |
+| QUANTA 91:  I D L E  |
+| QUANTA 92:  I D L E  |
+| QUANTA 93:  I D L E  |
+| QUANTA 94:  I D L E  |
+| QUANTA 95:  I D L E  |
+| QUANTA 96:  I D L E  |
+| QUANTA 97:  I D L E  |
+| QUANTA 98:  I D L E  |
+| QUANTA 99:  I D L E  |
+
+
+0 processes did not finish after 100 QUANTA
+
+cpu was idle 64.9 Quanta 
+run #1:
+________________________________________________________
+|   pid    |   a time |   e time |   r time |  priority|
+|======================================================|
+|   0      |   93.9   |   8.5    |   8.5    |   1      |
+|   1      |   66.7   |   6.5    |   6.5    |   3      |
+|   2      |   12.7   |   4.1    |   4.1    |   4      |
+|   3      |   65.8   |   3.6    |   3.6    |   4      |
+|   4      |   42.2   |   1.7    |   1.7    |   1      |
+|   5      |   8.1    |   3.4    |   3.4    |   4      |
+|   6      |   29.2   |   4.7    |   4.7    |   2      |
+|   7      |   85.0   |   1.3    |   1.3    |   1      |
+|   8      |   22.2   |   4.6    |   4.6    |   1      |
+|   9      |   4.2    |   3.7    |   3.7    |   3      |
+========================================================
+expected order:
+________________________________________________________
+|   pid    |   a time |   e time |   r time |  priority|
+|======================================================|
+|   7      |   85.0   |   1.3    |   1.3    |   1      |
+|   4      |   42.2   |   1.7    |   1.7    |   1      |
+|   5      |   8.1    |   3.4    |   3.4    |   4      |
+|   3      |   65.8   |   3.6    |   3.6    |   4      |
+|   9      |   4.2    |   3.7    |   3.7    |   3      |
+|   2      |   12.7   |   4.1    |   4.1    |   4      |
+|   8      |   22.2   |   4.6    |   4.6    |   1      |
+|   6      |   29.2   |   4.7    |   4.7    |   2      |
+|   1      |   66.7   |   6.5    |   6.5    |   3      |
+|   0      |   93.9   |   8.5    |   8.5    |   1      |
+========================================================
+
+ Simulation starting...
+
+| QUANTA 00:  I D L E  |
+| QUANTA 01:  I D L E  |
+| QUANTA 02:  I D L E  |
+| QUANTA 03:  I D L E  |
+| QUANTA 04:  I D L E  |
+| QUANTA 05: [p09](2.7)|
+| QUANTA 06: [p09](1.7)|
+| QUANTA 07: [p09](0.7)|
+| QUANTA 08: [p09](0.0)|<< CPU IDLE for 0.3 QUANTA |
+| QUANTA 09: [p05](2.4)|
+| QUANTA 10: [p05](1.4)|
+| QUANTA 11: [p05](0.4)|
+| QUANTA 12: [p05](0.0)|<< CPU IDLE for 0.6 QUANTA |
+| QUANTA 13: [p02](3.1)|
+| QUANTA 14: [p02](2.1)|
+| QUANTA 15: [p02](1.1)|
+| QUANTA 16: [p02](0.1)|
+| QUANTA 17: [p02](0.0)|<< CPU IDLE for 0.9 QUANTA |
+| QUANTA 18:  I D L E  |
+| QUANTA 19:  I D L E  |
+| QUANTA 20:  I D L E  |
+| QUANTA 21:  I D L E  |
+| QUANTA 22:  I D L E  |
+| QUANTA 23: [p08](3.6)|
+| QUANTA 24: [p08](2.6)|
+| QUANTA 25: [p08](1.6)|
+| QUANTA 26: [p08](0.6)|
+| QUANTA 27: [p08](0.0)|<< CPU IDLE for 0.4 QUANTA |
+| QUANTA 28:  I D L E  |
+| QUANTA 29:  I D L E  |
+| QUANTA 30: [p06](3.7)|
+| QUANTA 31: [p06](2.7)|
+| QUANTA 32: [p06](1.7)|
+| QUANTA 33: [p06](0.7)|
+| QUANTA 34: [p06](0.0)|<< CPU IDLE for 0.3 QUANTA |
+| QUANTA 35:  I D L E  |
+| QUANTA 36:  I D L E  |
+| QUANTA 37:  I D L E  |
+| QUANTA 38:  I D L E  |
+| QUANTA 39:  I D L E  |
+| QUANTA 40:  I D L E  |
+| QUANTA 41:  I D L E  |
+| QUANTA 42:  I D L E  |
+| QUANTA 43: [p04](0.7)|
+| QUANTA 44: [p04](0.0)|<< CPU IDLE for 0.3 QUANTA |
+| QUANTA 45:  I D L E  |
+| QUANTA 46:  I D L E  |
+| QUANTA 47:  I D L E  |
+| QUANTA 48:  I D L E  |
+| QUANTA 49:  I D L E  |
+| QUANTA 50:  I D L E  |
+| QUANTA 51:  I D L E  |
+| QUANTA 52:  I D L E  |
+| QUANTA 53:  I D L E  |
+| QUANTA 54:  I D L E  |
+| QUANTA 55:  I D L E  |
+| QUANTA 56:  I D L E  |
+| QUANTA 57:  I D L E  |
+| QUANTA 58:  I D L E  |
+| QUANTA 59:  I D L E  |
+| QUANTA 60:  I D L E  |
+| QUANTA 61:  I D L E  |
+| QUANTA 62:  I D L E  |
+| QUANTA 63:  I D L E  |
+| QUANTA 64:  I D L E  |
+| QUANTA 65:  I D L E  |
+| QUANTA 66: [p03](2.6)|
+| QUANTA 67: [p03](1.6)|
+| QUANTA 68: [p03](0.6)|
+| QUANTA 69: [p03](0.0)|<< CPU IDLE for 0.4 QUANTA |
+| QUANTA 70: [p01](5.5)|
+| QUANTA 71: [p01](4.5)|
+| QUANTA 72: [p01](3.5)|
+| QUANTA 73: [p01](2.5)|
+| QUANTA 74: [p01](1.5)|
+| QUANTA 75: [p01](0.5)|
+| QUANTA 76: [p01](0.0)|<< CPU IDLE for 0.5 QUANTA |
+| QUANTA 77:  I D L E  |
+| QUANTA 78:  I D L E  |
+| QUANTA 79:  I D L E  |
+| QUANTA 80:  I D L E  |
+| QUANTA 81:  I D L E  |
+| QUANTA 82:  I D L E  |
+| QUANTA 83:  I D L E  |
+| QUANTA 84:  I D L E  |
+| QUANTA 85: [p07](0.3)|
+| QUANTA 86: [p07](0.0)|<< CPU IDLE for 0.7 QUANTA |
+| QUANTA 87:  I D L E  |
+| QUANTA 88:  I D L E  |
+| QUANTA 89:  I D L E  |
+| QUANTA 90:  I D L E  |
+| QUANTA 91:  I D L E  |
+| QUANTA 92:  I D L E  |
+| QUANTA 93:  I D L E  |
+| QUANTA 94: [p00](7.5)|
+| QUANTA 95: [p00](6.5)|
+| QUANTA 96: [p00](5.5)|
+| QUANTA 97: [p00](4.5)|
+| QUANTA 98: [p00](3.5)|
+| QUANTA 99: [p00](2.5)|
+
+
+1 processes did not finish after 100 QUANTA
+pid:0 remaining time: 2.500000
+
+cpu was idle 60.4 Quanta 
+run #2:
+________________________________________________________
+|   pid    |   a time |   e time |   r time |  priority|
+|======================================================|
+|   0      |   29.8   |   4.8    |   4.8    |   4      |
+|   1      |   59.0   |   7.7    |   7.7    |   1      |
+|   2      |   81.9   |   3.5    |   3.5    |   2      |
+|   3      |   15.5   |   7.6    |   7.6    |   4      |
+|   4      |   37.9   |   7.2    |   7.2    |   3      |
+|   5      |   77.6   |   1.4    |   1.4    |   1      |
+|   6      |   86.0   |   6.3    |   6.3    |   4      |
+|   7      |   88.4   |   1.8    |   1.8    |   1      |
+|   8      |   62.1   |   3.2    |   3.2    |   4      |
+|   9      |   61.3   |   1.0    |   1.0    |   4      |
+========================================================
+expected order:
+________________________________________________________
+|   pid    |   a time |   e time |   r time |  priority|
+|======================================================|
+|   9      |   61.3   |   1.0    |   1.0    |   4      |
+|   5      |   77.6   |   1.4    |   1.4    |   1      |
+|   7      |   88.4   |   1.8    |   1.8    |   1      |
+|   8      |   62.1   |   3.2    |   3.2    |   4      |
+|   2      |   81.9   |   3.5    |   3.5    |   2      |
+|   0      |   29.8   |   4.8    |   4.8    |   4      |
+|   6      |   86.0   |   6.3    |   6.3    |   4      |
+|   4      |   37.9   |   7.2    |   7.2    |   3      |
+|   3      |   15.5   |   7.6    |   7.6    |   4      |
+|   1      |   59.0   |   7.7    |   7.7    |   1      |
+========================================================
+
+ Simulation starting...
+
+| QUANTA 00:  I D L E  |
+| QUANTA 01:  I D L E  |
+| QUANTA 02:  I D L E  |
+| QUANTA 03:  I D L E  |
+| QUANTA 04:  I D L E  |
+| QUANTA 05:  I D L E  |
+| QUANTA 06:  I D L E  |
+| QUANTA 07:  I D L E  |
+| QUANTA 08:  I D L E  |
+| QUANTA 09:  I D L E  |
+| QUANTA 10:  I D L E  |
+| QUANTA 11:  I D L E  |
+| QUANTA 12:  I D L E  |
+| QUANTA 13:  I D L E  |
+| QUANTA 14:  I D L E  |
+| QUANTA 15:  I D L E  |
+| QUANTA 16: [p03](6.6)|
+| QUANTA 17: [p03](5.6)|
+| QUANTA 18: [p03](4.6)|
+| QUANTA 19: [p03](3.6)|
+| QUANTA 20: [p03](2.6)|
+| QUANTA 21: [p03](1.6)|
+| QUANTA 22: [p03](0.6)|
+| QUANTA 23: [p03](0.0)|<< CPU IDLE for 0.4 QUANTA |
+| QUANTA 24:  I D L E  |
+| QUANTA 25:  I D L E  |
+| QUANTA 26:  I D L E  |
+| QUANTA 27:  I D L E  |
+| QUANTA 28:  I D L E  |
+| QUANTA 29:  I D L E  |
+| QUANTA 30: [p00](3.8)|
+| QUANTA 31: [p00](2.8)|
+| QUANTA 32: [p00](1.8)|
+| QUANTA 33: [p00](0.8)|
+| QUANTA 34: [p00](0.0)|<< CPU IDLE for 0.2 QUANTA |
+| QUANTA 35:  I D L E  |
+| QUANTA 36:  I D L E  |
+| QUANTA 37:  I D L E  |
+| QUANTA 38: [p04](6.2)|
+| QUANTA 39: [p04](5.2)|
+| QUANTA 40: [p04](4.2)|
+| QUANTA 41: [p04](3.2)|
+| QUANTA 42: [p04](2.2)|
+| QUANTA 43: [p04](1.2)|
+| QUANTA 44: [p04](0.2)|
+| QUANTA 45: [p04](0.0)|<< CPU IDLE for 0.8 QUANTA |
+| QUANTA 46:  I D L E  |
+| QUANTA 47:  I D L E  |
+| QUANTA 48:  I D L E  |
+| QUANTA 49:  I D L E  |
+| QUANTA 50:  I D L E  |
+| QUANTA 51:  I D L E  |
+| QUANTA 52:  I D L E  |
+| QUANTA 53:  I D L E  |
+| QUANTA 54:  I D L E  |
+| QUANTA 55:  I D L E  |
+| QUANTA 56:  I D L E  |
+| QUANTA 57:  I D L E  |
+| QUANTA 58:  I D L E  |
+| QUANTA 59: [p01](6.7)|
+| QUANTA 60: [p01](5.7)|
+| QUANTA 61: [p01](4.7)|
+| QUANTA 62: [p09](0.0)|
+| QUANTA 63: [p08](2.2)|
+| QUANTA 64: [p08](1.2)|
+| QUANTA 65: [p08](0.2)|
+| QUANTA 66: [p08](0.0)|<< CPU IDLE for 0.8 QUANTA |
+| QUANTA 67: [p01](3.7)|
+| QUANTA 68: [p01](2.7)|
+| QUANTA 69: [p01](1.7)|
+| QUANTA 70: [p01](0.7)|
+| QUANTA 71: [p01](0.0)|<< CPU IDLE for 0.3 QUANTA |
+| QUANTA 72:  I D L E  |
+| QUANTA 73:  I D L E  |
+| QUANTA 74:  I D L E  |
+| QUANTA 75:  I D L E  |
+| QUANTA 76:  I D L E  |
+| QUANTA 77:  I D L E  |
+| QUANTA 78: [p05](0.4)|
+| QUANTA 79: [p05](0.0)|<< CPU IDLE for 0.6 QUANTA |
+| QUANTA 80:  I D L E  |
+| QUANTA 81:  I D L E  |
+| QUANTA 82: [p02](2.5)|
+| QUANTA 83: [p02](1.5)|
+| QUANTA 84: [p02](0.5)|
+| QUANTA 85: [p02](0.0)|<< CPU IDLE for 0.5 QUANTA |
+| QUANTA 86: [p06](5.3)|
+| QUANTA 87: [p06](4.3)|
+| QUANTA 88: [p06](3.3)|
+| QUANTA 89: [p07](0.8)|
+| QUANTA 90: [p07](0.0)|<< CPU IDLE for 0.2 QUANTA |
+| QUANTA 91: [p06](2.3)|
+| QUANTA 92: [p06](1.3)|
+| QUANTA 93: [p06](0.3)|
+| QUANTA 94: [p06](0.0)|<< CPU IDLE for 0.7 QUANTA |
+| QUANTA 95:  I D L E  |
+| QUANTA 96:  I D L E  |
+| QUANTA 97:  I D L E  |
+| QUANTA 98:  I D L E  |
+| QUANTA 99:  I D L E  |
+
+
+0 processes did not finish after 100 QUANTA
+
+cpu was idle 55.5 Quanta 
+run #3:
+________________________________________________________
+|   pid    |   a time |   e time |   r time |  priority|
+|======================================================|
+|   0      |   32.6   |   3.5    |   3.5    |   4      |
+|   1      |   20.2   |   2.2    |   2.2    |   1      |
+|   2      |   78.4   |   3.1    |   3.1    |   2      |
+|   3      |   86.8   |   5.9    |   5.9    |   4      |
+|   4      |   87.2   |   7.8    |   7.8    |   3      |
+|   5      |   49.8   |   5.4    |   5.4    |   3      |
+|   6      |   75.3   |   9.4    |   9.4    |   3      |
+|   7      |   33.3   |   1.9    |   1.9    |   3      |
+|   8      |   89.0   |   9.3    |   9.3    |   2      |
+|   9      |   74.6   |   7.0    |   7.0    |   4      |
+========================================================
+expected order:
+________________________________________________________
+|   pid    |   a time |   e time |   r time |  priority|
+|======================================================|
+|   7      |   33.3   |   1.9    |   1.9    |   3      |
+|   1      |   20.2   |   2.2    |   2.2    |   1      |
+|   2      |   78.4   |   3.1    |   3.1    |   2      |
+|   0      |   32.6   |   3.5    |   3.5    |   4      |
+|   5      |   49.8   |   5.4    |   5.4    |   3      |
+|   3      |   86.8   |   5.9    |   5.9    |   4      |
+|   9      |   74.6   |   7.0    |   7.0    |   4      |
+|   4      |   87.2   |   7.8    |   7.8    |   3      |
+|   8      |   89.0   |   9.3    |   9.3    |   2      |
+|   6      |   75.3   |   9.4    |   9.4    |   3      |
+========================================================
+
+ Simulation starting...
+
+| QUANTA 00:  I D L E  |
+| QUANTA 01:  I D L E  |
+| QUANTA 02:  I D L E  |
+| QUANTA 03:  I D L E  |
+| QUANTA 04:  I D L E  |
+| QUANTA 05:  I D L E  |
+| QUANTA 06:  I D L E  |
+| QUANTA 07:  I D L E  |
+| QUANTA 08:  I D L E  |
+| QUANTA 09:  I D L E  |
+| QUANTA 10:  I D L E  |
+| QUANTA 11:  I D L E  |
+| QUANTA 12:  I D L E  |
+| QUANTA 13:  I D L E  |
+| QUANTA 14:  I D L E  |
+| QUANTA 15:  I D L E  |
+| QUANTA 16:  I D L E  |
+| QUANTA 17:  I D L E  |
+| QUANTA 18:  I D L E  |
+| QUANTA 19:  I D L E  |
+| QUANTA 20:  I D L E  |
+| QUANTA 21: [p01](1.2)|
+| QUANTA 22: [p01](0.2)|
+| QUANTA 23: [p01](0.0)|<< CPU IDLE for 0.8 QUANTA |
+| QUANTA 24:  I D L E  |
+| QUANTA 25:  I D L E  |
+| QUANTA 26:  I D L E  |
+| QUANTA 27:  I D L E  |
+| QUANTA 28:  I D L E  |
+| QUANTA 29:  I D L E  |
+| QUANTA 30:  I D L E  |
+| QUANTA 31:  I D L E  |
+| QUANTA 32:  I D L E  |
+| QUANTA 33: [p00](2.5)|
+| QUANTA 34: [p07](0.9)|
+| QUANTA 35: [p07](0.0)|<< CPU IDLE for 0.1 QUANTA |
+| QUANTA 36: [p00](1.5)|
+| QUANTA 37: [p00](0.5)|
+| QUANTA 38: [p00](0.0)|<< CPU IDLE for 0.5 QUANTA |
+| QUANTA 39:  I D L E  |
+| QUANTA 40:  I D L E  |
+| QUANTA 41:  I D L E  |
+| QUANTA 42:  I D L E  |
+| QUANTA 43:  I D L E  |
+| QUANTA 44:  I D L E  |
+| QUANTA 45:  I D L E  |
+| QUANTA 46:  I D L E  |
+| QUANTA 47:  I D L E  |
+| QUANTA 48:  I D L E  |
+| QUANTA 49:  I D L E  |
+| QUANTA 50: [p05](4.4)|
+| QUANTA 51: [p05](3.4)|
+| QUANTA 52: [p05](2.4)|
+| QUANTA 53: [p05](1.4)|
+| QUANTA 54: [p05](0.4)|
+| QUANTA 55: [p05](0.0)|<< CPU IDLE for 0.6 QUANTA |
+| QUANTA 56:  I D L E  |
+| QUANTA 57:  I D L E  |
+| QUANTA 58:  I D L E  |
+| QUANTA 59:  I D L E  |
+| QUANTA 60:  I D L E  |
+| QUANTA 61:  I D L E  |
+| QUANTA 62:  I D L E  |
+| QUANTA 63:  I D L E  |
+| QUANTA 64:  I D L E  |
+| QUANTA 65:  I D L E  |
+| QUANTA 66:  I D L E  |
+| QUANTA 67:  I D L E  |
+| QUANTA 68:  I D L E  |
+| QUANTA 69:  I D L E  |
+| QUANTA 70:  I D L E  |
+| QUANTA 71:  I D L E  |
+| QUANTA 72:  I D L E  |
+| QUANTA 73:  I D L E  |
+| QUANTA 74:  I D L E  |
+| QUANTA 75: [p09](6.0)|
+| QUANTA 76: [p09](5.0)|
+| QUANTA 77: [p09](4.0)|
+| QUANTA 78: [p09](3.0)|
+| QUANTA 79: [p09](2.0)|
+| QUANTA 80: [p09](1.0)|
+| QUANTA 81: [p09](0.0)|
+| QUANTA 82: [p02](2.1)|
+| QUANTA 83: [p02](1.1)|
+| QUANTA 84: [p02](0.1)|
+| QUANTA 85: [p02](0.0)|<< CPU IDLE for 0.9 QUANTA |
+| QUANTA 86: [p06](8.4)|
+| QUANTA 87: [p03](4.9)|
+| QUANTA 88: [p03](3.9)|
+| QUANTA 89: [p03](2.9)|
+| QUANTA 90: [p03](1.9)|
+| QUANTA 91: [p03](0.9)|
+| QUANTA 92: [p03](0.0)|<< CPU IDLE for 0.1 QUANTA |
+| QUANTA 93: [p04](6.8)|
+| QUANTA 94: [p04](5.8)|
+| QUANTA 95: [p04](4.8)|
+| QUANTA 96: [p04](3.8)|
+| QUANTA 97: [p04](2.8)|
+| QUANTA 98: [p04](1.8)|
+| QUANTA 99: [p04](0.8)|
+
+
+3 processes did not finish after 100 QUANTA
+pid:4 remaining time: 0.800000
+pid:6 remaining time: 8.400000
+pid:8 remaining time: 9.300000
+
+cpu was idle 63.0 Quanta 
+run #4:
+________________________________________________________
+|   pid    |   a time |   e time |   r time |  priority|
+|======================================================|
+|   0      |   50.0   |   1.0    |   1.0    |   3      |
+|   1      |   79.7   |   3.4    |   3.4    |   1      |
+|   2      |   30.3   |   7.1    |   7.1    |   3      |
+|   3      |   49.7   |   9.5    |   9.5    |   2      |
+|   4      |   68.6   |   1.8    |   1.8    |   2      |
+|   5      |   99.6   |   1.9    |   1.9    |   3      |
+|   6      |   15.7   |   2.8    |   2.8    |   1      |
+|   7      |   46.0   |   8.0    |   8.0    |   1      |
+|   8      |   46.0   |   2.1    |   2.1    |   3      |
+|   9      |   2.7    |   6.5    |   6.5    |   3      |
+========================================================
+expected order:
+________________________________________________________
+|   pid    |   a time |   e time |   r time |  priority|
+|======================================================|
+|   0      |   50.0   |   1.0    |   1.0    |   3      |
+|   4      |   68.6   |   1.8    |   1.8    |   2      |
+|   5      |   99.6   |   1.9    |   1.9    |   3      |
+|   8      |   46.0   |   2.1    |   2.1    |   3      |
+|   6      |   15.7   |   2.8    |   2.8    |   1      |
+|   1      |   79.7   |   3.4    |   3.4    |   1      |
+|   9      |   2.7    |   6.5    |   6.5    |   3      |
+|   2      |   30.3   |   7.1    |   7.1    |   3      |
+|   7      |   46.0   |   8.0    |   8.0    |   1      |
+|   3      |   49.7   |   9.5    |   9.5    |   2      |
+========================================================
+
+ Simulation starting...
+
+| QUANTA 00:  I D L E  |
+| QUANTA 01:  I D L E  |
+| QUANTA 02:  I D L E  |
+| QUANTA 03: [p09](5.5)|
+| QUANTA 04: [p09](4.5)|
+| QUANTA 05: [p09](3.5)|
+| QUANTA 06: [p09](2.5)|
+| QUANTA 07: [p09](1.5)|
+| QUANTA 08: [p09](0.5)|
+| QUANTA 09: [p09](0.0)|<< CPU IDLE for 0.5 QUANTA |
+| QUANTA 10:  I D L E  |
+| QUANTA 11:  I D L E  |
+| QUANTA 12:  I D L E  |
+| QUANTA 13:  I D L E  |
+| QUANTA 14:  I D L E  |
+| QUANTA 15:  I D L E  |
+| QUANTA 16: [p06](1.8)|
+| QUANTA 17: [p06](0.8)|
+| QUANTA 18: [p06](0.0)|<< CPU IDLE for 0.2 QUANTA |
+| QUANTA 19:  I D L E  |
+| QUANTA 20:  I D L E  |
+| QUANTA 21:  I D L E  |
+| QUANTA 22:  I D L E  |
+| QUANTA 23:  I D L E  |
+| QUANTA 24:  I D L E  |
+| QUANTA 25:  I D L E  |
+| QUANTA 26:  I D L E  |
+| QUANTA 27:  I D L E  |
+| QUANTA 28:  I D L E  |
+| QUANTA 29:  I D L E  |
+| QUANTA 30:  I D L E  |
+| QUANTA 31: [p02](6.1)|
+| QUANTA 32: [p02](5.1)|
+| QUANTA 33: [p02](4.1)|
+| QUANTA 34: [p02](3.1)|
+| QUANTA 35: [p02](2.1)|
+| QUANTA 36: [p02](1.1)|
+| QUANTA 37: [p02](0.1)|
+| QUANTA 38: [p02](0.0)|<< CPU IDLE for 0.9 QUANTA |
+| QUANTA 39:  I D L E  |
+| QUANTA 40:  I D L E  |
+| QUANTA 41:  I D L E  |
+| QUANTA 42:  I D L E  |
+| QUANTA 43:  I D L E  |
+| QUANTA 44:  I D L E  |
+| QUANTA 45:  I D L E  |
+| QUANTA 46: [p08](1.1)|
+| QUANTA 47: [p08](0.1)|
+| QUANTA 48: [p08](0.0)|<< CPU IDLE for 0.9 QUANTA |
+| QUANTA 49: [p07](7.0)|
+| QUANTA 50: [p00](0.0)|
+| QUANTA 51: [p07](6.0)|
+| QUANTA 52: [p07](5.0)|
+| QUANTA 53: [p07](4.0)|
+| QUANTA 54: [p07](3.0)|
+| QUANTA 55: [p07](2.0)|
+| QUANTA 56: [p07](1.0)|
+| QUANTA 57: [p07](0.0)|
+| QUANTA 58: [p03](8.5)|
+| QUANTA 59: [p03](7.5)|
+| QUANTA 60: [p03](6.5)|
+| QUANTA 61: [p03](5.5)|
+| QUANTA 62: [p03](4.5)|
+| QUANTA 63: [p03](3.5)|
+| QUANTA 64: [p03](2.5)|
+| QUANTA 65: [p03](1.5)|
+| QUANTA 66: [p03](0.5)|
+| QUANTA 67: [p03](0.0)|<< CPU IDLE for 0.5 QUANTA |
+| QUANTA 68:  I D L E  |
+| QUANTA 69: [p04](0.8)|
+| QUANTA 70: [p04](0.0)|<< CPU IDLE for 0.2 QUANTA |
+| QUANTA 71:  I D L E  |
+| QUANTA 72:  I D L E  |
+| QUANTA 73:  I D L E  |
+| QUANTA 74:  I D L E  |
+| QUANTA 75:  I D L E  |
+| QUANTA 76:  I D L E  |
+| QUANTA 77:  I D L E  |
+| QUANTA 78:  I D L E  |
+| QUANTA 79:  I D L E  |
+| QUANTA 80: [p01](2.4)|
+| QUANTA 81: [p01](1.4)|
+| QUANTA 82: [p01](0.4)|
+| QUANTA 83: [p01](0.0)|<< CPU IDLE for 0.6 QUANTA |
+| QUANTA 84:  I D L E  |
+| QUANTA 85:  I D L E  |
+| QUANTA 86:  I D L E  |
+| QUANTA 87:  I D L E  |
+| QUANTA 88:  I D L E  |
+| QUANTA 89:  I D L E  |
+| QUANTA 90:  I D L E  |
+| QUANTA 91:  I D L E  |
+| QUANTA 92:  I D L E  |
+| QUANTA 93:  I D L E  |
+| QUANTA 94:  I D L E  |
+| QUANTA 95:  I D L E  |
+| QUANTA 96:  I D L E  |
+| QUANTA 97:  I D L E  |
+| QUANTA 98:  I D L E  |
+| QUANTA 99:  I D L E  |
+
+
+1 processes did not finish after 100 QUANTA
+pid:5 remaining time: 1.900000
+
+cpu was idle 57.8 Quanta 
+Running rr 5 times
+0
+expected order:
+________________________________________________________
+|   pid    |   a time |   e time |   r time |  priority|
+|======================================================|
+|   2      |   3.9    |   1.4    |   1.4    |   3      |
+|   8      |   4.9    |   7.3    |   7.3    |   1      |
+|   7      |   12.7   |   1.1    |   1.1    |   4      |
+|   5      |   15.1   |   2.9    |   2.9    |   4      |
+|   6      |   33.9   |   2.6    |   2.6    |   1      |
+|   3      |   40.3   |   1.1    |   1.1    |   1      |
+|   9      |   42.9   |   1.4    |   1.4    |   1      |
+|   0      |   55.6   |   1.3    |   1.3    |   4      |
+|   4      |   64.7   |   8.1    |   8.1    |   4      |
+|   1      |   69.7   |   4.9    |   4.9    |   3      |
+========================================================
+
+ Simulation starting...
+
+| QUANTA 00:  I D L E  |
+| QUANTA 01:  I D L E  |
+| QUANTA 02:  I D L E  |
+| QUANTA 03:  I D L E  |
+| QUANTA 04: [p02](0.4)|
+| QUANTA 05: [p08](6.3)|
+| QUANTA 06: [p02](0.0)|<< CPU IDLE for 0.6 QUANTA |
+| QUANTA 07: [p08](5.3)|
+| QUANTA 08: [p08](4.3)|
+| QUANTA 09: [p08](3.3)|
+| QUANTA 10: [p08](2.3)|
+| QUANTA 11: [p08](1.3)|
+| QUANTA 12: [p08](0.3)|
+| QUANTA 13: [p07](0.1)|
+| QUANTA 14: [p08](0.0)|<< CPU IDLE for 0.7 QUANTA |
+| QUANTA 15: [p07](0.0)|<< CPU IDLE for 0.9 QUANTA |
+| QUANTA 16: [p05](1.9)|
+| QUANTA 17: [p05](0.9)|
+| QUANTA 18: [p05](0.0)|<< CPU IDLE for 0.1 QUANTA |
+| QUANTA 19:  I D L E  |
+| QUANTA 20:  I D L E  |
+| QUANTA 21:  I D L E  |
+| QUANTA 22:  I D L E  |
+| QUANTA 23:  I D L E  |
+| QUANTA 24:  I D L E  |
+| QUANTA 25:  I D L E  |
+| QUANTA 26:  I D L E  |
+| QUANTA 27:  I D L E  |
+| QUANTA 28:  I D L E  |
+| QUANTA 29:  I D L E  |
+| QUANTA 30:  I D L E  |
+| QUANTA 31:  I D L E  |
+| QUANTA 32:  I D L E  |
+| QUANTA 33:  I D L E  |
+| QUANTA 34: [p06](1.6)|
+| QUANTA 35: [p06](0.6)|
+| QUANTA 36: [p06](0.0)|<< CPU IDLE for 0.4 QUANTA |
+| QUANTA 37:  I D L E  |
+| QUANTA 38:  I D L E  |
+| QUANTA 39:  I D L E  |
+| QUANTA 40:  I D L E  |
+| QUANTA 41: [p03](0.1)|
+| QUANTA 42: [p03](0.0)|<< CPU IDLE for 0.9 QUANTA |
+| QUANTA 43: [p09](0.4)|
+| QUANTA 44: [p09](0.0)|<< CPU IDLE for 0.6 QUANTA |
+| QUANTA 45:  I D L E  |
+| QUANTA 46:  I D L E  |
+| QUANTA 47:  I D L E  |
+| QUANTA 48:  I D L E  |
+| QUANTA 49:  I D L E  |
+| QUANTA 50:  I D L E  |
+| QUANTA 51:  I D L E  |
+| QUANTA 52:  I D L E  |
+| QUANTA 53:  I D L E  |
+| QUANTA 54:  I D L E  |
+| QUANTA 55:  I D L E  |
+| QUANTA 56: [p00](0.3)|
+| QUANTA 57: [p00](0.0)|<< CPU IDLE for 0.7 QUANTA |
+| QUANTA 58:  I D L E  |
+| QUANTA 59:  I D L E  |
+| QUANTA 60:  I D L E  |
+| QUANTA 61:  I D L E  |
+| QUANTA 62:  I D L E  |
+| QUANTA 63:  I D L E  |
+| QUANTA 64:  I D L E  |
+| QUANTA 65: [p04](7.1)|
+| QUANTA 66: [p04](6.1)|
+| QUANTA 67: [p04](5.1)|
+| QUANTA 68: [p04](4.1)|
+| QUANTA 69: [p04](3.1)|
+| QUANTA 70: [p01](3.9)|
+| QUANTA 71: [p04](2.1)|
+| QUANTA 72: [p01](2.9)|
+| QUANTA 73: [p04](1.1)|
+| QUANTA 74: [p01](1.9)|
+| QUANTA 75: [p04](0.1)|
+| QUANTA 76: [p01](0.9)|
+| QUANTA 77: [p04](0.0)|<< CPU IDLE for 0.9 QUANTA |
+| QUANTA 78: [p01](0.0)|<< CPU IDLE for 0.1 QUANTA |
+| QUANTA 79: IDLE  |
+| QUANTA 80: IDLE  |
+| QUANTA 81: IDLE  |
+| QUANTA 82: IDLE  |
+| QUANTA 83: IDLE  |
+| QUANTA 84: IDLE  |
+| QUANTA 85: IDLE  |
+| QUANTA 86: IDLE  |
+| QUANTA 87: IDLE  |
+| QUANTA 88: IDLE  |
+| QUANTA 89: IDLE  |
+| QUANTA 90: IDLE  |
+| QUANTA 91: IDLE  |
+| QUANTA 92: IDLE  |
+| QUANTA 93: IDLE  |
+| QUANTA 94: IDLE  |
+| QUANTA 95: IDLE  |
+| QUANTA 96: IDLE  |
+| QUANTA 97: IDLE  |
+| QUANTA 98: IDLE  |
+| QUANTA 99: IDLE  |
+
+
+0 processes did not finish after 100 QUANTA
+
+cpu was idle 67.9 Quanta 
+1
+expected order:
+________________________________________________________
+|   pid    |   a time |   e time |   r time |  priority|
+|======================================================|
+|   8      |   2.3    |   1.9    |   1.9    |   1      |
+|   7      |   4.2    |   1.3    |   1.3    |   2      |
+|   0      |   17.7   |   7.6    |   7.6    |   3      |
+|   9      |   30.9   |   7.8    |   7.8    |   1      |
+|   5      |   34.0   |   8.0    |   8.0    |   4      |
+|   2      |   36.7   |   2.4    |   2.4    |   2      |
+|   3      |   79.5   |   5.5    |   5.5    |   4      |
+|   4      |   82.9   |   1.3    |   1.3    |   2      |
+|   6      |   82.6   |   3.7    |   3.7    |   1      |
+|   1      |   97.1   |   1.9    |   1.9    |   4      |
+========================================================
+
+ Simulation starting...
+
+| QUANTA 00:  I D L E  |
+| QUANTA 01:  I D L E  |
+| QUANTA 02:  I D L E  |
+| QUANTA 03: [p08](0.9)|
+| QUANTA 04: [p08](0.0)|<< CPU IDLE for 0.1 QUANTA |
+| QUANTA 05: [p07](0.3)|
+| QUANTA 06: [p07](0.0)|<< CPU IDLE for 0.7 QUANTA |
+| QUANTA 07:  I D L E  |
+| QUANTA 08:  I D L E  |
+| QUANTA 09:  I D L E  |
+| QUANTA 10:  I D L E  |
+| QUANTA 11:  I D L E  |
+| QUANTA 12:  I D L E  |
+| QUANTA 13:  I D L E  |
+| QUANTA 14:  I D L E  |
+| QUANTA 15:  I D L E  |
+| QUANTA 16:  I D L E  |
+| QUANTA 17:  I D L E  |
+| QUANTA 18: [p00](6.6)|
+| QUANTA 19: [p00](5.6)|
+| QUANTA 20: [p00](4.6)|
+| QUANTA 21: [p00](3.6)|
+| QUANTA 22: [p00](2.6)|
+| QUANTA 23: [p00](1.6)|
+| QUANTA 24: [p00](0.6)|
+| QUANTA 25: [p00](0.0)|<< CPU IDLE for 0.4 QUANTA |
+| QUANTA 26:  I D L E  |
+| QUANTA 27:  I D L E  |
+| QUANTA 28:  I D L E  |
+| QUANTA 29:  I D L E  |
+| QUANTA 30:  I D L E  |
+| QUANTA 31: [p09](6.8)|
+| QUANTA 32: [p09](5.8)|
+| QUANTA 33: [p09](4.8)|
+| QUANTA 34: [p05](7.0)|
+| QUANTA 35: [p09](3.8)|
+| QUANTA 36: [p05](6.0)|
+| QUANTA 37: [p02](1.4)|
+| QUANTA 38: [p09](2.8)|
+| QUANTA 39: [p05](5.0)|
+| QUANTA 40: [p02](0.4)|
+| QUANTA 41: [p09](1.8)|
+| QUANTA 42: [p05](4.0)|
+| QUANTA 43: [p02](0.0)|<< CPU IDLE for 0.6 QUANTA |
+| QUANTA 44: [p09](0.8)|
+| QUANTA 45: [p05](3.0)|
+| QUANTA 46: [p09](0.0)|<< CPU IDLE for 0.2 QUANTA |
+| QUANTA 47: [p05](2.0)|
+| QUANTA 48: [p05](1.0)|
+| QUANTA 49: [p05](0.0)|
+| QUANTA 50:  I D L E  |
+| QUANTA 51:  I D L E  |
+| QUANTA 52:  I D L E  |
+| QUANTA 53:  I D L E  |
+| QUANTA 54:  I D L E  |
+| QUANTA 55:  I D L E  |
+| QUANTA 56:  I D L E  |
+| QUANTA 57:  I D L E  |
+| QUANTA 58:  I D L E  |
+| QUANTA 59:  I D L E  |
+| QUANTA 60:  I D L E  |
+| QUANTA 61:  I D L E  |
+| QUANTA 62:  I D L E  |
+| QUANTA 63:  I D L E  |
+| QUANTA 64:  I D L E  |
+| QUANTA 65:  I D L E  |
+| QUANTA 66:  I D L E  |
+| QUANTA 67:  I D L E  |
+| QUANTA 68:  I D L E  |
+| QUANTA 69:  I D L E  |
+| QUANTA 70:  I D L E  |
+| QUANTA 71:  I D L E  |
+| QUANTA 72:  I D L E  |
+| QUANTA 73:  I D L E  |
+| QUANTA 74:  I D L E  |
+| QUANTA 75:  I D L E  |
+| QUANTA 76:  I D L E  |
+| QUANTA 77:  I D L E  |
+| QUANTA 78:  I D L E  |
+| QUANTA 79:  I D L E  |
+| QUANTA 80: [p03](4.5)|
+| QUANTA 81: [p03](3.5)|
+| QUANTA 82: [p03](2.5)|
+| QUANTA 83: [p04](0.3)|
+| QUANTA 84: [p06](2.7)|
+| QUANTA 85: [p03](1.5)|
+| QUANTA 86: [p04](0.0)|<< CPU IDLE for 0.7 QUANTA |
+| QUANTA 87: [p06](1.7)|
+| QUANTA 88: [p03](0.5)|
+| QUANTA 89: [p06](0.7)|
+| QUANTA 90: [p03](0.0)|<< CPU IDLE for 0.5 QUANTA |
+| QUANTA 91: [p06](0.0)|<< CPU IDLE for 0.3 QUANTA |
+| QUANTA 92:  I D L E  |
+| QUANTA 93:  I D L E  |
+| QUANTA 94:  I D L E  |
+| QUANTA 95:  I D L E  |
+| QUANTA 96:  I D L E  |
+| QUANTA 97:  I D L E  |
+| QUANTA 98: [p01](0.9)|
+| QUANTA 99: [p01](0.0)|<< CPU IDLE for 0.1 QUANTA |
+
+
+0 processes did not finish after 100 QUANTA
+
+cpu was idle 58.6 Quanta 
+2
+expected order:
+________________________________________________________
+|   pid    |   a time |   e time |   r time |  priority|
+|======================================================|
+|   9      |   8.0    |   3.8    |   3.8    |   3      |
+|   3      |   16.8   |   5.9    |   5.9    |   3      |
+|   1      |   23.4   |   1.5    |   1.5    |   1      |
+|   4      |   31.2   |   1.7    |   1.7    |   1      |
+|   5      |   34.6   |   1.3    |   1.3    |   4      |
+|   2      |   52.4   |   1.9    |   1.9    |   4      |
+|   7      |   52.9   |   1.9    |   1.9    |   1      |
+|   8      |   64.7   |   3.7    |   3.7    |   1      |
+|   6      |   91.6   |   1.2    |   1.2    |   3      |
+|   0      |   99.6   |   1.4    |   1.4    |   2      |
+========================================================
+
+ Simulation starting...
+
+| QUANTA 00:  I D L E  |
+| QUANTA 01:  I D L E  |
+| QUANTA 02:  I D L E  |
+| QUANTA 03:  I D L E  |
+| QUANTA 04:  I D L E  |
+| QUANTA 05:  I D L E  |
+| QUANTA 06:  I D L E  |
+| QUANTA 07:  I D L E  |
+| QUANTA 08: [p09](2.8)|
+| QUANTA 09: [p09](1.8)|
+| QUANTA 10: [p09](0.8)|
+| QUANTA 11: [p09](0.0)|<< CPU IDLE for 0.2 QUANTA |
+| QUANTA 12:  I D L E  |
+| QUANTA 13:  I D L E  |
+| QUANTA 14:  I D L E  |
+| QUANTA 15:  I D L E  |
+| QUANTA 16:  I D L E  |
+| QUANTA 17: [p03](4.9)|
+| QUANTA 18: [p03](3.9)|
+| QUANTA 19: [p03](2.9)|
+| QUANTA 20: [p03](1.9)|
+| QUANTA 21: [p03](0.9)|
+| QUANTA 22: [p03](0.0)|<< CPU IDLE for 0.1 QUANTA |
+| QUANTA 23:  I D L E  |
+| QUANTA 24: [p01](0.5)|
+| QUANTA 25: [p01](0.0)|<< CPU IDLE for 0.5 QUANTA |
+| QUANTA 26:  I D L E  |
+| QUANTA 27:  I D L E  |
+| QUANTA 28:  I D L E  |
+| QUANTA 29:  I D L E  |
+| QUANTA 30:  I D L E  |
+| QUANTA 31:  I D L E  |
+| QUANTA 32: [p04](0.7)|
+| QUANTA 33: [p04](0.0)|<< CPU IDLE for 0.3 QUANTA |
+| QUANTA 34:  I D L E  |
+| QUANTA 35: [p05](0.3)|
+| QUANTA 36: [p05](0.0)|<< CPU IDLE for 0.7 QUANTA |
+| QUANTA 37:  I D L E  |
+| QUANTA 38:  I D L E  |
+| QUANTA 39:  I D L E  |
+| QUANTA 40:  I D L E  |
+| QUANTA 41:  I D L E  |
+| QUANTA 42:  I D L E  |
+| QUANTA 43:  I D L E  |
+| QUANTA 44:  I D L E  |
+| QUANTA 45:  I D L E  |
+| QUANTA 46:  I D L E  |
+| QUANTA 47:  I D L E  |
+| QUANTA 48:  I D L E  |
+| QUANTA 49:  I D L E  |
+| QUANTA 50:  I D L E  |
+| QUANTA 51:  I D L E  |
+| QUANTA 52:  I D L E  |
+| QUANTA 53: [p02](0.9)|
+| QUANTA 54: [p07](0.9)|
+| QUANTA 55: [p02](0.0)|<< CPU IDLE for 0.1 QUANTA |
+| QUANTA 56: [p07](0.0)|<< CPU IDLE for 0.1 QUANTA |
+| QUANTA 57:  I D L E  |
+| QUANTA 58:  I D L E  |
+| QUANTA 59:  I D L E  |
+| QUANTA 60:  I D L E  |
+| QUANTA 61:  I D L E  |
+| QUANTA 62:  I D L E  |
+| QUANTA 63:  I D L E  |
+| QUANTA 64:  I D L E  |
+| QUANTA 65: [p08](2.7)|
+| QUANTA 66: [p08](1.7)|
+| QUANTA 67: [p08](0.7)|
+| QUANTA 68: [p08](0.0)|<< CPU IDLE for 0.3 QUANTA |
+| QUANTA 69:  I D L E  |
+| QUANTA 70:  I D L E  |
+| QUANTA 71:  I D L E  |
+| QUANTA 72:  I D L E  |
+| QUANTA 73:  I D L E  |
+| QUANTA 74:  I D L E  |
+| QUANTA 75:  I D L E  |
+| QUANTA 76:  I D L E  |
+| QUANTA 77:  I D L E  |
+| QUANTA 78:  I D L E  |
+| QUANTA 79:  I D L E  |
+| QUANTA 80:  I D L E  |
+| QUANTA 81:  I D L E  |
+| QUANTA 82:  I D L E  |
+| QUANTA 83:  I D L E  |
+| QUANTA 84:  I D L E  |
+| QUANTA 85:  I D L E  |
+| QUANTA 86:  I D L E  |
+| QUANTA 87:  I D L E  |
+| QUANTA 88:  I D L E  |
+| QUANTA 89:  I D L E  |
+| QUANTA 90:  I D L E  |
+| QUANTA 91:  I D L E  |
+| QUANTA 92: [p06](0.2)|
+| QUANTA 93: [p06](0.0)|<< CPU IDLE for 0.8 QUANTA |
+| QUANTA 94:  I D L E  |
+| QUANTA 95:  I D L E  |
+| QUANTA 96:  I D L E  |
+| QUANTA 97:  I D L E  |
+| QUANTA 98:  I D L E  |
+| QUANTA 99:  I D L E  |
+
+
+1 processes did not finish after 100 QUANTA
+pid:0 remaining time: 1.400000
+
+cpu was idle 77.1 Quanta 
+3
+expected order:
+________________________________________________________
+|   pid    |   a time |   e time |   r time |  priority|
+|======================================================|
+|   4      |   18.9   |   6.4    |   6.4    |   1      |
+|   9      |   26.0   |   8.9    |   8.9    |   2      |
+|   3      |   47.9   |   6.6    |   6.6    |   4      |
+|   2      |   51.2   |   6.0    |   6.0    |   2      |
+|   7      |   56.6   |   1.4    |   1.4    |   4      |
+|   5      |   64.1   |   3.4    |   3.4    |   3      |
+|   0      |   85.7   |   1.0    |   1.0    |   2      |
+|   8      |   85.6   |   6.4    |   6.4    |   1      |
+|   1      |   88.6   |   3.5    |   3.5    |   1      |
+|   6      |   98.7   |   3.9    |   3.9    |   3      |
+========================================================
+
+ Simulation starting...
+
+| QUANTA 00:  I D L E  |
+| QUANTA 01:  I D L E  |
+| QUANTA 02:  I D L E  |
+| QUANTA 03:  I D L E  |
+| QUANTA 04:  I D L E  |
+| QUANTA 05:  I D L E  |
+| QUANTA 06:  I D L E  |
+| QUANTA 07:  I D L E  |
+| QUANTA 08:  I D L E  |
+| QUANTA 09:  I D L E  |
+| QUANTA 10:  I D L E  |
+| QUANTA 11:  I D L E  |
+| QUANTA 12:  I D L E  |
+| QUANTA 13:  I D L E  |
+| QUANTA 14:  I D L E  |
+| QUANTA 15:  I D L E  |
+| QUANTA 16:  I D L E  |
+| QUANTA 17:  I D L E  |
+| QUANTA 18:  I D L E  |
+| QUANTA 19: [p04](5.4)|
+| QUANTA 20: [p04](4.4)|
+| QUANTA 21: [p04](3.4)|
+| QUANTA 22: [p04](2.4)|
+| QUANTA 23: [p04](1.4)|
+| QUANTA 24: [p04](0.4)|
+| QUANTA 25: [p04](0.0)|<< CPU IDLE for 0.6 QUANTA |
+| QUANTA 26: [p09](7.9)|
+| QUANTA 27: [p09](6.9)|
+| QUANTA 28: [p09](5.9)|
+| QUANTA 29: [p09](4.9)|
+| QUANTA 30: [p09](3.9)|
+| QUANTA 31: [p09](2.9)|
+| QUANTA 32: [p09](1.9)|
+| QUANTA 33: [p09](0.9)|
+| QUANTA 34: [p09](0.0)|<< CPU IDLE for 0.1 QUANTA |
+| QUANTA 35:  I D L E  |
+| QUANTA 36:  I D L E  |
+| QUANTA 37:  I D L E  |
+| QUANTA 38:  I D L E  |
+| QUANTA 39:  I D L E  |
+| QUANTA 40:  I D L E  |
+| QUANTA 41:  I D L E  |
+| QUANTA 42:  I D L E  |
+| QUANTA 43:  I D L E  |
+| QUANTA 44:  I D L E  |
+| QUANTA 45:  I D L E  |
+| QUANTA 46:  I D L E  |
+| QUANTA 47:  I D L E  |
+| QUANTA 48: [p03](5.6)|
+| QUANTA 49: [p03](4.6)|
+| QUANTA 50: [p03](3.6)|
+| QUANTA 51: [p03](2.6)|
+| QUANTA 52: [p02](5.0)|
+| QUANTA 53: [p03](1.6)|
+| QUANTA 54: [p02](4.0)|
+| QUANTA 55: [p03](0.6)|
+| QUANTA 56: [p02](3.0)|
+| QUANTA 57: [p07](0.4)|
+| QUANTA 58: [p03](0.0)|<< CPU IDLE for 0.4 QUANTA |
+| QUANTA 59: [p02](2.0)|
+| QUANTA 60: [p07](0.0)|<< CPU IDLE for 0.6 QUANTA |
+| QUANTA 61: [p02](1.0)|
+| QUANTA 62: [p02](0.0)|
+| QUANTA 63:  I D L E  |
+| QUANTA 64:  I D L E  |
+| QUANTA 65: [p05](2.4)|
+| QUANTA 66: [p05](1.4)|
+| QUANTA 67: [p05](0.4)|
+| QUANTA 68: [p05](0.0)|<< CPU IDLE for 0.6 QUANTA |
+| QUANTA 69:  I D L E  |
+| QUANTA 70:  I D L E  |
+| QUANTA 71:  I D L E  |
+| QUANTA 72:  I D L E  |
+| QUANTA 73:  I D L E  |
+| QUANTA 74:  I D L E  |
+| QUANTA 75:  I D L E  |
+| QUANTA 76:  I D L E  |
+| QUANTA 77:  I D L E  |
+| QUANTA 78:  I D L E  |
+| QUANTA 79:  I D L E  |
+| QUANTA 80:  I D L E  |
+| QUANTA 81:  I D L E  |
+| QUANTA 82:  I D L E  |
+| QUANTA 83:  I D L E  |
+| QUANTA 84:  I D L E  |
+| QUANTA 85:  I D L E  |
+| QUANTA 86: [p00](0.0)|
+| QUANTA 87: [p08](5.4)|
+| QUANTA 88: [p08](4.4)|
+| QUANTA 89: [p01](2.5)|
+| QUANTA 90: [p08](3.4)|
+| QUANTA 91: [p01](1.5)|
+| QUANTA 92: [p08](2.4)|
+| QUANTA 93: [p01](0.5)|
+| QUANTA 94: [p08](1.4)|
+| QUANTA 95: [p01](0.0)|<< CPU IDLE for 0.5 QUANTA |
+| QUANTA 96: [p08](0.4)|
+| QUANTA 97: [p08](0.0)|<< CPU IDLE for 0.6 QUANTA |
+| QUANTA 98:  I D L E  |
+| QUANTA 99: [p06](2.9)|
+
+
+1 processes did not finish after 100 QUANTA
+pid:6 remaining time: 2.900000
+
+cpu was idle 55.4 Quanta 
+4
+expected order:
+________________________________________________________
+|   pid    |   a time |   e time |   r time |  priority|
+|======================================================|
+|   8      |   7.4    |   1.0    |   1.0    |   2      |
+|   6      |   10.0   |   6.3    |   6.3    |   3      |
+|   0      |   20.5   |   1.8    |   1.8    |   2      |
+|   5      |   31.4   |   5.1    |   5.1    |   4      |
+|   7      |   43.8   |   7.1    |   7.1    |   3      |
+|   1      |   51.8   |   2.6    |   2.6    |   3      |
+|   4      |   60.7   |   3.3    |   3.3    |   2      |
+|   3      |   63.7   |   9.5    |   9.5    |   3      |
+|   9      |   68.1   |   3.5    |   3.5    |   3      |
+|   2      |   87.3   |   3.3    |   3.3    |   3      |
+========================================================
+
+ Simulation starting...
+
+| QUANTA 00:  I D L E  |
+| QUANTA 01:  I D L E  |
+| QUANTA 02:  I D L E  |
+| QUANTA 03:  I D L E  |
+| QUANTA 04:  I D L E  |
+| QUANTA 05:  I D L E  |
+| QUANTA 06:  I D L E  |
+| QUANTA 07:  I D L E  |
+| QUANTA 08: [p08](0.0)|
+| QUANTA 09:  I D L E  |
+| QUANTA 10: [p06](5.3)|
+| QUANTA 11: [p06](4.3)|
+| QUANTA 12: [p06](3.3)|
+| QUANTA 13: [p06](2.3)|
+| QUANTA 14: [p06](1.3)|
+| QUANTA 15: [p06](0.3)|
+| QUANTA 16: [p06](0.0)|<< CPU IDLE for 0.7 QUANTA |
+| QUANTA 17:  I D L E  |
+| QUANTA 18:  I D L E  |
+| QUANTA 19:  I D L E  |
+| QUANTA 20:  I D L E  |
+| QUANTA 21: [p00](0.8)|
+| QUANTA 22: [p00](0.0)|<< CPU IDLE for 0.2 QUANTA |
+| QUANTA 23:  I D L E  |
+| QUANTA 24:  I D L E  |
+| QUANTA 25:  I D L E  |
+| QUANTA 26:  I D L E  |
+| QUANTA 27:  I D L E  |
+| QUANTA 28:  I D L E  |
+| QUANTA 29:  I D L E  |
+| QUANTA 30:  I D L E  |
+| QUANTA 31:  I D L E  |
+| QUANTA 32: [p05](4.1)|
+| QUANTA 33: [p05](3.1)|
+| QUANTA 34: [p05](2.1)|
+| QUANTA 35: [p05](1.1)|
+| QUANTA 36: [p05](0.1)|
+| QUANTA 37: [p05](0.0)|<< CPU IDLE for 0.9 QUANTA |
+| QUANTA 38:  I D L E  |
+| QUANTA 39:  I D L E  |
+| QUANTA 40:  I D L E  |
+| QUANTA 41:  I D L E  |
+| QUANTA 42:  I D L E  |
+| QUANTA 43:  I D L E  |
+| QUANTA 44: [p07](6.1)|
+| QUANTA 45: [p07](5.1)|
+| QUANTA 46: [p07](4.1)|
+| QUANTA 47: [p07](3.1)|
+| QUANTA 48: [p07](2.1)|
+| QUANTA 49: [p07](1.1)|
+| QUANTA 50: [p07](0.1)|
+| QUANTA 51: [p07](0.0)|<< CPU IDLE for 0.9 QUANTA |
+| QUANTA 52: [p01](1.6)|
+| QUANTA 53: [p01](0.6)|
+| QUANTA 54: [p01](0.0)|<< CPU IDLE for 0.4 QUANTA |
+| QUANTA 55:  I D L E  |
+| QUANTA 56:  I D L E  |
+| QUANTA 57:  I D L E  |
+| QUANTA 58:  I D L E  |
+| QUANTA 59:  I D L E  |
+| QUANTA 60:  I D L E  |
+| QUANTA 61: [p04](2.3)|
+| QUANTA 62: [p04](1.3)|
+| QUANTA 63: [p04](0.3)|
+| QUANTA 64: [p03](8.5)|
+| QUANTA 65: [p04](0.0)|<< CPU IDLE for 0.7 QUANTA |
+| QUANTA 66: [p03](7.5)|
+| QUANTA 67: [p03](6.5)|
+| QUANTA 68: [p03](5.5)|
+| QUANTA 69: [p09](2.5)|
+| QUANTA 70: [p03](4.5)|
+| QUANTA 71: [p09](1.5)|
+| QUANTA 72: [p03](3.5)|
+| QUANTA 73: [p09](0.5)|
+| QUANTA 74: [p03](2.5)|
+| QUANTA 75: [p09](0.0)|<< CPU IDLE for 0.5 QUANTA |
+| QUANTA 76: [p03](1.5)|
+| QUANTA 77: [p03](0.5)|
+| QUANTA 78: [p03](0.0)|<< CPU IDLE for 0.5 QUANTA |
+| QUANTA 79:  I D L E  |
+| QUANTA 80:  I D L E  |
+| QUANTA 81:  I D L E  |
+| QUANTA 82:  I D L E  |
+| QUANTA 83:  I D L E  |
+| QUANTA 84:  I D L E  |
+| QUANTA 85:  I D L E  |
+| QUANTA 86:  I D L E  |
+| QUANTA 87:  I D L E  |
+| QUANTA 88: [p02](2.3)|
+| QUANTA 89: [p02](1.3)|
+| QUANTA 90: [p02](0.3)|
+| QUANTA 91: [p02](0.0)|<< CPU IDLE for 0.7 QUANTA |
+| QUANTA 92: IDLE  |
+| QUANTA 93: IDLE  |
+| QUANTA 94: IDLE  |
+| QUANTA 95: IDLE  |
+| QUANTA 96: IDLE  |
+| QUANTA 97: IDLE  |
+| QUANTA 98: IDLE  |
+| QUANTA 99: IDLE  |
+
+
+0 processes did not finish after 100 QUANTA
+
+cpu was idle 56.5 Quanta 
+Running hpf 5 times
+0
+________________________________________________________
+|   pid    |   a time |   e time |   r time |  priority|
+|======================================================|
+|   0      |   27.0   |   5.5    |   5.5    |   2      |
+|   1      |   83.9   |   4.9    |   4.9    |   3      |
+|   2      |   62.2   |   2.3    |   2.3    |   3      |
+|   3      |   84.7   |   9.7    |   9.7    |   2      |
+|   4      |   68.2   |   6.1    |   6.1    |   2      |
+|   5      |   79.1   |   3.3    |   3.3    |   1      |
+|   6      |   52.1   |   1.5    |   1.5    |   4      |
+|   7      |   49.1   |   4.3    |   4.3    |   1      |
+|   8      |   23.1   |   5.9    |   5.9    |   2      |
+|   9      |   74.0   |   3.3    |   3.3    |   1      |
+========================================================
+No jobs at quantum 0
+No jobs at quantum 1
+No jobs at quantum 2
+No jobs at quantum 3
+No jobs at quantum 4
+No jobs at quantum 5
+No jobs at quantum 6
+No jobs at quantum 7
+No jobs at quantum 8
+No jobs at quantum 9
+No jobs at quantum 10
+No jobs at quantum 11
+No jobs at quantum 12
+No jobs at quantum 13
+No jobs at quantum 14
+No jobs at quantum 15
+No jobs at quantum 16
+No jobs at quantum 17
+No jobs at quantum 18
+No jobs at quantum 19
+No jobs at quantum 20
+No jobs at quantum 21
+No jobs at quantum 22
+No jobs at quantum 23
+Q 24: 8(5.900000,2)
+Q 25: 8(4.900000,2)
+Q 26: 8(3.900000,2)
+Q 27: 0(5.500000,2)
+Q 28: 8(2.900000,2)
+Q 29: 8(1.900000,2)
+Q 30: 8(0.900000,2)   (CPU idle for 0.100000 quantum)
+Q 31: 0(4.500000,2)
+Q 32: 0(3.500000,2)
+Q 33: 0(2.500000,2)
+Q 34: 0(1.500000,2)
+Q 35: 0(0.500000,2)   (CPU idle for 0.500000 quantum)
+No jobs at quantum 36
+No jobs at quantum 37
+No jobs at quantum 38
+No jobs at quantum 39
+No jobs at quantum 40
+No jobs at quantum 41
+No jobs at quantum 42
+No jobs at quantum 43
+No jobs at quantum 44
+No jobs at quantum 45
+No jobs at quantum 46
+No jobs at quantum 47
+No jobs at quantum 48
+No jobs at quantum 49
+Q 50: 7(4.300000,1)
+Q 51: 7(3.300000,1)
+Q 52: 7(2.300000,1)
+Q 53: 7(1.300000,1)
+Q 54: 7(0.300000,1)   (CPU idle for 0.700000 quantum)
+Q 55: 6(1.500000,4)
+Q 56: 6(0.500000,4)   (CPU idle for 0.500000 quantum)
+No jobs at quantum 57
+No jobs at quantum 58
+No jobs at quantum 59
+No jobs at quantum 60
+No jobs at quantum 61
+No jobs at quantum 62
+Q 63: 2(2.300000,3)
+Q 64: 2(1.300000,3)
+Q 65: 2(0.300000,3)   (CPU idle for 0.700000 quantum)
+No jobs at quantum 66
+No jobs at quantum 67
+No jobs at quantum 68
+Q 69: 4(6.100000,2)
+Q 70: 4(5.100000,2)
+Q 71: 4(4.100000,2)
+Q 72: 4(3.100000,2)
+Q 73: 4(2.100000,2)
+Q 74: 9(3.300000,1)
+Q 75: 4(1.100000,2)
+Q 76: 9(2.300000,1)
+Q 77: 4(0.100000,2)   (CPU idle for 0.900000 quantum)
+Q 78: 9(1.300000,1)
+Q 79: 9(0.300000,1)   (CPU idle for 0.700000 quantum)
+Q 80: 5(3.300000,1)
+Q 81: 5(2.300000,1)
+Q 82: 5(1.300000,1)
+Q 83: 5(0.300000,1)   (CPU idle for 0.700000 quantum)
+Q 84: 1(4.900000,3)
+Q 85: 3(9.700000,2)
+Q 86: 3(8.700000,2)
+Q 87: 3(7.700000,2)
+Q 88: 3(6.700000,2)
+Q 89: 1(3.900000,3)
+Q 90: 3(5.700000,2)
+Q 91: 3(4.700000,2)
+Q 92: 3(3.700000,2)
+Q 93: 3(2.700000,2)
+Q 94: 1(2.900000,3)
+Q 95: 3(1.700000,2)
+Q 96: 1(1.900000,3)
+Q 97: 3(0.700000,2)   (CPU idle for 0.300000 quantum)
+Q 98: 1(0.900000,3)   (CPU idle for 0.100000 quantum)
+No jobs at quantum 99
+
+***Overall statistics***
+Total completed processes: 10
+Avg. Response time: 1.760001
+Avg. Turn around-time: 8.060000
+Avg. Waiting time: 3.380001
+Avg. throughput: 10.000000
+
+***Priority specific statistics***
+Priority 1:
+Avg. Response time: 1.600001
+Avg. Turn around-time: 5.600001
+Avg. Waiting time: 1.966668
+Avg. throughput: 3.000000
+Priority 2:
+Avg. Response time: 1.500001
+Avg. Turn around-time: 10.000002
+Avg. Waiting time: 3.200001
+Avg. throughput: 4.000000
+Priority 3:
+Avg. Response time: 1.449999
+Avg. Turn around-time: 9.449999
+Avg. Waiting time: 5.849999
+Avg. throughput: 2.000000
+Priority 4:
+Avg. Response time: 3.900002
+Avg. Turn around-time: 4.900002
+Avg. Waiting time: 3.400002
+Avg. throughput: 1.000000
+No jobs at quantum 0
+No jobs at quantum 1
+No jobs at quantum 2
+No jobs at quantum 3
+No jobs at quantum 4
+No jobs at quantum 5
+No jobs at quantum 6
+No jobs at quantum 7
+No jobs at quantum 8
+No jobs at quantum 9
+No jobs at quantum 10
+No jobs at quantum 11
+No jobs at quantum 12
+No jobs at quantum 13
+No jobs at quantum 14
+No jobs at quantum 15
+No jobs at quantum 16
+No jobs at quantum 17
+No jobs at quantum 18
+No jobs at quantum 19
+No jobs at quantum 20
+No jobs at quantum 21
+No jobs at quantum 22
+No jobs at quantum 23
+Q 24: 8(5.900000,2)
+Q 25: 8(4.900000,2)
+Q 26: 8(3.900000,2)
+Q 27: 8(2.900000,2)
+Q 28: 8(1.900000,2)
+Q 29: 8(0.900000,2)   (CPU idle for 0.100000 quantum)
+Q 30: 0(5.500000,2)
+Q 31: 0(4.500000,2)
+Q 32: 0(3.500000,2)
+Q 33: 0(2.500000,2)
+Q 34: 0(1.500000,2)
+Q 35: 0(0.500000,2)   (CPU idle for 0.500000 quantum)
+No jobs at quantum 36
+No jobs at quantum 37
+No jobs at quantum 38
+No jobs at quantum 39
+No jobs at quantum 40
+No jobs at quantum 41
+No jobs at quantum 42
+No jobs at quantum 43
+No jobs at quantum 44
+No jobs at quantum 45
+No jobs at quantum 46
+No jobs at quantum 47
+No jobs at quantum 48
+No jobs at quantum 49
+Q 50: 7(4.300000,1)
+Q 51: 7(3.300000,1)
+Q 52: 7(2.300000,1)
+Q 53: 7(1.300000,1)
+Q 54: 7(0.300000,1)   (CPU idle for 0.700000 quantum)
+Q 55: 6(1.500000,4)
+Q 56: 6(0.500000,4)   (CPU idle for 0.500000 quantum)
+No jobs at quantum 57
+No jobs at quantum 58
+No jobs at quantum 59
+No jobs at quantum 60
+No jobs at quantum 61
+No jobs at quantum 62
+Q 63: 2(2.300000,3)
+Q 64: 2(1.300000,3)
+Q 65: 2(0.300000,3)   (CPU idle for 0.700000 quantum)
+No jobs at quantum 66
+No jobs at quantum 67
+No jobs at quantum 68
+Q 69: 4(6.100000,2)
+Q 70: 4(5.100000,2)
+Q 71: 4(4.100000,2)
+Q 72: 4(3.100000,2)
+Q 73: 4(2.100000,2)
+Q 74: 4(1.100000,2)
+Q 75: 4(0.100000,2)   (CPU idle for 0.900000 quantum)
+Q 76: 9(3.300000,1)
+Q 77: 9(2.300000,1)
+Q 78: 9(1.300000,1)
+Q 79: 9(0.300000,1)   (CPU idle for 0.700000 quantum)
+Q 80: 5(3.300000,1)
+Q 81: 5(2.300000,1)
+Q 82: 5(1.300000,1)
+Q 83: 5(0.300000,1)   (CPU idle for 0.700000 quantum)
+Q 84: 1(4.900000,3)
+Q 85: 1(3.900000,3)
+Q 86: 1(2.900000,3)
+Q 87: 1(1.900000,3)
+Q 88: 1(0.900000,3)   (CPU idle for 0.100000 quantum)
+Q 89: 3(9.700000,2)
+Q 90: 3(8.700000,2)
+Q 91: 3(7.700000,2)
+Q 92: 3(6.700000,2)
+Q 93: 3(5.700000,2)
+Q 94: 3(4.700000,2)
+Q 95: 3(3.700000,2)
+Q 96: 3(2.700000,2)
+Q 97: 3(1.700000,2)
+Q 98: 3(0.700000,2)   (CPU idle for 0.300000 quantum)
+No jobs at quantum 99
+
+***Overall statistics***
+Total completed processes: 10
+Avg. Response time: 2.660001
+Avg. Turn around-time: 6.860001
+Avg. Waiting time: 2.180001
+Avg. throughput: 10.000000
+
+***Priority specific statistics***
+Priority 1:
+Avg. Response time: 2.266668
+Avg. Turn around-time: 5.600001
+Avg. Waiting time: 1.966668
+Avg. throughput: 3.000000
+Priority 2:
+Avg. Response time: 3.250001
+Avg. Turn around-time: 9.500002
+Avg. Waiting time: 2.700001
+Avg. throughput: 4.000000
+Priority 3:
+Avg. Response time: 1.449999
+Avg. Turn around-time: 4.449999
+Avg. Waiting time: 0.849999
+Avg. throughput: 2.000000
+Priority 4:
+Avg. Response time: 3.900002
+Avg. Turn around-time: 4.900002
+Avg. Waiting time: 3.400002
+Avg. throughput: 1.000000
+1
+________________________________________________________
+|   pid    |   a time |   e time |   r time |  priority|
+|======================================================|
+|   0      |   9.8    |   3.7    |   3.7    |   1      |
+|   1      |   51.6   |   7.9    |   7.9    |   2      |
+|   2      |   23.1   |   6.2    |   6.2    |   1      |
+|   3      |   40.4   |   4.3    |   4.3    |   1      |
+|   4      |   21.8   |   5.7    |   5.7    |   1      |
+|   5      |   86.2   |   3.1    |   3.1    |   4      |
+|   6      |   97.7   |   6.8    |   6.8    |   1      |
+|   7      |   90.4   |   3.9    |   3.9    |   3      |
+|   8      |   20.7   |   8.2    |   8.2    |   2      |
+|   9      |   74.4   |   9.3    |   9.3    |   1      |
+========================================================
+No jobs at quantum 0
+No jobs at quantum 1
+No jobs at quantum 2
+No jobs at quantum 3
+No jobs at quantum 4
+No jobs at quantum 5
+No jobs at quantum 6
+No jobs at quantum 7
+No jobs at quantum 8
+No jobs at quantum 9
+Q 10: 0(3.700000,1)
+Q 11: 0(2.700000,1)
+Q 12: 0(1.700000,1)
+Q 13: 0(0.700000,1)   (CPU idle for 0.300000 quantum)
+No jobs at quantum 14
+No jobs at quantum 15
+No jobs at quantum 16
+No jobs at quantum 17
+No jobs at quantum 18
+No jobs at quantum 19
+No jobs at quantum 20
+Q 21: 8(8.200000,2)
+Q 22: 4(5.700000,1)
+Q 23: 4(4.700000,1)
+Q 24: 2(6.200000,1)
+Q 25: 4(3.700000,1)
+Q 26: 2(5.200000,1)
+Q 27: 8(7.200000,2)
+Q 28: 4(2.700000,1)
+Q 29: 2(4.200000,1)
+Q 30: 8(6.200000,2)
+Q 31: 4(1.700000,1)
+Q 32: 2(3.200000,1)
+Q 33: 8(5.200000,2)
+Q 34: 4(0.700000,1)   (CPU idle for 0.300000 quantum)
+Q 35: 2(2.200000,1)
+Q 36: 8(4.200000,2)
+Q 37: 2(1.200000,1)
+Q 38: 8(3.200000,2)
+Q 39: 2(0.200000,1)   (CPU idle for 0.800000 quantum)
+Q 40: 8(2.200000,2)
+Q 41: 3(4.300000,1)
+Q 42: 8(1.200000,2)
+Q 43: 3(3.300000,1)
+Q 44: 8(0.200000,2)   (CPU idle for 0.800000 quantum)
+Q 45: 3(2.300000,1)
+Q 46: 3(1.300000,1)
+Q 47: 3(0.300000,1)   (CPU idle for 0.700000 quantum)
+No jobs at quantum 48
+No jobs at quantum 49
+No jobs at quantum 50
+No jobs at quantum 51
+Q 52: 1(7.900000,2)
+Q 53: 1(6.900000,2)
+Q 54: 1(5.900000,2)
+Q 55: 1(4.900000,2)
+Q 56: 1(3.900000,2)
+Q 57: 1(2.900000,2)
+Q 58: 1(1.900000,2)
+Q 59: 1(0.900000,2)   (CPU idle for 0.100000 quantum)
+No jobs at quantum 60
+No jobs at quantum 61
+No jobs at quantum 62
+No jobs at quantum 63
+No jobs at quantum 64
+No jobs at quantum 65
+No jobs at quantum 66
+No jobs at quantum 67
+No jobs at quantum 68
+No jobs at quantum 69
+No jobs at quantum 70
+No jobs at quantum 71
+No jobs at quantum 72
+No jobs at quantum 73
+No jobs at quantum 74
+Q 75: 9(9.300000,1)
+Q 76: 9(8.300000,1)
+Q 77: 9(7.300000,1)
+Q 78: 9(6.300000,1)
+Q 79: 9(5.300000,1)
+Q 80: 9(4.300000,1)
+Q 81: 9(3.300000,1)
+Q 82: 9(2.300000,1)
+Q 83: 9(1.300000,1)
+Q 84: 9(0.300000,1)   (CPU idle for 0.700000 quantum)
+No jobs at quantum 85
+No jobs at quantum 86
+Q 87: 5(3.100000,4)
+Q 88: 5(2.100000,4)
+Q 89: 5(1.100000,4)
+Q 90: 5(0.100000,4)   (CPU idle for 0.900000 quantum)
+Q 91: 7(3.900000,3)
+Q 92: 7(2.900000,3)
+Q 93: 7(1.900000,3)
+Q 94: 7(0.900000,3)   (CPU idle for 0.100000 quantum)
+No jobs at quantum 95
+No jobs at quantum 96
+No jobs at quantum 97
+Q 98: 6(6.800000,1)
+Q 99: 6(5.800000,1)
+
+***Overall statistics***
+Total completed processes: 9
+Avg. Response time: 1.511111
+Avg. Turn around-time: 10.511111
+Avg. Waiting time: 4.700000
+Avg. throughput: 9.000000
+
+***Priority specific statistics***
+Priority 1:
+Avg. Response time: 1.499999
+Avg. Turn around-time: 10.500000
+Avg. Waiting time: 4.660000
+Avg. throughput: 5.000000
+Priority 2:
+Avg. Response time: 1.350000
+Avg. Turn around-time: 16.350000
+Avg. Waiting time: 8.300000
+Avg. throughput: 2.000000
+Priority 3:
+Avg. Response time: 1.599998
+Avg. Turn around-time: 4.599998
+Avg. Waiting time: 0.699998
+Avg. throughput: 1.000000
+Priority 4:
+Avg. Response time: 1.800003
+Avg. Turn around-time: 4.800003
+Avg. Waiting time: 1.700003
+Avg. throughput: 1.000000
+No jobs at quantum 0
+No jobs at quantum 1
+No jobs at quantum 2
+No jobs at quantum 3
+No jobs at quantum 4
+No jobs at quantum 5
+No jobs at quantum 6
+No jobs at quantum 7
+No jobs at quantum 8
+No jobs at quantum 9
+Q 10: 0(3.700000,1)
+Q 11: 0(2.700000,1)
+Q 12: 0(1.700000,1)
+Q 13: 0(0.700000,1)   (CPU idle for 0.300000 quantum)
+No jobs at quantum 14
+No jobs at quantum 15
+No jobs at quantum 16
+No jobs at quantum 17
+No jobs at quantum 18
+No jobs at quantum 19
+No jobs at quantum 20
+Q 21: 8(8.200000,2)
+Q 22: 8(7.200000,2)
+Q 23: 8(6.200000,2)
+Q 24: 8(5.200000,2)
+Q 25: 8(4.200000,2)
+Q 26: 8(3.200000,2)
+Q 27: 8(2.200000,2)
+Q 28: 8(1.200000,2)
+Q 29: 8(0.200000,2)   (CPU idle for 0.800000 quantum)
+Q 30: 4(5.700000,1)
+Q 31: 4(4.700000,1)
+Q 32: 4(3.700000,1)
+Q 33: 4(2.700000,1)
+Q 34: 4(1.700000,1)
+Q 35: 4(0.700000,1)   (CPU idle for 0.300000 quantum)
+Q 36: 2(6.200000,1)
+Q 37: 2(5.200000,1)
+Q 38: 2(4.200000,1)
+Q 39: 2(3.200000,1)
+Q 40: 2(2.200000,1)
+Q 41: 2(1.200000,1)
+Q 42: 2(0.200000,1)   (CPU idle for 0.800000 quantum)
+Q 43: 3(4.300000,1)
+Q 44: 3(3.300000,1)
+Q 45: 3(2.300000,1)
+Q 46: 3(1.300000,1)
+Q 47: 3(0.300000,1)   (CPU idle for 0.700000 quantum)
+No jobs at quantum 48
+No jobs at quantum 49
+No jobs at quantum 50
+No jobs at quantum 51
+Q 52: 1(7.900000,2)
+Q 53: 1(6.900000,2)
+Q 54: 1(5.900000,2)
+Q 55: 1(4.900000,2)
+Q 56: 1(3.900000,2)
+Q 57: 1(2.900000,2)
+Q 58: 1(1.900000,2)
+Q 59: 1(0.900000,2)   (CPU idle for 0.100000 quantum)
+No jobs at quantum 60
+No jobs at quantum 61
+No jobs at quantum 62
+No jobs at quantum 63
+No jobs at quantum 64
+No jobs at quantum 65
+No jobs at quantum 66
+No jobs at quantum 67
+No jobs at quantum 68
+No jobs at quantum 69
+No jobs at quantum 70
+No jobs at quantum 71
+No jobs at quantum 72
+No jobs at quantum 73
+No jobs at quantum 74
+Q 75: 9(9.300000,1)
+Q 76: 9(8.300000,1)
+Q 77: 9(7.300000,1)
+Q 78: 9(6.300000,1)
+Q 79: 9(5.300000,1)
+Q 80: 9(4.300000,1)
+Q 81: 9(3.300000,1)
+Q 82: 9(2.300000,1)
+Q 83: 9(1.300000,1)
+Q 84: 9(0.300000,1)   (CPU idle for 0.700000 quantum)
+No jobs at quantum 85
+No jobs at quantum 86
+Q 87: 5(3.100000,4)
+Q 88: 5(2.100000,4)
+Q 89: 5(1.100000,4)
+Q 90: 5(0.100000,4)   (CPU idle for 0.900000 quantum)
+Q 91: 7(3.900000,3)
+Q 92: 7(2.900000,3)
+Q 93: 7(1.900000,3)
+Q 94: 7(0.900000,3)   (CPU idle for 0.100000 quantum)
+No jobs at quantum 95
+No jobs at quantum 96
+No jobs at quantum 97
+Q 98: 6(6.800000,1)
+Q 99: 6(5.800000,1)
+
+***Overall statistics***
+Total completed processes: 9
+Avg. Response time: 3.955555
+Avg. Turn around-time: 9.288889
+Avg. Waiting time: 3.477778
+Avg. throughput: 9.000000
+
+***Priority specific statistics***
+Priority 1:
+Avg. Response time: 5.899999
+Avg. Turn around-time: 11.300000
+Avg. Waiting time: 5.460000
+Avg. throughput: 5.000000
+Priority 2:
+Avg. Response time: 1.350000
+Avg. Turn around-time: 8.850000
+Avg. Waiting time: 0.800000
+Avg. throughput: 2.000000
+Priority 3:
+Avg. Response time: 1.599998
+Avg. Turn around-time: 4.599998
+Avg. Waiting time: 0.699998
+Avg. throughput: 1.000000
+Priority 4:
+Avg. Response time: 1.800003
+Avg. Turn around-time: 4.800003
+Avg. Waiting time: 1.700003
+Avg. throughput: 1.000000
+2
+________________________________________________________
+|   pid    |   a time |   e time |   r time |  priority|
+|======================================================|
+|   0      |   12.7   |   9.4    |   9.4    |   1      |
+|   1      |   56.0   |   3.5    |   3.5    |   1      |
+|   2      |   56.3   |   4.4    |   4.4    |   4      |
+|   3      |   71.1   |   8.6    |   8.6    |   4      |
+|   4      |   29.1   |   5.4    |   5.4    |   1      |
+|   5      |   61.4   |   4.8    |   4.8    |   3      |
+|   6      |   99.3   |   1.8    |   1.8    |   1      |
+|   7      |   88.2   |   2.8    |   2.8    |   2      |
+|   8      |   71.7   |   8.1    |   8.1    |   3      |
+|   9      |   57.4   |   5.1    |   5.1    |   3      |
+========================================================
+No jobs at quantum 0
+No jobs at quantum 1
+No jobs at quantum 2
+No jobs at quantum 3
+No jobs at quantum 4
+No jobs at quantum 5
+No jobs at quantum 6
+No jobs at quantum 7
+No jobs at quantum 8
+No jobs at quantum 9
+No jobs at quantum 10
+No jobs at quantum 11
+No jobs at quantum 12
+Q 13: 0(9.400000,1)
+Q 14: 0(8.400000,1)
+Q 15: 0(7.400000,1)
+Q 16: 0(6.400000,1)
+Q 17: 0(5.400000,1)
+Q 18: 0(4.400000,1)
+Q 19: 0(3.400000,1)
+Q 20: 0(2.400000,1)
+Q 21: 0(1.400000,1)
+Q 22: 0(0.400000,1)   (CPU idle for 0.600000 quantum)
+No jobs at quantum 23
+No jobs at quantum 24
+No jobs at quantum 25
+No jobs at quantum 26
+No jobs at quantum 27
+No jobs at quantum 28
+No jobs at quantum 29
+Q 30: 4(5.400000,1)
+Q 31: 4(4.400000,1)
+Q 32: 4(3.400000,1)
+Q 33: 4(2.400000,1)
+Q 34: 4(1.400000,1)
+Q 35: 4(0.400000,1)   (CPU idle for 0.600000 quantum)
+No jobs at quantum 36
+No jobs at quantum 37
+No jobs at quantum 38
+No jobs at quantum 39
+No jobs at quantum 40
+No jobs at quantum 41
+No jobs at quantum 42
+No jobs at quantum 43
+No jobs at quantum 44
+No jobs at quantum 45
+No jobs at quantum 46
+No jobs at quantum 47
+No jobs at quantum 48
+No jobs at quantum 49
+No jobs at quantum 50
+No jobs at quantum 51
+No jobs at quantum 52
+No jobs at quantum 53
+No jobs at quantum 54
+No jobs at quantum 55
+Q 56: 1(3.500000,1)
+Q 57: 1(2.500000,1)
+Q 58: 1(1.500000,1)
+Q 59: 1(0.500000,1)   (CPU idle for 0.500000 quantum)
+Q 60: 9(5.100000,3)
+Q 61: 9(4.100000,3)
+Q 62: 5(4.800000,3)
+Q 63: 9(3.100000,3)
+Q 64: 9(2.100000,3)
+Q 65: 9(1.100000,3)
+Q 66: 9(0.100000,3)   (CPU idle for 0.900000 quantum)
+Q 67: 5(3.800000,3)
+Q 68: 2(4.400000,4)
+Q 69: 5(2.800000,3)
+Q 70: 2(3.400000,4)
+Q 71: 5(1.800000,3)
+Q 72: 5(0.800000,3)   (CPU idle for 0.200000 quantum)
+Q 73: 2(2.400000,4)
+Q 74: 2(1.400000,4)
+Q 75: 2(0.400000,4)   (CPU idle for 0.600000 quantum)
+Q 76: 8(8.100000,3)
+Q 77: 8(7.100000,3)
+Q 78: 8(6.100000,3)
+Q 79: 8(5.100000,3)
+Q 80: 8(4.100000,3)
+Q 81: 8(3.100000,3)
+Q 82: 8(2.100000,3)
+Q 83: 8(1.100000,3)
+Q 84: 8(0.100000,3)   (CPU idle for 0.900000 quantum)
+Q 85: 3(8.600000,4)
+Q 86: 3(7.600000,4)
+Q 87: 3(6.600000,4)
+Q 88: 3(5.600000,4)
+Q 89: 3(4.600000,4)
+Q 90: 3(3.600000,4)
+Q 91: 3(2.600000,4)
+Q 92: 3(1.600000,4)
+Q 93: 3(0.600000,4)   (CPU idle for 0.400000 quantum)
+Q 94: 7(2.800000,2)
+Q 95: 7(1.800000,2)
+Q 96: 7(0.800000,2)   (CPU idle for 0.200000 quantum)
+No jobs at quantum 97
+No jobs at quantum 98
+No jobs at quantum 99
+
+***Overall statistics***
+Total completed processes: 9
+Avg. Response time: 5.455556
+Avg. Turn around-time: 11.900001
+Avg. Waiting time: 6.111112
+Avg. throughput: 9.000000
+
+***Priority specific statistics***
+Priority 1:
+Avg. Response time: 1.400000
+Avg. Turn around-time: 7.066667
+Avg. Waiting time: 0.966667
+Avg. throughput: 3.000000
+Priority 2:
+Avg. Response time: 6.800003
+Avg. Turn around-time: 8.800003
+Avg. Waiting time: 6.000003
+Avg. throughput: 1.000000
+Priority 3:
+Avg. Response time: 3.500000
+Avg. Turn around-time: 11.500000
+Avg. Waiting time: 5.500000
+Avg. throughput: 3.000000
+Priority 4:
+Avg. Response time: 13.800001
+Avg. Turn around-time: 21.300001
+Avg. Waiting time: 14.800001
+Avg. throughput: 2.000000
+No jobs at quantum 0
+No jobs at quantum 1
+No jobs at quantum 2
+No jobs at quantum 3
+No jobs at quantum 4
+No jobs at quantum 5
+No jobs at quantum 6
+No jobs at quantum 7
+No jobs at quantum 8
+No jobs at quantum 9
+No jobs at quantum 10
+No jobs at quantum 11
+No jobs at quantum 12
+Q 13: 0(9.400000,1)
+Q 14: 0(8.400000,1)
+Q 15: 0(7.400000,1)
+Q 16: 0(6.400000,1)
+Q 17: 0(5.400000,1)
+Q 18: 0(4.400000,1)
+Q 19: 0(3.400000,1)
+Q 20: 0(2.400000,1)
+Q 21: 0(1.400000,1)
+Q 22: 0(0.400000,1)   (CPU idle for 0.600000 quantum)
+No jobs at quantum 23
+No jobs at quantum 24
+No jobs at quantum 25
+No jobs at quantum 26
+No jobs at quantum 27
+No jobs at quantum 28
+No jobs at quantum 29
+Q 30: 4(5.400000,1)
+Q 31: 4(4.400000,1)
+Q 32: 4(3.400000,1)
+Q 33: 4(2.400000,1)
+Q 34: 4(1.400000,1)
+Q 35: 4(0.400000,1)   (CPU idle for 0.600000 quantum)
+No jobs at quantum 36
+No jobs at quantum 37
+No jobs at quantum 38
+No jobs at quantum 39
+No jobs at quantum 40
+No jobs at quantum 41
+No jobs at quantum 42
+No jobs at quantum 43
+No jobs at quantum 44
+No jobs at quantum 45
+No jobs at quantum 46
+No jobs at quantum 47
+No jobs at quantum 48
+No jobs at quantum 49
+No jobs at quantum 50
+No jobs at quantum 51
+No jobs at quantum 52
+No jobs at quantum 53
+No jobs at quantum 54
+No jobs at quantum 55
+Q 56: 1(3.500000,1)
+Q 57: 1(2.500000,1)
+Q 58: 1(1.500000,1)
+Q 59: 1(0.500000,1)   (CPU idle for 0.500000 quantum)
+Q 60: 9(5.100000,3)
+Q 61: 9(4.100000,3)
+Q 62: 9(3.100000,3)
+Q 63: 9(2.100000,3)
+Q 64: 9(1.100000,3)
+Q 65: 9(0.100000,3)   (CPU idle for 0.900000 quantum)
+Q 66: 5(4.800000,3)
+Q 67: 5(3.800000,3)
+Q 68: 5(2.800000,3)
+Q 69: 5(1.800000,3)
+Q 70: 5(0.800000,3)   (CPU idle for 0.200000 quantum)
+Q 71: 2(4.400000,4)
+Q 72: 2(3.400000,4)
+Q 73: 2(2.400000,4)
+Q 74: 2(1.400000,4)
+Q 75: 2(0.400000,4)   (CPU idle for 0.600000 quantum)
+Q 76: 8(8.100000,3)
+Q 77: 8(7.100000,3)
+Q 78: 8(6.100000,3)
+Q 79: 8(5.100000,3)
+Q 80: 8(4.100000,3)
+Q 81: 8(3.100000,3)
+Q 82: 8(2.100000,3)
+Q 83: 8(1.100000,3)
+Q 84: 8(0.100000,3)   (CPU idle for 0.900000 quantum)
+Q 85: 3(8.600000,4)
+Q 86: 3(7.600000,4)
+Q 87: 3(6.600000,4)
+Q 88: 3(5.600000,4)
+Q 89: 3(4.600000,4)
+Q 90: 3(3.600000,4)
+Q 91: 3(2.600000,4)
+Q 92: 3(1.600000,4)
+Q 93: 3(0.600000,4)   (CPU idle for 0.400000 quantum)
+Q 94: 7(2.800000,2)
+Q 95: 7(1.800000,2)
+Q 96: 7(0.800000,2)   (CPU idle for 0.200000 quantum)
+No jobs at quantum 97
+No jobs at quantum 98
+No jobs at quantum 99
+
+***Overall statistics***
+Total completed processes: 9
+Avg. Response time: 6.233334
+Avg. Turn around-time: 11.566668
+Avg. Waiting time: 5.777778
+Avg. throughput: 9.000000
+
+***Priority specific statistics***
+Priority 1:
+Avg. Response time: 1.400000
+Avg. Turn around-time: 7.066667
+Avg. Waiting time: 0.966667
+Avg. throughput: 3.000000
+Priority 2:
+Avg. Response time: 6.800003
+Avg. Turn around-time: 8.800003
+Avg. Waiting time: 6.000003
+Avg. throughput: 1.000000
+Priority 3:
+Avg. Response time: 4.833333
+Avg. Turn around-time: 10.500000
+Avg. Waiting time: 4.500000
+Avg. throughput: 3.000000
+Priority 4:
+Avg. Response time: 15.300001
+Avg. Turn around-time: 21.300001
+Avg. Waiting time: 14.800001
+Avg. throughput: 2.000000
+3
+________________________________________________________
+|   pid    |   a time |   e time |   r time |  priority|
+|======================================================|
+|   0      |   48.6   |   1.9    |   1.9    |   3      |
+|   1      |   7.4    |   4.3    |   4.3    |   3      |
+|   2      |   17.9   |   10.0   |   10.0   |   2      |
+|   3      |   77.5   |   6.8    |   6.8    |   4      |
+|   4      |   71.0   |   1.2    |   1.2    |   4      |
+|   5      |   1.7    |   2.6    |   2.6    |   1      |
+|   6      |   13.7   |   7.5    |   7.5    |   3      |
+|   7      |   94.3   |   1.7    |   1.7    |   3      |
+|   8      |   92.5   |   3.3    |   3.3    |   1      |
+|   9      |   1.8    |   7.6    |   7.6    |   1      |
+========================================================
+No jobs at quantum 0
+No jobs at quantum 1
+Q 2: 5(2.600000,1)
+Q 3: 9(7.600000,1)
+Q 4: 5(1.600000,1)
+Q 5: 9(6.600000,1)
+Q 6: 5(0.600000,1)   (CPU idle for 0.400000 quantum)
+Q 7: 9(5.600000,1)
+Q 8: 9(4.600000,1)
+Q 9: 9(3.600000,1)
+Q 10: 9(2.600000,1)
+Q 11: 9(1.600000,1)
+Q 12: 9(0.600000,1)   (CPU idle for 0.400000 quantum)
+Q 13: 1(4.300000,3)
+Q 14: 1(3.300000,3)
+Q 15: 1(2.300000,3)
+Q 16: 1(1.300000,3)
+Q 17: 1(0.300000,3)   (CPU idle for 0.700000 quantum)
+Q 18: 2(10.000000,2)
+Q 19: 6(7.500000,3)
+Q 20: 2(9.000000,2)
+Q 21: 6(6.500000,3)
+Q 22: 2(8.000000,2)
+Q 23: 2(7.000000,2)
+Q 24: 6(5.500000,3)
+Q 25: 2(6.000000,2)
+Q 26: 6(4.500000,3)
+Q 27: 2(5.000000,2)
+Q 28: 6(3.500000,3)
+Q 29: 2(4.000000,2)
+Q 30: 6(2.500000,3)
+Q 31: 2(3.000000,2)
+Q 32: 6(1.500000,3)
+Q 33: 2(2.000000,2)
+Q 34: 6(0.500000,3)   (CPU idle for 0.500000 quantum)
+Q 35: 2(1.000000,2)
+No jobs at quantum 36
+No jobs at quantum 37
+No jobs at quantum 38
+No jobs at quantum 39
+No jobs at quantum 40
+No jobs at quantum 41
+No jobs at quantum 42
+No jobs at quantum 43
+No jobs at quantum 44
+No jobs at quantum 45
+No jobs at quantum 46
+No jobs at quantum 47
+No jobs at quantum 48
+Q 49: 1(-1.000000,3)   (CPU idle for 2.000000 quantum)
+Q 50: 0(1.900000,3)
+Q 51: 0(0.900000,3)   (CPU idle for 0.100000 quantum)
+No jobs at quantum 52
+No jobs at quantum 53
+No jobs at quantum 54
+No jobs at quantum 55
+No jobs at quantum 56
+No jobs at quantum 57
+No jobs at quantum 58
+No jobs at quantum 59
+No jobs at quantum 60
+No jobs at quantum 61
+No jobs at quantum 62
+No jobs at quantum 63
+No jobs at quantum 64
+No jobs at quantum 65
+No jobs at quantum 66
+No jobs at quantum 67
+No jobs at quantum 68
+No jobs at quantum 69
+No jobs at quantum 70
+Q 71: 4(1.200000,4)
+Q 72: 4(0.200000,4)   (CPU idle for 0.800000 quantum)
+No jobs at quantum 73
+No jobs at quantum 74
+No jobs at quantum 75
+No jobs at quantum 76
+No jobs at quantum 77
+Q 78: 3(6.800000,4)
+Q 79: 3(5.800000,4)
+Q 80: 3(4.800000,4)
+Q 81: 3(3.800000,4)
+Q 82: 3(2.800000,4)
+Q 83: 3(1.800000,4)
+Q 84: 3(0.800000,4)   (CPU idle for 0.200000 quantum)
+No jobs at quantum 85
+No jobs at quantum 86
+No jobs at quantum 87
+No jobs at quantum 88
+No jobs at quantum 89
+No jobs at quantum 90
+No jobs at quantum 91
+No jobs at quantum 92
+Q 93: 8(3.300000,1)
+Q 94: 8(2.300000,1)
+Q 95: 8(1.300000,1)
+Q 96: 8(0.300000,1)   (CPU idle for 0.700000 quantum)
+Q 97: 7(1.700000,3)
+Q 98: 7(0.700000,3)   (CPU idle for 0.300000 quantum)
+No jobs at quantum 99
+
+***Overall statistics***
+Total completed processes: 10
+Avg. Response time: 2.760000
+Avg. Turn around-time: 12.059999
+Avg. Waiting time: 7.370000
+Avg. throughput: 10.000000
+
+***Priority specific statistics***
+Priority 1:
+Avg. Response time: 1.666667
+Avg. Turn around-time: 7.000000
+Avg. Waiting time: 2.500000
+Avg. throughput: 3.000000
+Priority 2:
+Avg. Response time: 1.100000
+Avg. Turn around-time: 18.100000
+Avg. Waiting time: 8.100000
+Avg. throughput: 1.000000
+Priority 3:
+Avg. Response time: 4.750000
+Avg. Turn around-time: 18.000000
+Avg. Waiting time: 14.149999
+Avg. throughput: 4.000000
+Priority 4:
+Avg. Response time: 1.250000
+Avg. Turn around-time: 4.750000
+Avg. Waiting time: 0.750000
+Avg. throughput: 2.000000
+No jobs at quantum 0
+No jobs at quantum 1
+Q 2: 5(2.600000,1)
+Q 3: 5(1.600000,1)
+Q 4: 5(0.600000,1)   (CPU idle for 0.400000 quantum)
+Q 5: 9(7.600000,1)
+Q 6: 9(6.600000,1)
+Q 7: 9(5.600000,1)
+Q 8: 9(4.600000,1)
+Q 9: 9(3.600000,1)
+Q 10: 9(2.600000,1)
+Q 11: 9(1.600000,1)
+Q 12: 9(0.600000,1)   (CPU idle for 0.400000 quantum)
+Q 13: 1(4.300000,3)
+Q 14: 1(3.300000,3)
+Q 15: 1(2.300000,3)
+Q 16: 1(1.300000,3)
+Q 17: 1(0.300000,3)   (CPU idle for 0.700000 quantum)
+Q 18: 2(10.000000,2)
+Q 19: 2(9.000000,2)
+Q 20: 2(8.000000,2)
+Q 21: 2(7.000000,2)
+Q 22: 2(6.000000,2)
+Q 23: 2(5.000000,2)
+Q 24: 2(4.000000,2)
+Q 25: 2(3.000000,2)
+Q 26: 2(2.000000,2)
+Q 27: 2(1.000000,2)
+Q 28: 6(7.500000,3)
+Q 29: 6(6.500000,3)
+Q 30: 6(5.500000,3)
+Q 31: 6(4.500000,3)
+Q 32: 6(3.500000,3)
+Q 33: 6(2.500000,3)
+Q 34: 6(1.500000,3)
+Q 35: 6(0.500000,3)   (CPU idle for 0.500000 quantum)
+No jobs at quantum 36
+No jobs at quantum 37
+No jobs at quantum 38
+No jobs at quantum 39
+No jobs at quantum 40
+No jobs at quantum 41
+No jobs at quantum 42
+No jobs at quantum 43
+No jobs at quantum 44
+No jobs at quantum 45
+No jobs at quantum 46
+No jobs at quantum 47
+No jobs at quantum 48
+Q 49: 0(1.900000,3)
+Q 50: 0(0.900000,3)   (CPU idle for 0.100000 quantum)
+No jobs at quantum 51
+No jobs at quantum 52
+No jobs at quantum 53
+No jobs at quantum 54
+No jobs at quantum 55
+No jobs at quantum 56
+No jobs at quantum 57
+No jobs at quantum 58
+No jobs at quantum 59
+No jobs at quantum 60
+No jobs at quantum 61
+No jobs at quantum 62
+No jobs at quantum 63
+No jobs at quantum 64
+No jobs at quantum 65
+No jobs at quantum 66
+No jobs at quantum 67
+No jobs at quantum 68
+No jobs at quantum 69
+No jobs at quantum 70
+Q 71: 4(1.200000,4)
+Q 72: 4(0.200000,4)   (CPU idle for 0.800000 quantum)
+No jobs at quantum 73
+No jobs at quantum 74
+No jobs at quantum 75
+No jobs at quantum 76
+No jobs at quantum 77
+Q 78: 3(6.800000,4)
+Q 79: 3(5.800000,4)
+Q 80: 3(4.800000,4)
+Q 81: 3(3.800000,4)
+Q 82: 3(2.800000,4)
+Q 83: 3(1.800000,4)
+Q 84: 3(0.800000,4)   (CPU idle for 0.200000 quantum)
+No jobs at quantum 85
+No jobs at quantum 86
+No jobs at quantum 87
+No jobs at quantum 88
+No jobs at quantum 89
+No jobs at quantum 90
+No jobs at quantum 91
+No jobs at quantum 92
+Q 93: 8(3.300000,1)
+Q 94: 8(2.300000,1)
+Q 95: 8(1.300000,1)
+Q 96: 8(0.300000,1)   (CPU idle for 0.700000 quantum)
+Q 97: 7(1.700000,3)
+Q 98: 7(0.700000,3)   (CPU idle for 0.300000 quantum)
+No jobs at quantum 99
+
+***Overall statistics***
+Total completed processes: 10
+Avg. Response time: 3.760000
+Avg. Turn around-time: 7.860000
+Avg. Waiting time: 3.170000
+Avg. throughput: 10.000000
+
+***Priority specific statistics***
+Priority 1:
+Avg. Response time: 2.333333
+Avg. Turn around-time: 6.333333
+Avg. Waiting time: 1.833333
+Avg. throughput: 3.000000
+Priority 2:
+Avg. Response time: 1.100000
+Avg. Turn around-time: 10.100000
+Avg. Waiting time: 0.100000
+Avg. throughput: 1.000000
+Priority 3:
+Avg. Response time: 6.750000
+Avg. Turn around-time: 10.000000
+Avg. Waiting time: 6.149999
+Avg. throughput: 4.000000
+Priority 4:
+Avg. Response time: 1.250000
+Avg. Turn around-time: 4.750000
+Avg. Waiting time: 0.750000
+Avg. throughput: 2.000000
+4
+________________________________________________________
+|   pid    |   a time |   e time |   r time |  priority|
+|======================================================|
+|   0      |   96.3   |   1.3    |   1.3    |   1      |
+|   1      |   85.8   |   5.3    |   5.3    |   4      |
+|   2      |   57.1   |   3.4    |   3.4    |   3      |
+|   3      |   68.5   |   1.0    |   1.0    |   3      |
+|   4      |   60.4   |   2.3    |   2.3    |   1      |
+|   5      |   25.0   |   2.9    |   2.9    |   3      |
+|   6      |   48.5   |   2.7    |   2.7    |   1      |
+|   7      |   63.9   |   8.4    |   8.4    |   1      |
+|   8      |   96.7   |   1.4    |   1.4    |   3      |
+|   9      |   67.7   |   7.1    |   7.1    |   1      |
+========================================================
+No jobs at quantum 0
+No jobs at quantum 1
+No jobs at quantum 2
+No jobs at quantum 3
+No jobs at quantum 4
+No jobs at quantum 5
+No jobs at quantum 6
+No jobs at quantum 7
+No jobs at quantum 8
+No jobs at quantum 9
+No jobs at quantum 10
+No jobs at quantum 11
+No jobs at quantum 12
+No jobs at quantum 13
+No jobs at quantum 14
+No jobs at quantum 15
+No jobs at quantum 16
+No jobs at quantum 17
+No jobs at quantum 18
+No jobs at quantum 19
+No jobs at quantum 20
+No jobs at quantum 21
+No jobs at quantum 22
+No jobs at quantum 23
+No jobs at quantum 24
+Q 25: 5(2.900000,3)
+Q 26: 5(1.900000,3)
+Q 27: 5(0.900000,3)   (CPU idle for 0.100000 quantum)
+No jobs at quantum 28
+No jobs at quantum 29
+No jobs at quantum 30
+No jobs at quantum 31
+No jobs at quantum 32
+No jobs at quantum 33
+No jobs at quantum 34
+No jobs at quantum 35
+No jobs at quantum 36
+No jobs at quantum 37
+No jobs at quantum 38
+No jobs at quantum 39
+No jobs at quantum 40
+No jobs at quantum 41
+No jobs at quantum 42
+No jobs at quantum 43
+No jobs at quantum 44
+No jobs at quantum 45
+No jobs at quantum 46
+No jobs at quantum 47
+No jobs at quantum 48
+Q 49: 6(2.700000,1)
+Q 50: 6(1.700000,1)
+Q 51: 6(0.700000,1)   (CPU idle for 0.300000 quantum)
+No jobs at quantum 52
+No jobs at quantum 53
+No jobs at quantum 54
+No jobs at quantum 55
+No jobs at quantum 56
+No jobs at quantum 57
+Q 58: 2(3.400000,3)
+Q 59: 2(2.400000,3)
+Q 60: 2(1.400000,3)
+Q 61: 4(2.300000,1)
+Q 62: 4(1.300000,1)
+Q 63: 4(0.300000,1)   (CPU idle for 0.700000 quantum)
+Q 64: 7(8.400000,1)
+Q 65: 7(7.400000,1)
+Q 66: 7(6.400000,1)
+Q 67: 7(5.400000,1)
+Q 68: 2(0.400000,3)   (CPU idle for 0.600000 quantum)
+Q 69: 9(7.100000,1)
+Q 70: 7(4.400000,1)
+Q 71: 9(6.100000,1)
+Q 72: 7(3.400000,1)
+Q 73: 9(5.100000,1)
+Q 74: 7(2.400000,1)
+Q 75: 9(4.100000,1)
+Q 76: 7(1.400000,1)
+Q 77: 9(3.100000,1)
+Q 78: 7(0.400000,1)   (CPU idle for 0.600000 quantum)
+Q 79: 9(2.100000,1)
+Q 80: 3(1.000000,3)
+Q 81: 9(1.100000,1)
+Q 82: 9(0.100000,1)   (CPU idle for 0.900000 quantum)
+No jobs at quantum 83
+No jobs at quantum 84
+No jobs at quantum 85
+Q 86: 1(5.300000,4)
+Q 87: 1(4.300000,4)
+Q 88: 1(3.300000,4)
+Q 89: 1(2.300000,4)
+Q 90: 1(1.300000,4)
+Q 91: 1(0.300000,4)   (CPU idle for 0.700000 quantum)
+No jobs at quantum 92
+No jobs at quantum 93
+No jobs at quantum 94
+No jobs at quantum 95
+No jobs at quantum 96
+Q 97: 0(1.300000,1)
+Q 98: 0(0.300000,1)   (CPU idle for 0.700000 quantum)
+Q 99: 8(1.400000,3)
+
+***Overall statistics***
+Total completed processes: 9
+Avg. Response time: 2.755555
+Avg. Turn around-time: 8.200000
+Avg. Waiting time: 4.377777
+Avg. throughput: 9.000000
+
+***Priority specific statistics***
+Priority 1:
+Avg. Response time: 1.639999
+Avg. Turn around-time: 8.039999
+Avg. Waiting time: 3.680000
+Avg. throughput: 5.000000
+Priority 2:
+Avg. Response time: -nan
+Avg. Turn around-time: -nan
+Avg. Waiting time: -nan
+Avg. throughput: 0.000000
+Priority 3:
+Avg. Response time: 5.133334
+Avg. Turn around-time: 9.133334
+Avg. Waiting time: 6.700001
+Avg. throughput: 3.000000
+Priority 4:
+Avg. Response time: 1.199997
+Avg. Turn around-time: 6.199997
+Avg. Waiting time: 0.899997
+Avg. throughput: 1.000000
+No jobs at quantum 0
+No jobs at quantum 1
+No jobs at quantum 2
+No jobs at quantum 3
+No jobs at quantum 4
+No jobs at quantum 5
+No jobs at quantum 6
+No jobs at quantum 7
+No jobs at quantum 8
+No jobs at quantum 9
+No jobs at quantum 10
+No jobs at quantum 11
+No jobs at quantum 12
+No jobs at quantum 13
+No jobs at quantum 14
+No jobs at quantum 15
+No jobs at quantum 16
+No jobs at quantum 17
+No jobs at quantum 18
+No jobs at quantum 19
+No jobs at quantum 20
+No jobs at quantum 21
+No jobs at quantum 22
+No jobs at quantum 23
+No jobs at quantum 24
+Q 25: 5(2.900000,3)
+Q 26: 5(1.900000,3)
+Q 27: 5(0.900000,3)   (CPU idle for 0.100000 quantum)
+No jobs at quantum 28
+No jobs at quantum 29
+No jobs at quantum 30
+No jobs at quantum 31
+No jobs at quantum 32
+No jobs at quantum 33
+No jobs at quantum 34
+No jobs at quantum 35
+No jobs at quantum 36
+No jobs at quantum 37
+No jobs at quantum 38
+No jobs at quantum 39
+No jobs at quantum 40
+No jobs at quantum 41
+No jobs at quantum 42
+No jobs at quantum 43
+No jobs at quantum 44
+No jobs at quantum 45
+No jobs at quantum 46
+No jobs at quantum 47
+No jobs at quantum 48
+Q 49: 6(2.700000,1)
+Q 50: 6(1.700000,1)
+Q 51: 6(0.700000,1)   (CPU idle for 0.300000 quantum)
+No jobs at quantum 52
+No jobs at quantum 53
+No jobs at quantum 54
+No jobs at quantum 55
+No jobs at quantum 56
+No jobs at quantum 57
+Q 58: 2(3.400000,3)
+Q 59: 2(2.400000,3)
+Q 60: 2(1.400000,3)
+Q 61: 2(0.400000,3)   (CPU idle for 0.600000 quantum)
+Q 62: 4(2.300000,1)
+Q 63: 4(1.300000,1)
+Q 64: 4(0.300000,1)   (CPU idle for 0.700000 quantum)
+Q 65: 7(8.400000,1)
+Q 66: 7(7.400000,1)
+Q 67: 7(6.400000,1)
+Q 68: 7(5.400000,1)
+Q 69: 7(4.400000,1)
+Q 70: 7(3.400000,1)
+Q 71: 7(2.400000,1)
+Q 72: 7(1.400000,1)
+Q 73: 7(0.400000,1)   (CPU idle for 0.600000 quantum)
+Q 74: 9(7.100000,1)
+Q 75: 9(6.100000,1)
+Q 76: 9(5.100000,1)
+Q 77: 9(4.100000,1)
+Q 78: 9(3.100000,1)
+Q 79: 9(2.100000,1)
+Q 80: 9(1.100000,1)
+Q 81: 9(0.100000,1)   (CPU idle for 0.900000 quantum)
+Q 82: 3(1.000000,3)
+No jobs at quantum 83
+No jobs at quantum 84
+No jobs at quantum 85
+Q 86: 1(5.300000,4)
+Q 87: 1(4.300000,4)
+Q 88: 1(3.300000,4)
+Q 89: 1(2.300000,4)
+Q 90: 1(1.300000,4)
+Q 91: 1(0.300000,4)   (CPU idle for 0.700000 quantum)
+No jobs at quantum 92
+No jobs at quantum 93
+No jobs at quantum 94
+No jobs at quantum 95
+No jobs at quantum 96
+Q 97: 0(1.300000,1)
+Q 98: 0(0.300000,1)   (CPU idle for 0.700000 quantum)
+Q 99: 8(1.400000,3)
+
+***Overall statistics***
+Total completed processes: 9
+Avg. Response time: 3.755555
+Avg. Turn around-time: 7.088888
+Avg. Waiting time: 3.266666
+Avg. throughput: 9.000000
+
+***Priority specific statistics***
+Priority 1:
+Avg. Response time: 3.039999
+Avg. Turn around-time: 7.039999
+Avg. Waiting time: 2.679999
+Avg. throughput: 5.000000
+Priority 2:
+Avg. Response time: -nan
+Avg. Turn around-time: -nan
+Avg. Waiting time: -nan
+Avg. throughput: 0.000000
+Priority 3:
+Avg. Response time: 5.800001
+Avg. Turn around-time: 7.466667
+Avg. Waiting time: 5.033334
+Avg. throughput: 3.000000
+Priority 4:
+Avg. Response time: 1.199997
+Avg. Turn around-time: 6.199997
+Avg. Waiting time: 0.899997
+Avg. throughput: 1.000000
