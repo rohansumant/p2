@@ -1,6 +1,9 @@
 #ifndef COMMON_H
 #define COMMON_H
 
+#include <stdlib.h>
+#include <stdio.h>
+
 #define NUMBER_OF_PROCS 10
 #define RUNS_PER_ALGO 5
 #define QUANTA 100

@@ -3,6 +3,7 @@
 
 #include "common.h"
 #include "fcfs.h"
+#include "sjf.h"
 
 // TODO: Answer the following:
 // can we add remaining time to the process struct?
@@ -10,19 +11,6 @@
 // why does expected run time run from 0.1 to 10
 //     with possible values: [ 0.1, 1, 2, 3, 4 .. 10 ]
 
-// Shortest Job First (non-preemptive)
-int sjf(process *ptr)
-{
-// sort on expected runtimes
-    int i;
-    qsort(ptr, NUMBER_OF_PROCS, sizeof(process), compare_expected_runtimes);
-    for(i=0; i<NUMBER_OF_PROCS; i++)
-    {
-        printf("pid: %d , expected runtime: %f\n", ptr[i].pid, ptr[i].expected_runtime);
-    }
-
-    return 0;
-}
 
 // Shortest Remaining Time (preemptive)
 int srt(process *ptr)
@@ -83,13 +71,14 @@ int main()
         fcfs(buff);
     }
 
-//    printf("Running sjf %d times\n", RUNS_PER_ALGO);
-//    for (i=0; i< RUNS_PER_ALGO; i++)
-//    {
-//        printf("%d\n", i);
-//        generate_procs(buff);
-//        sjf(buff);
-//    }
+    printf("Running sjf %d times\n", RUNS_PER_ALGO);
+    for (i=0; i< RUNS_PER_ALGO; i++)
+    {
+        printf("run #%d:\n", i);
+        generate_procs(buff);
+        print_procs(buff);
+        sjf(buff);
+    }
 //
 //    printf("Running srt %d times\n", RUNS_PER_ALGO);
 //    for (i=0; i< RUNS_PER_ALGO; i++)
