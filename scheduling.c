@@ -5,6 +5,7 @@
 #include "fcfs.h"
 #include "sjf.h"
 #include "srt.h"
+#include "rr.h"
 #include "hpf.h"
 
 // TODO: Answer the following:
@@ -53,15 +54,15 @@ int main()
 	srt(buff);
     }
 
-    //
-    //    printf("Running rr %d times\n", RUNS_PER_ALGO);
-    //    for (i=0; i< RUNS_PER_ALGO; i++)
-    //    {
-    //        printf("%d\n", i);
-    //        generate_procs(buff);
-    //        rr(buff);
-    //    }
-    //
+
+    printf("Running rr %d times\n", RUNS_PER_ALGO);
+    for (i=0; i< RUNS_PER_ALGO; i++)
+    {
+	printf("%d\n", i);
+	generate_procs(buff);
+	rr(buff);
+    }
+
 
     printf("Running hpf %d times\n", RUNS_PER_ALGO);
     for (i=0; i< RUNS_PER_ALGO; i++)
