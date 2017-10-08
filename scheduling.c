@@ -5,6 +5,7 @@
 #include "fcfs.h"
 #include "sjf.h"
 #include "srt.h"
+#include "rr.h"
 
 // TODO: Answer the following:
 // can we add remaining time to the process struct?
@@ -12,20 +13,6 @@
 // why does expected run time run from 0.1 to 10
 //     with possible values: [ 0.1, 1, 2, 3, 4 .. 10 ]
 
-
-
-// Round Robin (preemptive)
-int rr(process *ptr)
-{
-// dont sort
-    int i;
-    for(i=0; i<NUMBER_OF_PROCS; i++)
-    {
-        printf("pid: %d\n", ptr[i].pid);
-    }
-
-    return 0;
-}
 
 // Highest Priority First (both preemptive and non-preemptive)
 int hpf(process *ptr)
@@ -76,15 +63,16 @@ int main()
         print_procs(buff);
         srt(buff);
     }
-//
-//    printf("Running rr %d times\n", RUNS_PER_ALGO);
-//    for (i=0; i< RUNS_PER_ALGO; i++)
-//    {
-//        printf("%d\n", i);
-//        generate_procs(buff);
-//        rr(buff);
-//    }
-//
+
+    printf("Running rr %d times\n", RUNS_PER_ALGO);
+    for (i=0; i< RUNS_PER_ALGO; i++)
+    {
+       printf("%d\n", i);
+       generate_procs(buff);
+       print_procs(buff);
+       rr(buff);
+    }
+
 //    printf("Running hpf %d times\n", RUNS_PER_ALGO);
 //    for (i=0; i< RUNS_PER_ALGO; i++)
 //    {
