@@ -6,10 +6,7 @@ int compare_arrival_times(const void * a, const void * b)
 {
     process *p1 = (process*)a;
     process *p2 = (process*)b;
-    float r = p1->arrival_time - p2->arrival_time;
-    if (r>0) return 1;
-    if (r<0) return -1;
-    return r;
+    return (p1->arrival_time - p2->arrival_time);
 }
 
 int compare_expected_runtimes(const void * a, const void * b)
