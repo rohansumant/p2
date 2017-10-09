@@ -14,6 +14,7 @@ typedef struct {
     float expected_runtime;
     float remaining_runtime;
     int priority;
+    int age;
 } process;
 
 int compare_arrival_times(const void *, const void *);
