@@ -10,6 +10,15 @@ process * next_proc_pre(process* ptr, int Q){
     return NULL;
 }
 
+process * next_started_proc_pre(process* ptr, int Q){
+    int i =0;
+    qsort(ptr, NUMBER_OF_PROCS, sizeof(process), compare_remaining_runtimes);
+    for (i=0; i< NUMBER_OF_PROCS; i++){
+        if (Q >= ptr[i].arrival_time && ptr[i].remaining_runtime > 0 && ptr[i].remaining_runtime != ptr[i].expected_runtime) return &ptr[i];
+    }
+    return NULL;
+}
+
 // Shortest Remaining Time (preemptive)
 int srt(process *ptr)
 {
@@ -17,6 +26,8 @@ int srt(process *ptr)
     int done_procs = 0;
     float idle_time = 0;
     float q_idle_time = 0;
+    float response_time =0;
+    float turnaround_time =0;
     process* c_proc = NULL;
 
     // sort on shortest remaining time
@@ -25,7 +36,7 @@ int srt(process *ptr)
     printf("expected order:\n");
     print_procs(ptr);
 
-    printf("\n Simulation starting...\n\n");
+    printf("\n Shortest Remaining Time Simulation starting...\n\n");
     for (i=0; i<QUANTA; i++)
     {
         // sort on remaining time
@@ -42,17 +53,24 @@ int srt(process *ptr)
             continue;
         }
 
+        // First time this proc gets the cpu, we get response time from this
+        if (c_proc->expected_runtime == c_proc->remaining_runtime){
+            response_time += i - c_proc->arrival_time;
+        }
+
         // If we get here, we have a valid proc to run at c_proc
-        printf("| QUANTA %02d: ", i);  // QUANTA header
+        printf("| QUANTA %03d: ", i);  // QUANTA header
 
         // Now we found a process to run and we process by subtracting 1 from the remaining time
         c_proc->remaining_runtime -= 1;
 
         // Check to see if this process finished, if so, we record the cpu idle time in this quanta
+        // Also we get turn-around time here
         if (c_proc->remaining_runtime <= 0){
             done_procs++;
             q_idle_time = (-1) * c_proc->remaining_runtime;
             c_proc->remaining_runtime = 0;
+            turnaround_time += i - c_proc->arrival_time;
         }
 
         // Print the process id and its remaining runtime
@@ -66,20 +84,56 @@ int srt(process *ptr)
         printf("\n");
     }
 
-    // Finish the rest of the QUANTA
+    // Finish the rest of the QUANTA if all procs finished
     for (i=i; i< QUANTA; i++){
         printf("| QUANTA %02d:  I D L E  |\n",i);
         idle_time += 1.0;
     }
 
-    printf("\n\n%d processes did not finish after %d QUANTA\n", NUMBER_OF_PROCS - done_procs, QUANTA);
-    for (i=0; i< NUMBER_OF_PROCS; i++){
-        if (ptr[i].remaining_runtime > 0){
-            printf("pid:%d remaining time: %f\n", ptr[i].pid, ptr[i].remaining_runtime);
+    // Finish the procs that already started
+    while ((c_proc = next_started_proc_pre(ptr, i)) != NULL){
+        // If we get here, we have a valid proc to run at c_proc
+        printf("| QUANTA %03d: ", i);  // QUANTA header
+        // Now we found a process to run and we process by subtracting 1 from the remaining time
+        c_proc->remaining_runtime -= 1;
+
+        // Check to see if this process finished, if so, we record the cpu idle time in this quanta
+        // Also we get turn-around time here
+        if (c_proc->remaining_runtime <= 0){
+            done_procs++;
+            q_idle_time = (-1) * c_proc->remaining_runtime;
+            c_proc->remaining_runtime = 0;
+            turnaround_time += i - c_proc->arrival_time;
+        }
+        // Print the process id and its remaining runtime
+        printf("[p%02d](%2.1f)|", c_proc->pid, c_proc->remaining_runtime);
+        // If the cpu was idle in this quanta print that and add it to the total idle time
+        if (q_idle_time){
+            printf("<< CPU IDLE for %2.1f QUANTA |", q_idle_time);
+            idle_time += q_idle_time;
+        }
+        printf("\n");
+
+        i++;
+    }
+    int total_quanta = i;
+    printf("\n");
+    if (NUMBER_OF_PROCS - done_procs == 0){
+        printf("All procs finished after %d QUANTA\n", total_quanta);
+    }else{
+        printf("%d processes left un-finished after %d QUANTA\n", NUMBER_OF_PROCS - done_procs, total_quanta);
+        for (i=0; i< NUMBER_OF_PROCS; i++){
+            if (ptr[i].remaining_runtime > 0){
+                printf("pid:%d remaining time: %f\n", ptr[i].pid, ptr[i].remaining_runtime);
+            }
         }
     }
 
-    printf("\ncpu was idle %3.1f Quanta \n", idle_time);
+    printf("Average turn around time in this run: %3.1f quanta\n", turnaround_time / NUMBER_OF_PROCS);
+    printf("Average response time in this run: %3.1f quanta\n", response_time / NUMBER_OF_PROCS);
+    printf("Throughput: %3.3f\n", (float)done_procs/(float)total_quanta);
+
+    printf("CPU was idle %3.1f Quanta \n\n", idle_time);
 
     return 0;
 }
