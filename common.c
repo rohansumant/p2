@@ -44,7 +44,6 @@ int generate_procs(process *p)
 {
     int pr;
     int i;
-    float service_time;
     float tmp;
     for(i=0; i<NUMBER_OF_PROCS; i++)
     {
