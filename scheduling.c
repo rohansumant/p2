@@ -32,19 +32,19 @@ int main()
         fcfs(buff);
     }
 
-    printf("Running sjf %d times\n", RUNS_PER_ALGO);
+    printf("Running Shortest Job First %d times\n", RUNS_PER_ALGO);
     for (i=0; i< RUNS_PER_ALGO; i++)
     {
-        printf("run #%d:\n", i);
+        printf("Shortest Job First run #%d:\n", i);
         generate_procs(buff);
         print_procs(buff);
         sjf(buff);
     }
 
-    printf("Running srt %d times\n", RUNS_PER_ALGO);
+    printf("Running Shortest Remaining Time %d times\n", RUNS_PER_ALGO);
     for (i=0; i< RUNS_PER_ALGO; i++)
     {
-        printf("run #%d:\n", i);
+        printf("Shortest Remaining Time run #%d:\n", i);
         generate_procs(buff);
         print_procs(buff);
         srt(buff);
