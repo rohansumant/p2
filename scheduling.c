@@ -53,7 +53,7 @@ int main()
     printf("Running rr %d times\n", RUNS_PER_ALGO);
     for (i=0; i< RUNS_PER_ALGO; i++)
     {
-       printf("%d\n", i);
+       printf("Round Robin Run : %d\n", i);
        generate_procs(buff);
        print_procs(buff);
        rr(buff);
