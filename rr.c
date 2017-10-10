@@ -138,7 +138,7 @@ int rr(process *ptr)
 
     printf("\nAverage turn around time in this run: %3.1f quanta\n", turnaround_time / NUMBER_OF_PROCS);
     printf("Average response time in this run: %3.1f quanta\n", response_time / NUMBER_OF_PROCS);
-    printf("Throughput: %3.3f\n", (float)done_procs/(float)NUMBER_OF_PROCS);
+    printf("Throughput: %3.3f\n", (float)(NUMBER_OF_PROCS-proc_cnt)/(float)NUMBER_OF_PROCS);
 
     printf("\ncpu was idle %3.1f Quanta \n", idle_time);
 
