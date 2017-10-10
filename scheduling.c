@@ -117,7 +117,6 @@ int main(int argc, char *argv[])
 		printf("Invalid options %s. See options with -h \n", argv[1]);
 		return 0;
 	}
-    }
 
     return 0;
 }
