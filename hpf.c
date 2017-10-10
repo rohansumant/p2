@@ -106,6 +106,8 @@ int hpf_preemptive(process *ptr) {
 	    for(int j=0;j<ix[i];j++) if(Q[i][j].expected_runtime > 0 && Q[i][j].age == 5) {
 		Q[i-1][ix[i-1]] = Q[i][j]; // Insert process into higher priority queue
 		Q[i-1][ix[i-1]].age = 0; // Fresh process in this new queue
+		Q[i-1][ix[i-1]].priority--;
+		printf("Process %d aged one priority up\n",Q[i-1][ix[i-1]].pid);
 
 		ix[i-1]++;
 		Q[i][j].expected_runtime = -1; // Entry in previous queue effectively nullified
@@ -146,6 +148,7 @@ int hpf_preemptive(process *ptr) {
 	    printf("Q %d: %d(%f,%d)\n",q,target_process->pid,target_process->expected_runtime,target_process->priority);
 	}
 	target_process->expected_runtime -= 1.0;
+	target_process->age = 0; // Process just serviced, reset age.
 	if(target_process->expected_runtime <= 0) {
 	   done[target_process->pid] = 1;
 	} 
@@ -199,6 +202,8 @@ int hpf_nonpreemptive(process *ptr) {
 		if(target_process && target_process->pid == Q[i][j].pid) continue; // No benefit for doing this for the ongoing process, it already owns the CPU.
 		Q[i-1][ix[i-1]] = Q[i][j]; // Insert process into higher priority queue
 		Q[i-1][ix[i-1]].age = 0; // Fresh process in this new queue
+		Q[i-1][ix[i-1]].priority--;
+		printf("Process %d aged one priority up\n",Q[i-1][ix[i-1]].pid);
 
 		ix[i-1]++;
 		Q[i][j].expected_runtime = -1; // Entry in previous queue effectively nullified
@@ -236,6 +241,7 @@ int hpf_nonpreemptive(process *ptr) {
 	}
 
 	target_process->expected_runtime -= 1.0;
+	target_process->age = 0; // Process just serviced, reset age.
 	if(target_process->expected_runtime <= 0) {
 	   done[target_process->pid] = 1;
 	   target_process = NULL;
