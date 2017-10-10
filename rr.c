@@ -83,6 +83,9 @@ int rr(process *ptr)
             if (c_proc->expected_runtime == c_proc->remaining_runtime){
                 response_time += i - c_proc->arrival_time;
             }
+            if(c_proc->expected_runtime == c_proc->remaining_runtime && i>=QUANTA-1){
+                done_procs++;
+            }
             last_serviced = c_proc->pid;
 
             // If we get here, we have a valid proc to run at c_proc
@@ -116,6 +119,21 @@ int rr(process *ptr)
     for (i=i; i< QUANTA; i++){
         printf("| QUANTA %02d: IDLE  |\n",i);
         idle_time += 1.0;
+    }
+
+    int proc_cnt = 0;
+    int total_quanta = i;
+
+    for (i=0; i< NUMBER_OF_PROCS; i++){
+        if (ptr[i].remaining_runtime > 0){
+            proc_cnt ++;
+            printf("pid:%d remaining time: %f\n", ptr[i].pid, ptr[i].remaining_runtime);
+        }
+    }
+
+    printf("\n%d processes left un-finished after %d QUANTA\n", proc_cnt, total_quanta);
+    if (proc_cnt == 0){
+        printf("All procs finished after %d QUANTA\n", total_quanta);
     }
 
     printf("\nAverage turn around time in this run: %3.1f quanta\n", turnaround_time / NUMBER_OF_PROCS);
