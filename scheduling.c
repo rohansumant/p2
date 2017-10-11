@@ -1,7 +1,5 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include <unistd.h>
-#include <string.h>
 
 #include "common.h"
 #include "fcfs.h"
@@ -62,7 +60,7 @@ int main(int argc, char *argv[])
         printf("Running rr %d times\n", RUNS_PER_ALGO);
         for (i=0; i< RUNS_PER_ALGO; i++)
         {
-           printf("%d\n", i);
+           printf("Running rr %d\n", i);
            generate_procs(buff);
            print_procs(buff);
            rr(buff);
