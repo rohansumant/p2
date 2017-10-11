@@ -54,7 +54,6 @@ int rr(process *ptr)
     float q_idle_time = 0;
     process* c_proc = NULL;
     int last_serviced = 0;
-    int index = 0;
     // sort on expected runtime
     qsort(ptr, NUMBER_OF_PROCS, sizeof(process), compare_arrival_times);
 
